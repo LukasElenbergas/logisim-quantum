@@ -11,9 +11,9 @@ import com.cburch.draw.model.CanvasObject;
 import com.cburch.draw.shapes.Text;
 
 public class ModelEditTextAction extends ModelAction {
-	private Text text;
-	private String oldValue;
-	private String newValue;
+	private final Text text;
+	private final String oldValue;
+	private final String newValue;
 	
 	public ModelEditTextAction(CanvasModel model, Text text, String newValue) {
 		super(model);
@@ -24,7 +24,7 @@ public class ModelEditTextAction extends ModelAction {
 	
 	@Override
 	public Collection<CanvasObject> getObjects() {
-		return Collections.singleton((CanvasObject) text);
+		return Collections.singleton(text);
 	}
 
 	@Override

@@ -5,10 +5,10 @@ package com.cburch.logisim.analyze.model;
 
 
 public interface ExpressionVisitor<T> {
-	public T visitAnd(Expression a, Expression b);
-	public T visitOr(Expression a, Expression b);
-	public T visitXor(Expression a, Expression b);
-	public T visitNot(Expression a);
-	public T visitVariable(String name);
-	public T visitConstant(int value);
+	T visitAnd(Expression a, Expression b);
+	T visitOr(Expression a, Expression b);
+	T visitXor(Expression a, Expression b);
+	T visitNot(Expression a);
+	T visitVariable(String name);
+	T visitConstant(int value);
 }

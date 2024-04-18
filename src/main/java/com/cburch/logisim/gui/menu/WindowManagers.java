@@ -37,8 +37,8 @@ public class WindowManagers {
 	}
 	
 	private static boolean initialized = false;
-	private static MyListener myListener = new MyListener();
-	private static HashMap<Project,ProjectManager> projectMap
+	private static final MyListener myListener = new MyListener();
+	private static final HashMap<Project,ProjectManager> projectMap
 		= new LinkedHashMap<Project,ProjectManager>();
 	
 	private static class MyListener implements PropertyChangeListener {
@@ -49,7 +49,7 @@ public class WindowManagers {
 
 	private static class ProjectManager extends WindowMenuItemManager
 			implements ProjectListener, LibraryListener {
-		private Project proj;
+		private final Project proj;
 		
 		ProjectManager(Project proj) {
 			super(proj.getLogisimFile().getName(), false);

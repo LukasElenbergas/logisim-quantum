@@ -223,10 +223,10 @@ public class OutputExpressions {
 		}
 	}
 	
-	private MyListener myListener = new MyListener();
-	private AnalyzerModel model;
-	private HashMap<String,OutputData> outputData = new HashMap<String,OutputData>();
-	private ArrayList<OutputExpressionsListener> listeners
+	private final MyListener myListener = new MyListener();
+	private final AnalyzerModel model;
+	private final HashMap<String,OutputData> outputData = new HashMap<String,OutputData>();
+	private final ArrayList<OutputExpressionsListener> listeners
 		= new ArrayList<OutputExpressionsListener>();
 	private boolean updatingTable = false;
 	
@@ -278,7 +278,7 @@ public class OutputExpressions {
 	
 	public boolean isExpressionMinimal(String output) {
 		OutputData data = getOutputData(output, false);
-		return data == null ? true : data.isExpressionMinimal();
+		return data == null || data.isExpressionMinimal();
 	}
 	
 	public Expression getMinimalExpression(String output) {

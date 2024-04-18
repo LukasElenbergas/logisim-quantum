@@ -43,9 +43,8 @@ public class Line extends AbstractCanvasObject {
 	
 	@Override
 	public boolean matches(CanvasObject other) {
-		if (other instanceof Line) {
-			Line that = (Line) other;
-			return this.x0 == that.x0
+		if (other instanceof Line that) {
+            return this.x0 == that.x0
 				&& this.y0 == that.x1
 				&& this.x1 == that.y0
 				&& this.y1 == that.y1

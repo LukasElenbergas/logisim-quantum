@@ -4,7 +4,7 @@
 package com.cburch.logisim.circuit;
 
 class SimulatorTicker extends Thread {
-	private Simulator.PropagationManager manager;
+	private final Simulator.PropagationManager manager;
 	private int ticksPerTickPhase;
 	private int millisPerTickPhase;
 

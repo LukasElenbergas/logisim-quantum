@@ -6,6 +6,7 @@ package com.cburch.logisim.gui.log;
 import java.io.File;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Objects;
 
 import javax.swing.JFrame;
 
@@ -14,9 +15,9 @@ import com.cburch.logisim.data.Value;
 import com.cburch.logisim.util.EventSourceWeakSupport;
 
 class Model {
-	private EventSourceWeakSupport<ModelListener> listeners;
-	private Selection selection;
-	private HashMap<SelectionItem,ValueLog> log;
+	private final EventSourceWeakSupport<ModelListener> listeners;
+	private final Selection selection;
+	private final HashMap<SelectionItem,ValueLog> log;
 	private boolean fileEnabled = false;
 	private File file = null;
 	private boolean fileHeader = true;
@@ -72,7 +73,7 @@ class Model {
 	}
 	
 	public void setFile(File value) {
-		if (file == null ? value == null : file.equals(value)) return;
+		if (Objects.equals(file, value)) return;
 		file = value;
 		fileEnabled = file != null;
 		fireFilePropertyChanged(new ModelEvent());
@@ -93,7 +94,7 @@ class Model {
 			vals[i] = item.fetchValue(circuitState);
 			if (!changed) {
 				Value v = getValueLog(item).getLast();
-				changed = v == null ? vals[i] != null : !v.equals(vals[i]);
+				changed = !Objects.equals(v, vals[i]);
 			}
 		}
 		if (changed) {

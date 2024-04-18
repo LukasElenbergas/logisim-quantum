@@ -10,8 +10,8 @@ import com.cburch.logisim.util.StringGetter;
 import com.cburch.logisim.util.StringUtil;
 
 public class DurationAttribute extends Attribute<Integer> {
-	private int min;
-	private int max;
+	private final int min;
+	private final int max;
 	
 	public DurationAttribute(String name, StringGetter disp, int min, int max) {
 		super(name, disp);

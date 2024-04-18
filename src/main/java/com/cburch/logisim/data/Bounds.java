@@ -52,9 +52,8 @@ public class Bounds {
 
 	@Override
 	public boolean equals(Object other_obj) {
-		if (!(other_obj instanceof Bounds)) return false;
-		Bounds other = (Bounds) other_obj;
-		return x == other.x && y == other.y
+		if (!(other_obj instanceof Bounds other)) return false;
+        return x == other.x && y == other.y
 			&& wid == other.wid && ht == other.ht;
 	}
 	

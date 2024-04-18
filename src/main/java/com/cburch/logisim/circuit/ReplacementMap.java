@@ -14,8 +14,8 @@ import com.cburch.logisim.comp.Component;
 
 public class ReplacementMap {
 	private boolean frozen;
-	private HashMap<Component,HashSet<Component>> map;
-	private HashMap<Component,HashSet<Component>> inverse;
+	private final HashMap<Component,HashSet<Component>> map;
+	private final HashMap<Component,HashSet<Component>> inverse;
 	
 	public ReplacementMap(Component oldComp, Component newComp) {
 		this(new HashMap<Component,HashSet<Component>>(),

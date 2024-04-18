@@ -79,9 +79,8 @@ public class Location implements Comparable<Location> {
 
 	@Override
 	public boolean equals(Object other_obj) {
-		if (!(other_obj instanceof Location)) return false;
-		Location other = (Location) other_obj;
-		return this.x == other.x && this.y == other.y;
+		if (!(other_obj instanceof Location other)) return false;
+        return this.x == other.x && this.y == other.y;
 	}
 
 	@Override

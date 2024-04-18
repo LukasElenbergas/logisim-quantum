@@ -20,9 +20,9 @@ import com.cburch.draw.tools.DrawingAttributeSet;
 import com.cburch.logisim.util.GraphicsUtil;
 
 class Toolbar extends JComponent {
-	private static int ICON_WIDTH = 16;
-	private static int ICON_HEIGHT = 16;
-	private static int ICON_SEP = 4;
+	private static final int ICON_WIDTH = 16;
+	private static final int ICON_HEIGHT = 16;
+	private static final int ICON_SEP = 4;
 
 	private class Listener implements MouseListener, MouseMotionListener {
 		private AbstractTool toolPressed;
@@ -90,9 +90,9 @@ class Toolbar extends JComponent {
 	}
 	
 	
-	private Canvas canvas;
+	private final Canvas canvas;
 	private AbstractTool[][] tools;
-	private Listener listener;
+	private final Listener listener;
 	
 	public Toolbar(Canvas canvas, DrawingAttributeSet attrs) {
 		this.canvas = canvas;

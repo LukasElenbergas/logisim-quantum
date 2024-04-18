@@ -40,13 +40,11 @@ public class Constant extends InstanceFactory {
 	private static final Color BACKGROUND_COLOR = new Color(230, 230, 230);
 	
 	private static final List<Attribute<?>> ATTRIBUTES
-		= Arrays.asList(new Attribute<?>[] {
-				StdAttr.FACING, StdAttr.WIDTH, ATTR_VALUE
-		});
+		= Arrays.asList(StdAttr.FACING, StdAttr.WIDTH, ATTR_VALUE);
 	
 	private static class ConstantAttributes extends AbstractAttributeSet {
-		private Direction facing = Direction.EAST;;
-		private BitWidth width = BitWidth.ONE;
+		private Direction facing = Direction.EAST;
+        private BitWidth width = BitWidth.ONE;
 		private Value value = Value.TRUE;
 
 		@Override
@@ -90,7 +88,7 @@ public class Constant extends InstanceFactory {
 	}
 	
 	private static class ConstantExpression implements ExpressionComputer {
-		private Instance instance;
+		private final Instance instance;
 		
 		public ConstantExpression(Instance instance) {
 			this.instance = instance;

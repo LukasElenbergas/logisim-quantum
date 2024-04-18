@@ -112,8 +112,7 @@ public class ShiftRegisterPoker extends InstancePoker {
 					state.fireInvalidated();
 				}
 			} catch (NumberFormatException ex) {
-				return;
-			}
+            }
 		}
 	}
 }

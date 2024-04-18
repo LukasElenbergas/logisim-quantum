@@ -81,7 +81,7 @@ public class ZipClassLoader extends ClassLoader {
 	}
 	
 	private class WorkThread extends Thread {
-		private LinkedList<Request> requests = new LinkedList<Request>();
+		private final LinkedList<Request> requests = new LinkedList<Request>();
 		private ZipFile zipFile = null;
 		
 		@Override
@@ -204,9 +204,9 @@ public class ZipClassLoader extends ClassLoader {
 		}
 	}
 	
-	private File zipPath;
-	private HashMap<String,Object> classes = new HashMap<String,Object>();
-	private Object bgLock = new Object();
+	private final File zipPath;
+	private final HashMap<String,Object> classes = new HashMap<String,Object>();
+	private final Object bgLock = new Object();
 	private WorkThread bgThread = null;
  
 	public ZipClassLoader(String zipFileName) {
@@ -244,10 +244,9 @@ public class ZipClassLoader extends ClassLoader {
 			String resourceName = className.replace('.', '/') + ".class";
 			result = request(REQUEST_LOAD, resourceName);
 
-			if (result instanceof byte[]) {
+			if (result instanceof byte[] data) {
 				if (DEBUG >= 3) System.err.println("  define class"); //OK
-				byte[] data = (byte[]) result;
-				result = defineClass(className, data, 0, data.length);
+                result = defineClass(className, data, 0, data.length);
 				if (result != null) {
 					if (DEBUG >= 3) System.err.println("  class defined"); //OK
 				} else {

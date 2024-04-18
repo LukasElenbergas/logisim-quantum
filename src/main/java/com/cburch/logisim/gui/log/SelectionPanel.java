@@ -110,15 +110,15 @@ class SelectionPanel extends LogPanel {
 		}
 	}
 	
-	private Listener listener = new Listener();
+	private final Listener listener = new Listener();
 	
-	private ComponentSelector selector;
-	private JButton addTool;
-	private JButton changeBase;
-	private JButton moveUp;
-	private JButton moveDown;
-	private JButton remove;
-	private SelectionList list;
+	private final ComponentSelector selector;
+	private final JButton addTool;
+	private final JButton changeBase;
+	private final JButton moveUp;
+	private final JButton moveDown;
+	private final JButton remove;
+	private final SelectionList list;
 	
 	public SelectionPanel(LogFrame window) {
 		super(window);

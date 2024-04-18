@@ -6,6 +6,7 @@ package com.cburch.draw.actions;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Map;
+import java.util.Objects;
 
 import com.cburch.draw.model.AttributeMapKey;
 import com.cburch.draw.model.CanvasModel;
@@ -13,8 +14,8 @@ import com.cburch.draw.model.CanvasObject;
 import com.cburch.logisim.data.Attribute;
 
 public class ModelChangeAttributeAction extends ModelAction {
-	private Map<AttributeMapKey, Object> oldValues;
-	private Map<AttributeMapKey, Object> newValues;
+	private final Map<AttributeMapKey, Object> oldValues;
+	private final Map<AttributeMapKey, Object> newValues;
 	private Attribute<?> attr;
 	
 	public ModelChangeAttributeAction(CanvasModel model,
@@ -42,7 +43,7 @@ public class ModelChangeAttributeAction extends ModelAction {
 			for (AttributeMapKey key : newValues.keySet()) {
 				Attribute<?> at = key.getAttribute();
 				if (found) {
-					if (a == null ? at != null : !a.equals(at)) { a = null; break; }
+					if (!Objects.equals(a, at)) { a = null; break; }
 				} else {
 					found = true;
 					a = at;

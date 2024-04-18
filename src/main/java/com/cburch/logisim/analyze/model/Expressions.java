@@ -110,7 +110,7 @@ public class Expressions {
 	}
 
 	private static class Not extends Expression {
-		private Expression a;
+		private final Expression a;
 		
 		Not(Expression a) {
 			this.a = a;
@@ -138,9 +138,8 @@ public class Expressions {
 		
 		@Override
 		public boolean equals(Object other) {
-			if (!(other instanceof Not)) return false;
-			Not o = (Not) other;
-			return this.a.equals(o.a);
+			if (!(other instanceof Not o)) return false;
+            return this.a.equals(o.a);
 		}
 		
 		@Override
@@ -150,7 +149,7 @@ public class Expressions {
 	}
 	
 	private static class Variable extends Expression {
-		private String name;
+		private final String name;
 		
 		Variable(String name) {
 			this.name = name;
@@ -178,9 +177,8 @@ public class Expressions {
 		
 		@Override
 		public boolean equals(Object other) {
-			if (!(other instanceof Variable)) return false;
-			Variable o = (Variable) other;
-			return this.name.equals(o.name);
+			if (!(other instanceof Variable o)) return false;
+            return this.name.equals(o.name);
 		}
 		
 		@Override
@@ -190,7 +188,7 @@ public class Expressions {
 	}
 	
 	private static class Constant extends Expression {
-		private int value;
+		private final int value;
 		
 		Constant(int value) {
 			this.value = value;
@@ -218,9 +216,8 @@ public class Expressions {
 				
 		@Override
 		public boolean equals(Object other) {
-			if (!(other instanceof Constant)) return false;
-			Constant o = (Constant) other;
-			return this.value == o.value;
+			if (!(other instanceof Constant o)) return false;
+            return this.value == o.value;
 		}
 		
 		@Override

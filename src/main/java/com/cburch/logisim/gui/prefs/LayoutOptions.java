@@ -10,8 +10,8 @@ import com.cburch.logisim.prefs.AppPreferences;
 import com.cburch.logisim.util.TableLayout;
 
 class LayoutOptions extends OptionsPanel {
-	private PrefBoolean[] checks;
-	private PrefOptionList afterAdd;
+	private final PrefBoolean[] checks;
+	private final PrefOptionList afterAdd;
 	private PrefOptionList radix1;
 	private PrefOptionList radix2;
 

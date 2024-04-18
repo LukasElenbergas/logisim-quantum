@@ -190,9 +190,8 @@ public class Value {
 
 	@Override
 	public boolean equals(Object other_obj) {
-		if (!(other_obj instanceof Value)) return false;
-		Value other = (Value) other_obj;
-		boolean ret = this.width == other.width
+		if (!(other_obj instanceof Value other)) return false;
+        boolean ret = this.width == other.width
 			&& this.error == other.error
 			&& this.unknown == other.unknown
 			&& this.value == other.value;

@@ -88,15 +88,15 @@ class ToolbarOptions extends OptionsPanel {
 		}
 	}
 	
-	private Listener listener = new Listener();
+	private final Listener listener = new Listener();
 	
-	private ProjectExplorer explorer;
-	private JButton addTool;
-	private JButton addSeparator;
-	private JButton moveUp;
-	private JButton moveDown;
-	private JButton remove;
-	private ToolbarList list;
+	private final ProjectExplorer explorer;
+	private final JButton addTool;
+	private final JButton addSeparator;
+	private final JButton moveUp;
+	private final JButton moveDown;
+	private final JButton remove;
+	private final ToolbarList list;
 	
 	public ToolbarOptions(OptionsFrame window) {
 		super(window);

@@ -33,7 +33,7 @@ import com.cburch.logisim.util.StringUtil;
 class VariableTab extends AnalyzerTab implements TabInterface {
 	private static class VariableListModel extends AbstractListModel
 			implements VariableListListener {
-		private VariableList list;
+		private final VariableList list;
 		private String[] listCopy;
 		
 		public VariableListModel(VariableList list) {
@@ -82,8 +82,7 @@ class VariableTab extends AnalyzerTab implements TabInterface {
 			case VariableListEvent.REPLACE:
 				index = ((Integer) event.getData()).intValue();
 				fireContentsChanged(this, index, index);
-				return;
-			}
+            }
 		}
 	}
 	
@@ -163,17 +162,17 @@ class VariableTab extends AnalyzerTab implements TabInterface {
 		}
 	}
 	
-	private VariableList data;
-	private MyListener myListener = new MyListener();
+	private final VariableList data;
+	private final MyListener myListener = new MyListener();
 	
-	private JList list = new JList();
-	private JTextField field = new JTextField();
-	private JButton remove = new JButton();
-	private JButton moveUp = new JButton();
-	private JButton moveDown = new JButton();
-	private JButton add = new JButton();
-	private JButton rename = new JButton();
-	private JLabel error = new JLabel(" ");
+	private final JList list = new JList();
+	private final JTextField field = new JTextField();
+	private final JButton remove = new JButton();
+	private final JButton moveUp = new JButton();
+	private final JButton moveDown = new JButton();
+	private final JButton add = new JButton();
+	private final JButton rename = new JButton();
+	private final JLabel error = new JLabel(" ");
 	
 	VariableTab(VariableList data) {
 		this.data = data;

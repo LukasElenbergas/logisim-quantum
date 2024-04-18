@@ -78,9 +78,8 @@ public class Propagator {
 
 		@Override
 		public boolean equals(Object other) {
-			if (!(other instanceof ComponentPoint)) return false;
-			ComponentPoint o = (ComponentPoint) other;
-			return this.cause.equals(o.cause) && this.loc.equals(o.loc);
+			if (!(other instanceof ComponentPoint o)) return false;
+            return this.cause.equals(o.cause) && this.loc.equals(o.loc);
 		}
 	}
 	
@@ -103,12 +102,12 @@ public class Propagator {
 		}
 	}
 
-	private CircuitState    root; // root of state tree
+	private final CircuitState    root; // root of state tree
 	
 	/** The number of clock cycles to let pass before deciding that the
 	 * circuit is oscillating.
 	 */
-	private int simLimit = 1000;
+	private final int simLimit = 1000;
 
 	/** On average, one out of every 2**simRandomShift propagations
 	 * through a component is delayed one step more than the component
@@ -117,13 +116,13 @@ public class Propagator {
 	 * practice). */
 	private volatile int simRandomShift;
 
-	private PriorityQueue<SetData> toProcess = new PriorityQueue<SetData>();
+	private final PriorityQueue<SetData> toProcess = new PriorityQueue<SetData>();
 	private int clock = 0;
 	private boolean isOscillating = false;
 	private boolean oscAdding = false;
 	private PropagationPoints oscPoints = new PropagationPoints(); 
 	private int  ticks = 0;
-	private Random noiseSource = new Random();
+	private final Random noiseSource = new Random();
 	private int noiseCount = 0;
 	private int setDataSerialNumber = 0;
 	
@@ -415,8 +414,7 @@ public class Propagator {
 			Location loc, Component cause) {
 		HashMap<Location,SetData> causes = state.causes;
 		if (head == null) {
-			;
-		} else if (head.cause == cause) {
+        } else if (head.cause == cause) {
 			head = head.next;
 			if (head == null) causes.remove(loc);
 			else causes.put(loc, head);

@@ -10,7 +10,7 @@ import com.cburch.logisim.tools.Library;
 import com.cburch.logisim.tools.Tool;
 
 public class Arithmetic extends Library {
-	private static FactoryDescription[] DESCRIPTIONS = {
+	private static final FactoryDescription[] DESCRIPTIONS = {
 		new FactoryDescription("Adder", Strings.getter("adderComponent"),
 				"adder.gif", "Adder"),
 		new FactoryDescription("Subtractor", Strings.getter("subtractorComponent"),

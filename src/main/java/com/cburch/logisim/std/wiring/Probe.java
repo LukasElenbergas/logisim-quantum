@@ -5,6 +5,7 @@ package com.cburch.logisim.std.wiring;
 
 import java.awt.Color;
 import java.awt.Graphics;
+import java.util.Objects;
 
 import com.cburch.logisim.circuit.RadixOption;
 import com.cburch.logisim.comp.TextField;
@@ -187,7 +188,7 @@ public class Probe extends InstanceFactory {
 		StateData oldData = (StateData) state.getData();
 		Value oldValue = oldData == null ? Value.NIL : oldData.curValue;
 		Value newValue = state.getPort(0);
-		boolean same = oldValue == null ? newValue == null : oldValue.equals(newValue);
+		boolean same = Objects.equals(oldValue, newValue);
 		if (!same) {
 			if (oldData == null) {
 				oldData = new StateData();

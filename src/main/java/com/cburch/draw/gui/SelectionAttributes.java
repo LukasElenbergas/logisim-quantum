@@ -3,15 +3,7 @@
 
 package com.cburch.draw.gui;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 import com.cburch.draw.canvas.Selection;
 import com.cburch.draw.canvas.SelectionEvent;
@@ -109,7 +101,7 @@ public class SelectionAttributes extends AbstractAttributeSet {
 		}
 	}
 	
-	private Selection selection;
+	private final Selection selection;
 	private Listener listener;
 	private Map<AttributeSet, CanvasObject> selected;
 	private Attribute<?>[] selAttrs;
@@ -169,7 +161,7 @@ public class SelectionAttributes extends AbstractAttributeSet {
 		Object[] values = this.selValues;
 		for (int i = 0; i < attrs.length; i++) {
 			if (attrs[i] == attr) {
-				boolean same = value == null ? values[i] == null : value.equals(values[i]);
+				boolean same = Objects.equals(value, values[i]);
 				if (!same) {
 					values[i] = value;
 					for (AttributeSet objAttrs : selected.keySet()) {
@@ -190,7 +182,7 @@ public class SelectionAttributes extends AbstractAttributeSet {
 				if (ret == null) {
 					ret = val;
 				} else if (val != null && val.equals(ret)) {
-					; // keep on, making sure everything else matches
+                    // keep on, making sure everything else matches
 				} else {
 					return null;
 				}

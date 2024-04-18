@@ -94,7 +94,7 @@ public class AttributeSetImpl extends AbstractAttributeSet {
 		}
 	}
 
-	private AttrList list = new AttrList();
+	private final AttrList list = new AttrList();
 	private Node head = null;
 	private Node tail = null;
 	private int count = 0;
@@ -227,7 +227,7 @@ public class AttributeSetImpl extends AbstractAttributeSet {
 				+ attr + " is read-only");
 		}
 		if (value.equals(n.value)) {
-			; // do nothing - why change what's already there?
+            // do nothing - why change what's already there?
 		} else {
 			n.value = value;
 			fireAttributeValueChanged(attr, value);

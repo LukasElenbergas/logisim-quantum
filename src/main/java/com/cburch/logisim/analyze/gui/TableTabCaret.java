@@ -28,10 +28,10 @@ import com.cburch.logisim.analyze.model.TruthTableListener;
 import com.cburch.logisim.util.GraphicsUtil;
 
 class TableTabCaret {
-	private static Color SELECT_COLOR = new Color(192, 192, 255);
+	private static final Color SELECT_COLOR = new Color(192, 192, 255);
 
-	private Listener listener = new Listener();
-	private TableTab table;
+	private final Listener listener = new Listener();
+	private final TableTab table;
 	private int cursorRow;
 	private int cursorCol;
 	private int markRow;
@@ -90,7 +90,7 @@ class TableTabCaret {
 		
 		if (row == cursorRow && col == cursorCol
 				&& (keepMark || (row == markRow && col == markCol))) {
-			; // nothing is changing, so do nothing
+            // nothing is changing, so do nothing
 		} else if (!keepMark && markRow == cursorRow && markCol == cursorCol) {
 			int oldRow = cursorRow;
 			int oldCol = cursorCol;

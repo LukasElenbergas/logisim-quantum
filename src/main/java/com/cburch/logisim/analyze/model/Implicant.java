@@ -14,7 +14,7 @@ import java.util.Map;
 
 public class Implicant implements Comparable<Implicant> {
 	static Implicant MINIMAL_IMPLICANT = new Implicant(0, -1);
-	static List<Implicant> MINIMAL_LIST = Arrays.asList(new Implicant[] { MINIMAL_IMPLICANT });
+	static List<Implicant> MINIMAL_LIST = Arrays.asList(MINIMAL_IMPLICANT);
 
 	private static class TermIterator
 			implements Iterable<Implicant>, Iterator<Implicant> {
@@ -48,8 +48,8 @@ public class Implicant implements Comparable<Implicant> {
 		public void remove() { }
 	}
 	
-	private int unknowns;
-	private int values;
+	private final int unknowns;
+	private final int values;
 	
 	private Implicant(int unknowns, int values) {
 		this.unknowns = unknowns;
@@ -58,9 +58,8 @@ public class Implicant implements Comparable<Implicant> {
 	
 	@Override
 	public boolean equals(Object other) {
-		if (!(other instanceof Implicant)) return false;
-		Implicant o = (Implicant) other;
-		return this.unknowns == o.unknowns && this.values == o.values;
+		if (!(other instanceof Implicant o)) return false;
+        return this.unknowns == o.unknowns && this.values == o.values;
 	}
 	
 	public int compareTo(Implicant o) {

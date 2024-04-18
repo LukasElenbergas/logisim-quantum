@@ -23,15 +23,13 @@ public class Base extends Library {
 		SelectTool select = new SelectTool();
 		WiringTool wiring = new WiringTool();
 		
-		tools = Arrays.asList(new Tool[] {
-			new PokeTool(),
-			new EditTool(select, wiring),
-			select,
-			wiring,
-			new TextTool(),
-			new MenuTool(),
-			new AddTool(Text.FACTORY),
-		});
+		tools = Arrays.asList(new PokeTool(),
+                new EditTool(select, wiring),
+                select,
+                wiring,
+                new TextTool(),
+                new MenuTool(),
+                new AddTool(Text.FACTORY));
 	}
 
 	@Override

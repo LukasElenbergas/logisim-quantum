@@ -6,6 +6,7 @@ package com.cburch.logisim.std.base;
 import java.awt.Font;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 import com.cburch.logisim.data.AbstractAttributeSet;
 import com.cburch.logisim.data.Attribute;
@@ -15,9 +16,7 @@ import com.cburch.logisim.instance.StdAttr;
 
 class TextAttributes extends AbstractAttributeSet {
 	private static final List<Attribute<?>> ATTRIBUTES
-		= Arrays.asList(new Attribute<?>[] {
-			Text.ATTR_TEXT, Text.ATTR_FONT, Text.ATTR_HALIGN, Text.ATTR_VALIGN
-		});
+		= Arrays.asList(Text.ATTR_TEXT, Text.ATTR_FONT, Text.ATTR_HALIGN, Text.ATTR_VALIGN);
 
 	private String text;
 	private Font font;
@@ -55,7 +54,7 @@ class TextAttributes extends AbstractAttributeSet {
 	
 	boolean setOffsetBounds(Bounds value) {
 		Bounds old = offsetBounds;
-		boolean same = old == null ? value == null : old.equals(value);
+		boolean same = Objects.equals(old, value);
 		if (!same) {
 			offsetBounds = value;
 		}
@@ -64,7 +63,7 @@ class TextAttributes extends AbstractAttributeSet {
 
 	@Override
 	protected void copyInto(AbstractAttributeSet destObj) {
-		; // nothing to do
+        // nothing to do
 	}
 
 	@Override

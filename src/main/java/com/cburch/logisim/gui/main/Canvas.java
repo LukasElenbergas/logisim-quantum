@@ -501,26 +501,25 @@ public class Canvas extends JPanel
 			if (x < 0) x = 0;
 			g.drawString(msg, x, getHeight() - 23);
 			g.setFont(old);
-			return;
-		}
+        }
 	}
 
-	private Project proj;
+	private final Project proj;
 	private Tool drag_tool;
-	private Selection selection;
+	private final Selection selection;
 	private MouseMappings mappings;
 	private CanvasPane canvasPane;
 	private Bounds oldPreferredSize;
-	private MyListener myListener = new MyListener();
-	private MyViewport viewport = new MyViewport();
-	private MyProjectListener myProjectListener = new MyProjectListener();
-	private TickCounter tickCounter;
+	private final MyListener myListener = new MyListener();
+	private final MyViewport viewport = new MyViewport();
+	private final MyProjectListener myProjectListener = new MyProjectListener();
+	private final TickCounter tickCounter;
 
-	private CanvasPaintThread paintThread;
-	private CanvasPainter painter;
+	private final CanvasPaintThread paintThread;
+	private final CanvasPainter painter;
 	private boolean paintDirty = false; // only for within paintComponent
 	private boolean inPaint = false; // only for within paintComponent
-	private Object repaintLock = new Object(); // for waitForRepaintDone
+	private final Object repaintLock = new Object(); // for waitForRepaintDone
 
 	public Canvas(Project proj) {
 		this.proj = proj;
@@ -811,9 +810,8 @@ public class Canvas extends JPanel
 			ComponentUserEvent e = null;
 			for (Component comp : getCircuit().getAllContaining(loc)) {
 				Object makerObj = comp.getFeature(ToolTipMaker.class);
-				if (makerObj != null && makerObj instanceof ToolTipMaker) {
-					ToolTipMaker maker = (ToolTipMaker) makerObj;
-					if (e == null) {
+				if (makerObj != null && makerObj instanceof ToolTipMaker maker) {
+                    if (e == null) {
 						e = new ComponentUserEvent(this, loc.getX(), loc.getY());
 					}
 					String ret = maker.getToolTip(e);

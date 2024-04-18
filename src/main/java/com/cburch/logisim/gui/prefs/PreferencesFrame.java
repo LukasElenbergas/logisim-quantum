@@ -75,11 +75,11 @@ public class PreferencesFrame extends LFrame {
 		}
 	}
 	
-	private MyListener myListener = new MyListener();
+	private final MyListener myListener = new MyListener();
 	
-	private OptionsPanel[] panels;
-	private JTabbedPane tabbedPane;
-	private JButton close = new JButton();
+	private final OptionsPanel[] panels;
+	private final JTabbedPane tabbedPane;
+	private final JButton close = new JButton();
 
 	private PreferencesFrame() {
 		setDefaultCloseOperation(HIDE_ON_CLOSE);

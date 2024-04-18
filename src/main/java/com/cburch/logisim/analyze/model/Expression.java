@@ -11,22 +11,22 @@ public abstract class Expression {
 	public static final int AND_LEVEL = 2;
 	public static final int NOT_LEVEL = 3;
 	
-	static interface Visitor {
-		public void visitAnd(Expression a, Expression b);
-		public void visitOr(Expression a, Expression b);
-		public void visitXor(Expression a, Expression b);
-		public void visitNot(Expression a);
-		public void visitVariable(String name);
-		public void visitConstant(int value);
+	interface Visitor {
+		void visitAnd(Expression a, Expression b);
+		void visitOr(Expression a, Expression b);
+		void visitXor(Expression a, Expression b);
+		void visitNot(Expression a);
+		void visitVariable(String name);
+		void visitConstant(int value);
 	}
 	
-	static interface IntVisitor {
-		public int visitAnd(Expression a, Expression b);
-		public int visitOr(Expression a, Expression b);
-		public int visitXor(Expression a, Expression b);
-		public int visitNot(Expression a);
-		public int visitVariable(String name);
-		public int visitConstant(int value);
+	interface IntVisitor {
+		int visitAnd(Expression a, Expression b);
+		int visitOr(Expression a, Expression b);
+		int visitXor(Expression a, Expression b);
+		int visitNot(Expression a);
+		int visitVariable(String name);
+		int visitConstant(int value);
 	}
 	
 	public abstract int getPrecedence();
@@ -94,7 +94,7 @@ public abstract class Expression {
 			}
 			
 			public void visitConstant(int value) {
-				text.append("" + Integer.toString(value, 16));
+				text.append(Integer.toString(value, 16));
 			}
 		});
 		return text.toString();

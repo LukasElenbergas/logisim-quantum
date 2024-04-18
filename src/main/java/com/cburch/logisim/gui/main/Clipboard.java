@@ -15,7 +15,7 @@ class Clipboard {
 	public static final String contentsProperty = "contents";
 	
 	private static Clipboard current = null;
-	private static PropertyChangeWeakSupport propertySupport = new PropertyChangeWeakSupport(Clipboard.class);
+	private static final PropertyChangeWeakSupport propertySupport = new PropertyChangeWeakSupport(Clipboard.class);
 	
 	public static boolean isEmpty() {
 		return current == null || current.components.isEmpty();
@@ -54,7 +54,7 @@ class Clipboard {
 	//
 	// instance variables and methods
 	//
-	private HashSet<Component> components;
+	private final HashSet<Component> components;
 	private AttributeSet oldAttrs;
 	private AttributeSet newAttrs;
 	

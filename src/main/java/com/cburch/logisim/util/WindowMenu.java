@@ -36,9 +36,8 @@ public class WindowMenu extends JMenu {
 				doZoom();
 			} else if (src == close) {
 				doClose();
-			} else if (src instanceof WindowMenuItem) {
-				WindowMenuItem choice = (WindowMenuItem) src;
-				if (choice.isSelected()) {
+			} else if (src instanceof WindowMenuItem choice) {
+                if (choice.isSelected()) {
 					WindowMenuItem item = findOwnerItem();
 					if (item != null) {
 						item.setSelected(true);
@@ -59,14 +58,14 @@ public class WindowMenu extends JMenu {
 		}
 	}
 	
-	private JFrame owner;
-	private MyListener myListener = new MyListener();
-	private JMenuItem minimize = new JMenuItem();
-	private JMenuItem zoom = new JMenuItem();
-	private JMenuItem close = new JMenuItem();
-	private JRadioButtonMenuItem nullItem = new JRadioButtonMenuItem();
-	private ArrayList<WindowMenuItem> persistentItems = new ArrayList<WindowMenuItem>();
-	private ArrayList<WindowMenuItem> transientItems = new ArrayList<WindowMenuItem>();
+	private final JFrame owner;
+	private final MyListener myListener = new MyListener();
+	private final JMenuItem minimize = new JMenuItem();
+	private final JMenuItem zoom = new JMenuItem();
+	private final JMenuItem close = new JMenuItem();
+	private final JRadioButtonMenuItem nullItem = new JRadioButtonMenuItem();
+	private final ArrayList<WindowMenuItem> persistentItems = new ArrayList<WindowMenuItem>();
+	private final ArrayList<WindowMenuItem> transientItems = new ArrayList<WindowMenuItem>();
 
 	public WindowMenu(JFrame owner) {
 		this.owner = owner;

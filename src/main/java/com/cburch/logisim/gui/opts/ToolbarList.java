@@ -25,7 +25,7 @@ import com.cburch.logisim.tools.Tool;
 
 class ToolbarList extends JList {
 	private static class ToolIcon implements Icon {
-		private Tool tool;
+		private final Tool tool;
 		
 		ToolIcon(Tool tool) {
 			this.tool = tool;
@@ -52,9 +52,8 @@ class ToolbarList extends JList {
 				int index, boolean isSelected, boolean cellHasFocus) {
 			Component ret;
 			Icon icon;
-			if (value instanceof Tool) {
-				Tool t = (Tool) value;
-				ret = super.getListCellRendererComponent(list, t.getDisplayName(),
+			if (value instanceof Tool t) {
+                ret = super.getListCellRendererComponent(list, t.getDisplayName(),
 						index, isSelected, cellHasFocus);
 				icon = new ToolIcon(t);
 			} else if (value == null) {
@@ -99,8 +98,8 @@ class ToolbarList extends JList {
 		}
 	}
 
-	private ToolbarData base;
-	private Model model;
+	private final ToolbarData base;
+	private final Model model;
 	
 	public ToolbarList(ToolbarData base) {
 		this.base = base;

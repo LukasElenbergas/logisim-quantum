@@ -8,7 +8,7 @@ import java.awt.BorderLayout;
 import javax.swing.JScrollPane;
 
 class ScrollPanel extends LogPanel {
-	private TablePanel table;
+	private final TablePanel table;
 	
 	public ScrollPanel(LogFrame frame) {
 		super(frame);

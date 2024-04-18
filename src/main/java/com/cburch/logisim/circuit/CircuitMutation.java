@@ -16,8 +16,8 @@ import com.cburch.logisim.proj.Action;
 import com.cburch.logisim.util.StringGetter;
 
 public final class CircuitMutation extends CircuitTransaction {
-	private Circuit primary;
-	private List<CircuitChange> changes;
+	private final Circuit primary;
+	private final List<CircuitChange> changes;
 	
 	public CircuitMutation(Circuit circuit) {
 		this.primary = circuit;

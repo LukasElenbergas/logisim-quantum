@@ -11,7 +11,7 @@ import com.cburch.draw.model.CanvasObject;
 import com.cburch.draw.undo.Action;
 
 public abstract class ModelAction extends Action {
-	private CanvasModel model;
+	private final CanvasModel model;
 	
 	public ModelAction(CanvasModel model) {
 		this.model = model;

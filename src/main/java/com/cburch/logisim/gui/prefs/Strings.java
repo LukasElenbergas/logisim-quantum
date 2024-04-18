@@ -11,7 +11,7 @@ import com.cburch.logisim.util.LocaleManager;
 import com.cburch.logisim.util.StringGetter;
 
 class Strings {
-	private static LocaleManager source
+	private static final LocaleManager source
 		= new LocaleManager("resources/logisim", "prefs");
 
 	public static String get(String key) {

@@ -77,7 +77,7 @@ public class TableSorter extends AbstractTableModel {
 	public static final int NOT_SORTED = 0;
 	public static final int ASCENDING = 1;
 
-	private static Directive EMPTY_DIRECTIVE = new Directive(-1, NOT_SORTED);
+	private static final Directive EMPTY_DIRECTIVE = new Directive(-1, NOT_SORTED);
 
 	public static final Comparator<Object> COMPARABLE_COMPARATOR = new Comparator<Object>() {
 		public int compare(Object o1, Object o2) {
@@ -120,10 +120,10 @@ public class TableSorter extends AbstractTableModel {
 	private int[] modelToView;
 
 	private JTableHeader tableHeader;
-	private MouseListener mouseListener;
-	private TableModelListener tableModelListener;
-	private Map<Class<?>,Comparator<Object>> columnComparators = new HashMap<Class<?>,Comparator<Object>>();
-	private List<Directive> sortingColumns = new ArrayList<Directive>();
+	private final MouseListener mouseListener;
+	private final TableModelListener tableModelListener;
+	private final Map<Class<?>,Comparator<Object>> columnComparators = new HashMap<Class<?>,Comparator<Object>>();
+	private final List<Directive> sortingColumns = new ArrayList<Directive>();
 
 	public TableSorter() {
 		this.mouseListener = new MouseHandler();
@@ -319,7 +319,7 @@ public class TableSorter extends AbstractTableModel {
 	// Helper classes
 
 	private class Row implements Comparable<Row> {
-		private int modelIndex;
+		private final int modelIndex;
 
 		public Row(int index) {
 			this.modelIndex = index;
@@ -406,8 +406,7 @@ public class TableSorter extends AbstractTableModel {
 			// Something has happened to the data that may have invalidated the row order.
 			clearSortingState();
 			fireTableDataChanged();
-			return;
-		}
+        }
 	}
 
 	private class MouseHandler extends MouseAdapter {
@@ -431,9 +430,9 @@ public class TableSorter extends AbstractTableModel {
 	}
 
 	private static class Arrow implements Icon {
-		private boolean descending;
-		private int size;
-		private int priority;
+		private final boolean descending;
+		private final int size;
+		private final int priority;
 
 		public Arrow(boolean descending, int size, int priority) {
 			this.descending = descending;
@@ -484,7 +483,7 @@ public class TableSorter extends AbstractTableModel {
 	}
 
 	private class SortableHeaderRenderer implements TableCellRenderer {
-		private TableCellRenderer tableCellRenderer;
+		private final TableCellRenderer tableCellRenderer;
 
 		public SortableHeaderRenderer(TableCellRenderer tableCellRenderer) {
 			this.tableCellRenderer = tableCellRenderer;
@@ -498,9 +497,8 @@ public class TableSorter extends AbstractTableModel {
 													   int column) {
 			Component c = tableCellRenderer.getTableCellRendererComponent(table,
 					value, isSelected, hasFocus, row, column);
-			if (c instanceof JLabel) {
-				JLabel l = (JLabel) c;
-				l.setHorizontalTextPosition(JLabel.LEFT);
+			if (c instanceof JLabel l) {
+                l.setHorizontalTextPosition(JLabel.LEFT);
 				int modelColumn = table.convertColumnIndexToModel(column);
 				l.setIcon(getHeaderRendererIcon(modelColumn, l.getFont().getSize()));
 			}
@@ -509,8 +507,8 @@ public class TableSorter extends AbstractTableModel {
 	}
 
 	private static class Directive {
-		private int column;
-		private int direction;
+		private final int column;
+		private final int direction;
 
 		public Directive(int column, int direction) {
 			this.column = column;

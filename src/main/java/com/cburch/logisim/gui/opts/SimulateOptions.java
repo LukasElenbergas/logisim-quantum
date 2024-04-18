@@ -77,10 +77,10 @@ class SimulateOptions extends OptionsPanel {
 		}
 	}
 	
-	private MyListener myListener = new MyListener();
+	private final MyListener myListener = new MyListener();
 
-	private JLabel simLimitLabel = new JLabel();
-	private JComboBox simLimit = new JComboBox(new Integer[] {
+	private final JLabel simLimitLabel = new JLabel();
+	private final JComboBox simLimit = new JComboBox(new Integer[] {
 			Integer.valueOf(200),
 			Integer.valueOf(500),
 			Integer.valueOf(1000),
@@ -90,9 +90,9 @@ class SimulateOptions extends OptionsPanel {
 			Integer.valueOf(20000),
 			Integer.valueOf(50000),
 	});
-	private JCheckBox simRandomness = new JCheckBox();
-	private JLabel gateUndefinedLabel = new JLabel();
-	private JComboBox gateUndefined = new JComboBox(new Object[] {
+	private final JCheckBox simRandomness = new JCheckBox();
+	private final JLabel gateUndefinedLabel = new JLabel();
+	private final JComboBox gateUndefined = new JComboBox(new Object[] {
 			new ComboOption(Options.GATE_UNDEFINED_IGNORE),
 			new ComboOption(Options.GATE_UNDEFINED_ERROR)
 		});

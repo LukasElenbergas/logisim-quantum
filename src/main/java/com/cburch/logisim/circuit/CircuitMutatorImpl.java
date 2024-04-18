@@ -14,9 +14,9 @@ import com.cburch.logisim.data.Attribute;
 import com.cburch.logisim.data.AttributeSet;
 
 class CircuitMutatorImpl implements CircuitMutator {
-	private ArrayList<CircuitChange> log;
-	private HashMap<Circuit,ReplacementMap> replacements;
-	private HashSet<Circuit> modified;
+	private final ArrayList<CircuitChange> log;
+	private final HashMap<Circuit,ReplacementMap> replacements;
+	private final HashSet<Circuit> modified;
 	
 	public CircuitMutatorImpl() {
 		log = new ArrayList<CircuitChange>();

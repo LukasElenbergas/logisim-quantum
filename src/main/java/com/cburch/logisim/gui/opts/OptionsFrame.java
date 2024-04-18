@@ -79,15 +79,15 @@ public class OptionsFrame extends LFrame {
 		}
 	}
 	
-	private Project project;
-	private LogisimFile file;
-	private MyListener myListener = new MyListener();
-	private WindowMenuManager windowManager = new WindowMenuManager();
+	private final Project project;
+	private final LogisimFile file;
+	private final MyListener myListener = new MyListener();
+	private final WindowMenuManager windowManager = new WindowMenuManager();
 	
-	private OptionsPanel[] panels;
-	private JTabbedPane tabbedPane;
-	private JButton revert = new JButton();
-	private JButton close = new JButton();
+	private final OptionsPanel[] panels;
+	private final JTabbedPane tabbedPane;
+	private final JButton revert = new JButton();
+	private final JButton close = new JButton();
 
 	public OptionsFrame(Project project) {
 		this.project = project;

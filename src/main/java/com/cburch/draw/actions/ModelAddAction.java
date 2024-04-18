@@ -11,8 +11,8 @@ import com.cburch.draw.model.CanvasModel;
 import com.cburch.draw.model.CanvasObject;
 
 public class ModelAddAction extends ModelAction {
-	private ArrayList<CanvasObject> added;
-	private int addIndex;
+	private final ArrayList<CanvasObject> added;
+	private final int addIndex;
 	
 	public ModelAddAction(CanvasModel model, CanvasObject added) {
 		this(model, Collections.singleton(added));

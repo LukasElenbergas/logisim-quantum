@@ -11,7 +11,7 @@ import com.cburch.draw.model.CanvasObject;
 import com.cburch.draw.model.Handle;
 
 public class ModelDeleteHandleAction extends ModelAction {
-	private Handle handle;
+	private final Handle handle;
 	private Handle previous;
 	
 	public ModelDeleteHandleAction(CanvasModel model, Handle handle) {

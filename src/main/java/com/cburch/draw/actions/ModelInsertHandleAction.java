@@ -11,7 +11,7 @@ import com.cburch.draw.model.CanvasObject;
 import com.cburch.draw.model.Handle;
 
 public class ModelInsertHandleAction extends ModelAction {
-	private Handle desired;
+	private final Handle desired;
 	
 	public ModelInsertHandleAction(CanvasModel model, Handle desired) {
 		super(model);

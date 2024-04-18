@@ -3,11 +3,7 @@
 
 package com.cburch.logisim.util;
 
-import java.util.AbstractSet;
-import java.util.ConcurrentModificationException;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
+import java.util.*;
 
 public class SmallSet<E> extends AbstractSet<E> {
 	private static final int HASH_POINT = 4;
@@ -96,7 +92,7 @@ public class SmallSet<E> extends AbstractSet<E> {
 		} else if (size <= HASH_POINT) {
 			Object[] oldVals = (Object[]) this.values;
 			Object[] retVals = new Object[size];
-			for (int i = size - 1; i >= 0; i--) retVals[i] = oldVals[i];
+            System.arraycopy(oldVals, 0, retVals, 0, size - 1 + 1);
 		} else {
 			@SuppressWarnings("unchecked")
 			HashSet<E> oldVals = (HashSet<E>) this.values;
@@ -177,7 +173,7 @@ public class SmallSet<E> extends AbstractSet<E> {
 			E[] vals = (E[]) oldValues;
 			for (int i = 0; i < oldSize; i++) {
 				Object val = vals[i];
-				boolean same = val == null ? value == null : val.equals(value);
+				boolean same = Objects.equals(val, value);
 				if (same) return false;
 			}
 			if (oldSize < HASH_POINT) {
@@ -187,7 +183,7 @@ public class SmallSet<E> extends AbstractSet<E> {
 				return true;
 			} else {
 				HashSet<E> newValues = new HashSet<E>();
-				for (int i = 0; i < oldSize; i++) newValues.add(vals[i]);
+                newValues.addAll(Arrays.asList(vals).subList(0, oldSize));
 				newValues.add(value);
 				values = newValues;
 				size = oldSize + 1;
@@ -257,8 +253,7 @@ public class SmallSet<E> extends AbstractSet<E> {
 			if (cmd == null) break;
 			cmd = cmd.trim();
 			if (cmd.equals("")) {
-				;
-			} else if (cmd.startsWith("+")) {
+            } else if (cmd.startsWith("+")) {
 				set.add(cmd.substring(1));
 			} else if (cmd.startsWith("-")) {
 				set.remove(cmd.substring(1));

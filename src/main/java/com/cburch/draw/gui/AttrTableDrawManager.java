@@ -13,10 +13,10 @@ import com.cburch.draw.tools.SelectTool;
 import com.cburch.logisim.gui.generic.AttrTable;
 
 public class AttrTableDrawManager implements PropertyChangeListener {
-	private Canvas canvas;
-	private AttrTable table;
-	private AttrTableSelectionModel selectionModel;
-	private AttrTableToolModel toolModel;
+	private final Canvas canvas;
+	private final AttrTable table;
+	private final AttrTableSelectionModel selectionModel;
+	private final AttrTableToolModel toolModel;
 	
 	public AttrTableDrawManager(Canvas canvas, AttrTable table, DrawingAttributeSet attrs) {
 		this.canvas = canvas;

@@ -22,7 +22,7 @@ import com.cburch.logisim.tools.Tool;
 public class FileStatistics {
 	public static class Count {
 		private Library library;
-		private ComponentFactory factory;
+		private final ComponentFactory factory;
 		private int simpleCount;
 		private int uniqueCount;
 		private int recursiveCount;
@@ -174,9 +174,9 @@ public class FileStatistics {
 		return ret;
 	}
 	
-	private List<Count> counts;
-	private Count totalWithout;
-	private Count totalWith;
+	private final List<Count> counts;
+	private final Count totalWithout;
+	private final Count totalWith;
 	
 	private FileStatistics(List<Count> counts, Count totalWithout,
 			Count totalWith) {

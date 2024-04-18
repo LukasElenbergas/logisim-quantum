@@ -21,8 +21,8 @@ class TableTabClip implements ClipboardOwner {
 	private static final DataFlavor binaryFlavor = new DataFlavor(Data.class, "Binary data");
 	
 	private static class Data implements Transferable, Serializable {
-		private String[] headers;
-		private String[][] contents;
+		private final String[] headers;
+		private final String[][] contents;
 		
 		Data(String[] headers, String[][] contents) {
 			this.headers = headers;
@@ -59,7 +59,7 @@ class TableTabClip implements ClipboardOwner {
 		}
 	}
 	
-	private TableTab table;
+	private final TableTab table;
 	
 	TableTabClip(TableTab table) {
 		this.table = table;

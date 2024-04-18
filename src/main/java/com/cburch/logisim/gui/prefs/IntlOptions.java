@@ -23,10 +23,10 @@ class IntlOptions extends OptionsPanel {
 		}
 	}
 
-	private JLabel localeLabel = new RestrictedLabel();
-	private JComponent locale;
-	private PrefBoolean replAccents;
-	private PrefOptionList gateShape;
+	private final JLabel localeLabel = new RestrictedLabel();
+	private final JComponent locale;
+	private final PrefBoolean replAccents;
+	private final PrefOptionList gateShape;
 
 	public IntlOptions(PreferencesFrame window) {
 		super(window);

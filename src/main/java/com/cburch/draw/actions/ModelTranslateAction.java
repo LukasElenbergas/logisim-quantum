@@ -12,9 +12,9 @@ import com.cburch.draw.model.CanvasObject;
 import com.cburch.draw.undo.Action;
 
 public class ModelTranslateAction extends ModelAction {
-	private HashSet<CanvasObject> moved;
-	private int dx;
-	private int dy;
+	private final HashSet<CanvasObject> moved;
+	private final int dx;
+	private final int dy;
 	
 	public ModelTranslateAction(CanvasModel model,
 			Collection<CanvasObject> moved, int dx, int dy) {
@@ -46,9 +46,8 @@ public class ModelTranslateAction extends ModelAction {
 	
 	@Override
 	public boolean shouldAppendTo(Action other) {
-		if (other instanceof ModelTranslateAction) {
-			ModelTranslateAction o = (ModelTranslateAction) other;
-			return this.moved.equals(o.moved);
+		if (other instanceof ModelTranslateAction o) {
+            return this.moved.equals(o.moved);
 		} else {
 			return false;
 		}
@@ -56,9 +55,8 @@ public class ModelTranslateAction extends ModelAction {
 
 	@Override
 	public Action append(Action other) {
-		if (other instanceof ModelTranslateAction) {
-			ModelTranslateAction o = (ModelTranslateAction) other;
-			if (this.moved.equals(o.moved)) {
+		if (other instanceof ModelTranslateAction o) {
+            if (this.moved.equals(o.moved)) {
 				return new ModelTranslateAction(getModel(), moved,
 						this.dx + o.dx, this.dy + o.dy);
 			}
