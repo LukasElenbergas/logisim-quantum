@@ -1,18 +1,18 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.comp;
+package com.cburch.logisim.comp;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import main.java.com.cburch.logisim.circuit.CircuitState;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.data.BitWidth;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.util.EventSourceWeakSupport;
+import com.cburch.logisim.circuit.CircuitState;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.data.BitWidth;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.util.EventSourceWeakSupport;
 
 public abstract class ManagedComponent extends AbstractComponent {
 	private EventSourceWeakSupport<ComponentListener> listeners

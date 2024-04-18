@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.comp;
+package com.cburch.logisim.comp;
 
 import java.awt.Graphics;
 import java.awt.Font;
@@ -9,8 +9,8 @@ import java.awt.FontMetrics;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.util.GraphicsUtil;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.util.GraphicsUtil;
 
 public class TextField {
 	public static final int H_LEFT    = GraphicsUtil.H_LEFT;

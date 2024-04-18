@@ -19,9 +19,9 @@
  * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301  USA
  */
 
-package main.java.com.cburch.logisim;
+package com.cburch.logisim;
 
-import main.java.com.cburch.logisim.gui.start.Startup;
+import com.cburch.logisim.gui.start.Startup;
 
 public class Main {
 	public static final LogisimVersion VERSION = LogisimVersion.get(2, 7, 1);

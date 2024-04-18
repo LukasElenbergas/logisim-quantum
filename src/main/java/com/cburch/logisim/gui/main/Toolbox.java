@@ -1,16 +1,16 @@
 /* Copyright (c) 2011, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.main;
+package com.cburch.logisim.gui.main;
 
 import java.awt.BorderLayout;
 
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
-import main.java.com.cburch.draw.toolbar.Toolbar;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.tools.Tool;
+import com.cburch.draw.toolbar.Toolbar;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.tools.Tool;
 
 class Toolbox extends JPanel {
 	private ProjectExplorer toolbox;

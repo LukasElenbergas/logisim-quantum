@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.file;
+package com.cburch.logisim.file;
 
 import java.awt.Component;
 import java.awt.Dimension;
@@ -19,12 +19,12 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.filechooser.FileFilter;
 
-import main.java.com.cburch.logisim.std.Builtin;
-import main.java.com.cburch.logisim.tools.Library;
-import main.java.com.cburch.logisim.util.JFileChoosers;
-import main.java.com.cburch.logisim.util.MacCompatibility;
-import main.java.com.cburch.logisim.util.StringUtil;
-import main.java.com.cburch.logisim.util.ZipClassLoader;
+import com.cburch.logisim.std.Builtin;
+import com.cburch.logisim.tools.Library;
+import com.cburch.logisim.util.JFileChoosers;
+import com.cburch.logisim.util.MacCompatibility;
+import com.cburch.logisim.util.StringUtil;
+import com.cburch.logisim.util.ZipClassLoader;
 
 public class Loader implements LibraryLoader {
 	public static final String LOGISIM_EXTENSION = ".circ";

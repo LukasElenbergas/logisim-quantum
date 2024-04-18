@@ -1,19 +1,19 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.std.io;
+package com.cburch.logisim.std.io;
 
 import java.awt.Color;
 
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.BitWidth;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.data.Value;
-import main.java.com.cburch.logisim.instance.InstanceDataSingleton;
-import main.java.com.cburch.logisim.instance.InstanceFactory;
-import main.java.com.cburch.logisim.instance.InstancePainter;
-import main.java.com.cburch.logisim.instance.InstanceState;
-import main.java.com.cburch.logisim.instance.Port;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.BitWidth;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.data.Value;
+import com.cburch.logisim.instance.InstanceDataSingleton;
+import com.cburch.logisim.instance.InstanceFactory;
+import com.cburch.logisim.instance.InstancePainter;
+import com.cburch.logisim.instance.InstanceState;
+import com.cburch.logisim.instance.Port;
 
 public class HexDigit extends InstanceFactory {
 	public HexDigit() {

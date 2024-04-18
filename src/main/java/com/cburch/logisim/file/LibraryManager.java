@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.file;
+package com.cburch.logisim.file;
 
 import java.io.File;
 import java.io.IOException;
@@ -11,8 +11,8 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.WeakHashMap;
 
-import main.java.com.cburch.logisim.tools.Library;
-import main.java.com.cburch.logisim.util.StringUtil;
+import com.cburch.logisim.tools.Library;
+import com.cburch.logisim.util.StringUtil;
 
 class LibraryManager {
 	public static final LibraryManager instance = new LibraryManager();

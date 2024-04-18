@@ -1,17 +1,17 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.comp;
+package com.cburch.logisim.comp;
 
 import java.awt.Color;
 
-import main.java.com.cburch.logisim.LogisimVersion;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeDefaultProvider;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.util.StringGetter;
+import com.cburch.logisim.LogisimVersion;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeDefaultProvider;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.util.StringGetter;
 
 /**
  * Represents a category of components that appear in a circuit. This class

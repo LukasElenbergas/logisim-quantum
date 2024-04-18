@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.prefs;
+package com.cburch.logisim.gui.prefs;
 
 import java.awt.BorderLayout;
 import java.awt.Container;
@@ -15,11 +15,11 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 
-import main.java.com.cburch.logisim.gui.generic.LFrame;
-import main.java.com.cburch.logisim.gui.menu.LogisimMenuBar;
-import main.java.com.cburch.logisim.util.LocaleListener;
-import main.java.com.cburch.logisim.util.LocaleManager;
-import main.java.com.cburch.logisim.util.WindowMenuItemManager;
+import com.cburch.logisim.gui.generic.LFrame;
+import com.cburch.logisim.gui.menu.LogisimMenuBar;
+import com.cburch.logisim.util.LocaleListener;
+import com.cburch.logisim.util.LocaleManager;
+import com.cburch.logisim.util.WindowMenuItemManager;
 
 public class PreferencesFrame extends LFrame {
 	private static WindowMenuManager MENU_MANAGER = null;

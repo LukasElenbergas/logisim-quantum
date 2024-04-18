@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.shapes;
+package com.cburch.draw.shapes;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -12,11 +12,11 @@ import java.util.regex.Pattern;
 
 import org.w3c.dom.Element;
 
-import main.java.com.cburch.draw.model.AbstractCanvasObject;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeOption;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.util.UnmodifiableList;
+import com.cburch.draw.model.AbstractCanvasObject;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeOption;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.util.UnmodifiableList;
 
 public class SvgReader {
 	private SvgReader() { }

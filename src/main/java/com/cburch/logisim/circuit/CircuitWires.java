@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.circuit;
+package com.cburch.logisim.circuit;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -13,23 +13,23 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.comp.ComponentDrawContext;
-import main.java.com.cburch.logisim.comp.EndData;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeEvent;
-import main.java.com.cburch.logisim.data.AttributeListener;
-import main.java.com.cburch.logisim.data.BitWidth;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.data.Value;
-import main.java.com.cburch.logisim.instance.Instance;
-import main.java.com.cburch.logisim.instance.StdAttr;
-import main.java.com.cburch.logisim.std.wiring.PullResistor;
-import main.java.com.cburch.logisim.std.wiring.Tunnel;
-import main.java.com.cburch.logisim.util.GraphicsUtil;
-import main.java.com.cburch.logisim.util.IteratorUtil;
-import main.java.com.cburch.logisim.util.SmallSet;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.comp.ComponentDrawContext;
+import com.cburch.logisim.comp.EndData;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeEvent;
+import com.cburch.logisim.data.AttributeListener;
+import com.cburch.logisim.data.BitWidth;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.data.Value;
+import com.cburch.logisim.instance.Instance;
+import com.cburch.logisim.instance.StdAttr;
+import com.cburch.logisim.std.wiring.PullResistor;
+import com.cburch.logisim.std.wiring.Tunnel;
+import com.cburch.logisim.util.GraphicsUtil;
+import com.cburch.logisim.util.IteratorUtil;
+import com.cburch.logisim.util.SmallSet;
 
 class CircuitWires {
 	static class SplitterData {

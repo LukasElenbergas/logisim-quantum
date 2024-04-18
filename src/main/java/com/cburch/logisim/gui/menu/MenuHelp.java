@@ -1,11 +1,11 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.menu;
+package com.cburch.logisim.gui.menu;
 
-import main.java.com.cburch.logisim.gui.generic.LFrame;
-import main.java.com.cburch.logisim.gui.start.About;
-import main.java.com.cburch.logisim.util.MacCompatibility;
+import com.cburch.logisim.gui.generic.LFrame;
+import com.cburch.logisim.gui.start.About;
+import com.cburch.logisim.util.MacCompatibility;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

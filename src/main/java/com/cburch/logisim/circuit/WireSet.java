@@ -1,13 +1,13 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.circuit;
+package com.cburch.logisim.circuit;
 
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-import main.java.com.cburch.logisim.data.Location;
+import com.cburch.logisim.data.Location;
 
 public class WireSet {
 	private static final Set<Wire> NULL_WIRES = Collections.emptySet();

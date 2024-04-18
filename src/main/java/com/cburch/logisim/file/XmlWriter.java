@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.file;
+package com.cburch.logisim.file;
 
 import java.io.OutputStream;
 import java.util.HashMap;
@@ -23,20 +23,20 @@ import javax.xml.transform.stream.StreamResult;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-import main.java.com.cburch.draw.model.AbstractCanvasObject;
-import main.java.com.cburch.logisim.LogisimVersion;
-import main.java.com.cburch.logisim.Main;
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.circuit.Wire;
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.comp.ComponentFactory;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeDefaultProvider;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.tools.Library;
-import main.java.com.cburch.logisim.tools.Tool;
-import main.java.com.cburch.logisim.util.InputEventUtil;
-import main.java.com.cburch.logisim.util.StringUtil;
+import com.cburch.draw.model.AbstractCanvasObject;
+import com.cburch.logisim.LogisimVersion;
+import com.cburch.logisim.Main;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.circuit.Wire;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.comp.ComponentFactory;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeDefaultProvider;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.tools.Library;
+import com.cburch.logisim.tools.Tool;
+import com.cburch.logisim.util.InputEventUtil;
+import com.cburch.logisim.util.StringUtil;
 
 class XmlWriter {
 	static void write(LogisimFile file, OutputStream out, LibraryLoader loader)

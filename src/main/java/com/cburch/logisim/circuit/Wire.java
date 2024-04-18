@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.circuit;
+package com.cburch.logisim.circuit;
 
 import java.awt.Graphics;
 import java.util.AbstractList;
@@ -9,22 +9,22 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.comp.ComponentFactory;
-import main.java.com.cburch.logisim.comp.ComponentDrawContext;
-import main.java.com.cburch.logisim.comp.ComponentListener;
-import main.java.com.cburch.logisim.comp.EndData;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeListener;
-import main.java.com.cburch.logisim.data.AttributeOption;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.data.Attributes;
-import main.java.com.cburch.logisim.data.BitWidth;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.tools.CustomHandles;
-import main.java.com.cburch.logisim.util.Cache;
-import main.java.com.cburch.logisim.util.GraphicsUtil;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.comp.ComponentFactory;
+import com.cburch.logisim.comp.ComponentDrawContext;
+import com.cburch.logisim.comp.ComponentListener;
+import com.cburch.logisim.comp.EndData;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeListener;
+import com.cburch.logisim.data.AttributeOption;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.data.Attributes;
+import com.cburch.logisim.data.BitWidth;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.tools.CustomHandles;
+import com.cburch.logisim.util.Cache;
+import com.cburch.logisim.util.GraphicsUtil;
 
 public final class Wire implements Component, AttributeSet, CustomHandles,
 		Iterable<Location> {

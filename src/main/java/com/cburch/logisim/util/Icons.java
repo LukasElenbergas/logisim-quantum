@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.util;
+package com.cburch.logisim.util;
 
 import java.awt.Component;
 import java.awt.Graphics;
@@ -10,7 +10,7 @@ import java.awt.Graphics2D;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
-import main.java.com.cburch.logisim.data.Direction;
+import com.cburch.logisim.data.Direction;
 
 public class Icons {
 	private static final String path = "resources/logisim/icons";

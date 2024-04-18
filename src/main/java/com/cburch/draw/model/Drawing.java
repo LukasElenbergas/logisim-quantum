@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.model;
+package com.cburch.draw.model;
 
 import java.awt.Graphics;
 import java.util.ArrayList;
@@ -13,11 +13,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import main.java.com.cburch.draw.canvas.Selection;
-import main.java.com.cburch.draw.shapes.Text;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.util.EventSourceWeakSupport;
+import com.cburch.draw.canvas.Selection;
+import com.cburch.draw.shapes.Text;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.util.EventSourceWeakSupport;
 
 public class Drawing implements CanvasModel {
 	private EventSourceWeakSupport<CanvasModelListener> listeners;

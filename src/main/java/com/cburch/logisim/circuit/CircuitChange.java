@@ -1,14 +1,14 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.circuit;
+package com.cburch.logisim.circuit;
 
 import java.util.Collection;
 
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.instance.StdAttr;
-import main.java.com.cburch.logisim.std.wiring.Pin;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.instance.StdAttr;
+import com.cburch.logisim.std.wiring.Pin;
 
 class CircuitChange {
 	static final int CLEAR = 0;

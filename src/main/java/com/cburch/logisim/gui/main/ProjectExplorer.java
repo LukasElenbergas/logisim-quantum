@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.main;
+package com.cburch.logisim.gui.main;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -37,27 +37,27 @@ import javax.swing.tree.TreeModel;
 import javax.swing.tree.TreePath;
 import javax.swing.tree.TreeSelectionModel;
 
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.circuit.CircuitEvent;
-import main.java.com.cburch.logisim.circuit.CircuitListener;
-import main.java.com.cburch.logisim.circuit.SubcircuitFactory;
-import main.java.com.cburch.logisim.comp.ComponentFactory;
-import main.java.com.cburch.logisim.comp.ComponentDrawContext;
-import main.java.com.cburch.logisim.file.LibraryEventSource;
-import main.java.com.cburch.logisim.file.LogisimFile;
-import main.java.com.cburch.logisim.file.LibraryEvent;
-import main.java.com.cburch.logisim.file.LibraryListener;
-import main.java.com.cburch.logisim.prefs.AppPreferences;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.proj.ProjectEvent;
-import main.java.com.cburch.logisim.proj.ProjectListener;
-import main.java.com.cburch.logisim.tools.AddTool;
-import main.java.com.cburch.logisim.tools.Library;
-import main.java.com.cburch.logisim.tools.Tool;
-import main.java.com.cburch.logisim.util.JTreeDragController;
-import main.java.com.cburch.logisim.util.JTreeUtil;
-import main.java.com.cburch.logisim.util.LocaleListener;
-import main.java.com.cburch.logisim.util.LocaleManager;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.circuit.CircuitEvent;
+import com.cburch.logisim.circuit.CircuitListener;
+import com.cburch.logisim.circuit.SubcircuitFactory;
+import com.cburch.logisim.comp.ComponentFactory;
+import com.cburch.logisim.comp.ComponentDrawContext;
+import com.cburch.logisim.file.LibraryEventSource;
+import com.cburch.logisim.file.LogisimFile;
+import com.cburch.logisim.file.LibraryEvent;
+import com.cburch.logisim.file.LibraryListener;
+import com.cburch.logisim.prefs.AppPreferences;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.proj.ProjectEvent;
+import com.cburch.logisim.proj.ProjectListener;
+import com.cburch.logisim.tools.AddTool;
+import com.cburch.logisim.tools.Library;
+import com.cburch.logisim.tools.Tool;
+import com.cburch.logisim.util.JTreeDragController;
+import com.cburch.logisim.util.JTreeUtil;
+import com.cburch.logisim.util.LocaleListener;
+import com.cburch.logisim.util.LocaleManager;
 
 public class ProjectExplorer extends JTree implements LocaleListener {
 	private static final String DIRTY_MARKER = "*";

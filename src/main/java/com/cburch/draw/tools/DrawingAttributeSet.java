@@ -1,18 +1,18 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.tools;
+package com.cburch.draw.tools;
 
-import main.java.com.cburch.draw.model.CanvasObject;
-import main.java.com.cburch.draw.model.AbstractCanvasObject;
-import main.java.com.cburch.draw.shapes.DrawAttr;
-import main.java.com.cburch.logisim.data.AbstractAttributeSet;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeEvent;
-import main.java.com.cburch.logisim.data.AttributeListener;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.util.EventSourceWeakSupport;
-import main.java.com.cburch.logisim.util.UnmodifiableList;
+import com.cburch.draw.model.CanvasObject;
+import com.cburch.draw.model.AbstractCanvasObject;
+import com.cburch.draw.shapes.DrawAttr;
+import com.cburch.logisim.data.AbstractAttributeSet;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeEvent;
+import com.cburch.logisim.data.AttributeListener;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.util.EventSourceWeakSupport;
+import com.cburch.logisim.util.UnmodifiableList;
 
 import java.awt.Color;
 import java.util.ArrayList;

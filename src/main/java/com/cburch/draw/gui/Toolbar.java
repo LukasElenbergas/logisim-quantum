@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.gui;
+package com.cburch.draw.gui;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -13,11 +13,11 @@ import java.awt.event.MouseMotionListener;
 import javax.swing.Icon;
 import javax.swing.JComponent;
 
-import main.java.com.cburch.draw.canvas.Canvas;
-import main.java.com.cburch.draw.canvas.CanvasTool;
-import main.java.com.cburch.draw.tools.AbstractTool;
-import main.java.com.cburch.draw.tools.DrawingAttributeSet;
-import main.java.com.cburch.logisim.util.GraphicsUtil;
+import com.cburch.draw.canvas.Canvas;
+import com.cburch.draw.canvas.CanvasTool;
+import com.cburch.draw.tools.AbstractTool;
+import com.cburch.draw.tools.DrawingAttributeSet;
+import com.cburch.logisim.util.GraphicsUtil;
 
 class Toolbar extends JComponent {
 	private static int ICON_WIDTH = 16;

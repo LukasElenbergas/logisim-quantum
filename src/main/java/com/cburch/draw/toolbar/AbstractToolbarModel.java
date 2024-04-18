@@ -1,12 +1,12 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.toolbar;
+package com.cburch.draw.toolbar;
 
-import main.java.com.cburch.draw.toolbar.ToolbarItem;
-import main.java.com.cburch.draw.toolbar.ToolbarModel;
-import main.java.com.cburch.draw.toolbar.ToolbarModelEvent;
-import main.java.com.cburch.draw.toolbar.ToolbarModelListener;
+import com.cburch.draw.toolbar.ToolbarItem;
+import com.cburch.draw.toolbar.ToolbarModel;
+import com.cburch.draw.toolbar.ToolbarModelEvent;
+import com.cburch.draw.toolbar.ToolbarModelListener;
 
 import java.util.ArrayList;
 import java.util.List;

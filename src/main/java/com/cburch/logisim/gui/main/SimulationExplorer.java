@@ -1,7 +1,7 @@
 /* Copyright (c) 2011, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.main;
+package com.cburch.logisim.gui.main;
 
 import java.awt.BorderLayout;
 import java.awt.event.MouseEvent;
@@ -12,12 +12,12 @@ import javax.swing.JScrollPane;
 import javax.swing.JTree;
 import javax.swing.tree.TreePath;
 
-import main.java.com.cburch.draw.toolbar.Toolbar;
-import main.java.com.cburch.logisim.circuit.CircuitState;
-import main.java.com.cburch.logisim.circuit.Simulator;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.proj.ProjectEvent;
-import main.java.com.cburch.logisim.proj.ProjectListener;
+import com.cburch.draw.toolbar.Toolbar;
+import com.cburch.logisim.circuit.CircuitState;
+import com.cburch.logisim.circuit.Simulator;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.proj.ProjectEvent;
+import com.cburch.logisim.proj.ProjectListener;
 
 class SimulationExplorer extends JPanel
 		implements ProjectListener, MouseListener {

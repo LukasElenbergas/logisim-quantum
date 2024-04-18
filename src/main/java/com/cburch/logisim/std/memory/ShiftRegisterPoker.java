@@ -1,20 +1,20 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.std.memory;
+package com.cburch.logisim.std.memory;
 
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 
-import main.java.com.cburch.logisim.data.BitWidth;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.data.Value;
-import main.java.com.cburch.logisim.instance.InstancePainter;
-import main.java.com.cburch.logisim.instance.InstancePoker;
-import main.java.com.cburch.logisim.instance.InstanceState;
-import main.java.com.cburch.logisim.instance.StdAttr;
+import com.cburch.logisim.data.BitWidth;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.data.Value;
+import com.cburch.logisim.instance.InstancePainter;
+import com.cburch.logisim.instance.InstancePoker;
+import com.cburch.logisim.instance.InstanceState;
+import com.cburch.logisim.instance.StdAttr;
 
 public class ShiftRegisterPoker extends InstancePoker {
 	private int loc;

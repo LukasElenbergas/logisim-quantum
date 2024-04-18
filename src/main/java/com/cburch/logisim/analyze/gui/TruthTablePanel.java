@@ -1,13 +1,13 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.analyze.gui;
+package com.cburch.logisim.analyze.gui;
 
 import java.awt.Color;
 import java.awt.event.MouseEvent;
 
-import main.java.com.cburch.logisim.analyze.model.Entry;
-import main.java.com.cburch.logisim.analyze.model.TruthTable;
+import com.cburch.logisim.analyze.model.Entry;
+import com.cburch.logisim.analyze.model.TruthTable;
 
 interface TruthTablePanel {
 	public static final Color ERROR_COLOR = new Color(255, 128, 128);

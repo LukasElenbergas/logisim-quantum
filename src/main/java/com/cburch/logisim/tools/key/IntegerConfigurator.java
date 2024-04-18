@@ -1,9 +1,9 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.tools.key;
+package com.cburch.logisim.tools.key;
 
-import main.java.com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.Attribute;
 
 public class IntegerConfigurator extends NumericConfigurator<Integer> {
 	public IntegerConfigurator(Attribute<Integer> attr, int min, int max, int modifiersEx) {

@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.std.memory;
+package com.cburch.logisim.std.memory;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -9,29 +9,29 @@ import java.io.File;
 import java.io.IOException;
 import java.util.WeakHashMap;
 
-import main.java.com.cburch.hex.HexModel;
-import main.java.com.cburch.hex.HexModelListener;
-import main.java.com.cburch.logisim.circuit.CircuitState;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.data.Attributes;
-import main.java.com.cburch.logisim.data.BitWidth;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.data.Direction;
-import main.java.com.cburch.logisim.gui.hex.HexFile;
-import main.java.com.cburch.logisim.gui.hex.HexFrame;
-import main.java.com.cburch.logisim.instance.Instance;
-import main.java.com.cburch.logisim.instance.InstanceFactory;
-import main.java.com.cburch.logisim.instance.InstancePainter;
-import main.java.com.cburch.logisim.instance.InstanceState;
-import main.java.com.cburch.logisim.instance.Port;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.tools.MenuExtender;
-import main.java.com.cburch.logisim.tools.key.BitWidthConfigurator;
-import main.java.com.cburch.logisim.tools.key.JoinedConfigurator;
-import main.java.com.cburch.logisim.util.GraphicsUtil;
-import main.java.com.cburch.logisim.util.StringGetter;
-import main.java.com.cburch.logisim.util.StringUtil;
+import com.cburch.hex.HexModel;
+import com.cburch.hex.HexModelListener;
+import com.cburch.logisim.circuit.CircuitState;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.data.Attributes;
+import com.cburch.logisim.data.BitWidth;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.data.Direction;
+import com.cburch.logisim.gui.hex.HexFile;
+import com.cburch.logisim.gui.hex.HexFrame;
+import com.cburch.logisim.instance.Instance;
+import com.cburch.logisim.instance.InstanceFactory;
+import com.cburch.logisim.instance.InstancePainter;
+import com.cburch.logisim.instance.InstanceState;
+import com.cburch.logisim.instance.Port;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.tools.MenuExtender;
+import com.cburch.logisim.tools.key.BitWidthConfigurator;
+import com.cburch.logisim.tools.key.JoinedConfigurator;
+import com.cburch.logisim.util.GraphicsUtil;
+import com.cburch.logisim.util.StringGetter;
+import com.cburch.logisim.util.StringUtil;
 
 abstract class Mem extends InstanceFactory {
 	// Note: The code is meant to be able to handle up to 32-bit addresses, but it

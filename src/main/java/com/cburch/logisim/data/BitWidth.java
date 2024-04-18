@@ -1,12 +1,12 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.data;
+package com.cburch.logisim.data;
 
 
 import javax.swing.JComboBox;
 
-import main.java.com.cburch.logisim.util.StringGetter;
+import com.cburch.logisim.util.StringGetter;
 
 public class BitWidth implements Comparable<BitWidth> {
 	public static final BitWidth UNKNOWN = new BitWidth(0);
@@ -14,7 +14,7 @@ public class BitWidth implements Comparable<BitWidth> {
 
 	private static BitWidth[] prefab = null;
 
-	static class Attribute extends main.java.com.cburch.logisim.data.Attribute<BitWidth> {
+	static class Attribute extends com.cburch.logisim.data.Attribute<BitWidth> {
 		private BitWidth[] choices;
 
 		public Attribute(String name, StringGetter disp) {

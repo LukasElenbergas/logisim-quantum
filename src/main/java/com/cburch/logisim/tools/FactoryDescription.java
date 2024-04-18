@@ -1,16 +1,16 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.tools;
+package com.cburch.logisim.tools;
 
 import java.util.Arrays;
 import java.util.List;
 
 import javax.swing.Icon;
 
-import main.java.com.cburch.logisim.comp.ComponentFactory;
-import main.java.com.cburch.logisim.util.Icons;
-import main.java.com.cburch.logisim.util.StringGetter;
+import com.cburch.logisim.comp.ComponentFactory;
+import com.cburch.logisim.util.Icons;
+import com.cburch.logisim.util.StringGetter;
 
 /** This class allows an object to be created holding all the information
  * essential to showing a ComponentFactory in the explorer window, but without

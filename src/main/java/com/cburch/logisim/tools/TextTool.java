@@ -1,26 +1,26 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.tools;
+package com.cburch.logisim.tools;
 
 import java.awt.Cursor;
 import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 import java.awt.event.KeyEvent;
 
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.circuit.CircuitEvent;
-import main.java.com.cburch.logisim.circuit.CircuitListener;
-import main.java.com.cburch.logisim.circuit.CircuitMutation;
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.comp.ComponentDrawContext;
-import main.java.com.cburch.logisim.comp.ComponentUserEvent;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.gui.main.Canvas;
-import main.java.com.cburch.logisim.proj.Action;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.std.base.Text;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.circuit.CircuitEvent;
+import com.cburch.logisim.circuit.CircuitListener;
+import com.cburch.logisim.circuit.CircuitMutation;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.comp.ComponentDrawContext;
+import com.cburch.logisim.comp.ComponentUserEvent;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.gui.main.Canvas;
+import com.cburch.logisim.proj.Action;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.std.base.Text;
 
 public class TextTool extends Tool {
 	private class MyListener

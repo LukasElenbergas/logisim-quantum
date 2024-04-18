@@ -1,19 +1,19 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.std.arith;
+package com.cburch.logisim.std.arith;
 
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.BitWidth;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.data.Direction;
-import main.java.com.cburch.logisim.data.Value;
-import main.java.com.cburch.logisim.instance.InstanceFactory;
-import main.java.com.cburch.logisim.instance.InstancePainter;
-import main.java.com.cburch.logisim.instance.InstanceState;
-import main.java.com.cburch.logisim.instance.Port;
-import main.java.com.cburch.logisim.instance.StdAttr;
-import main.java.com.cburch.logisim.tools.key.BitWidthConfigurator;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.BitWidth;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.data.Direction;
+import com.cburch.logisim.data.Value;
+import com.cburch.logisim.instance.InstanceFactory;
+import com.cburch.logisim.instance.InstancePainter;
+import com.cburch.logisim.instance.InstanceState;
+import com.cburch.logisim.instance.Port;
+import com.cburch.logisim.instance.StdAttr;
+import com.cburch.logisim.tools.key.BitWidthConfigurator;
 
 public class Negator extends InstanceFactory {
 	private static final int IN    = 0;

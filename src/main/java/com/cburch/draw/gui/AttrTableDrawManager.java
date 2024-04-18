@@ -1,16 +1,16 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.gui;
+package com.cburch.draw.gui;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
-import main.java.com.cburch.draw.canvas.Canvas;
-import main.java.com.cburch.draw.tools.AbstractTool;
-import main.java.com.cburch.draw.tools.DrawingAttributeSet;
-import main.java.com.cburch.draw.tools.SelectTool;
-import main.java.com.cburch.logisim.gui.generic.AttrTable;
+import com.cburch.draw.canvas.Canvas;
+import com.cburch.draw.tools.AbstractTool;
+import com.cburch.draw.tools.DrawingAttributeSet;
+import com.cburch.draw.tools.SelectTool;
+import com.cburch.logisim.gui.generic.AttrTable;
 
 public class AttrTableDrawManager implements PropertyChangeListener {
 	private Canvas canvas;

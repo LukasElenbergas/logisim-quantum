@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.start;
+package com.cburch.logisim.gui.start;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -13,19 +13,19 @@ import java.io.File;
 
 import javax.swing.UIManager;
 
-import main.java.com.cburch.logisim.Main;
-import main.java.com.cburch.logisim.file.LoadFailedException;
-import main.java.com.cburch.logisim.file.Loader;
-import main.java.com.cburch.logisim.gui.main.Print;
-import main.java.com.cburch.logisim.gui.menu.LogisimMenuBar;
-import main.java.com.cburch.logisim.gui.menu.WindowManagers;
-import main.java.com.cburch.logisim.gui.start.SplashScreen;
-import main.java.com.cburch.logisim.prefs.AppPreferences;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.proj.ProjectActions;
-import main.java.com.cburch.logisim.util.LocaleManager;
-import main.java.com.cburch.logisim.util.MacCompatibility;
-import main.java.com.cburch.logisim.util.StringUtil;
+import com.cburch.logisim.Main;
+import com.cburch.logisim.file.LoadFailedException;
+import com.cburch.logisim.file.Loader;
+import com.cburch.logisim.gui.main.Print;
+import com.cburch.logisim.gui.menu.LogisimMenuBar;
+import com.cburch.logisim.gui.menu.WindowManagers;
+import com.cburch.logisim.gui.start.SplashScreen;
+import com.cburch.logisim.prefs.AppPreferences;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.proj.ProjectActions;
+import com.cburch.logisim.util.LocaleManager;
+import com.cburch.logisim.util.MacCompatibility;
+import com.cburch.logisim.util.StringUtil;
 
 public class Startup {
 	private static Startup startupTemp = null;

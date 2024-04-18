@@ -1,10 +1,10 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.circuit;
+package com.cburch.logisim.circuit;
 
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.data.Attribute;
 
 public interface CircuitMutator {
 	public void clear(Circuit circuit);

@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.tools;
+package com.cburch.logisim.tools;
 
 import java.awt.Color;
 import java.awt.Cursor;
@@ -12,32 +12,32 @@ import java.awt.event.MouseEvent;
 import javax.swing.Icon;
 import javax.swing.JOptionPane;
 
-import main.java.com.cburch.logisim.LogisimVersion;
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.circuit.CircuitException;
-import main.java.com.cburch.logisim.circuit.CircuitMutation;
-import main.java.com.cburch.logisim.circuit.SubcircuitFactory;
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.comp.ComponentFactory;
-import main.java.com.cburch.logisim.comp.ComponentDrawContext;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeEvent;
-import main.java.com.cburch.logisim.data.AttributeListener;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.data.Direction;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.gui.main.Canvas;
-import main.java.com.cburch.logisim.gui.main.SelectionActions;
-import main.java.com.cburch.logisim.gui.main.ToolAttributeAction;
-import main.java.com.cburch.logisim.prefs.AppPreferences;
-import main.java.com.cburch.logisim.proj.Action;
-import main.java.com.cburch.logisim.proj.Dependencies;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.tools.key.KeyConfigurationEvent;
-import main.java.com.cburch.logisim.tools.key.KeyConfigurator;
-import main.java.com.cburch.logisim.tools.key.KeyConfigurationResult;
-import main.java.com.cburch.logisim.util.StringUtil;
+import com.cburch.logisim.LogisimVersion;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.circuit.CircuitException;
+import com.cburch.logisim.circuit.CircuitMutation;
+import com.cburch.logisim.circuit.SubcircuitFactory;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.comp.ComponentFactory;
+import com.cburch.logisim.comp.ComponentDrawContext;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeEvent;
+import com.cburch.logisim.data.AttributeListener;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.data.Direction;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.gui.main.Canvas;
+import com.cburch.logisim.gui.main.SelectionActions;
+import com.cburch.logisim.gui.main.ToolAttributeAction;
+import com.cburch.logisim.prefs.AppPreferences;
+import com.cburch.logisim.proj.Action;
+import com.cburch.logisim.proj.Dependencies;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.tools.key.KeyConfigurationEvent;
+import com.cburch.logisim.tools.key.KeyConfigurator;
+import com.cburch.logisim.tools.key.KeyConfigurationResult;
+import com.cburch.logisim.util.StringUtil;
 
 public class AddTool extends Tool {
 	private static int INVALID_COORD = Integer.MIN_VALUE;

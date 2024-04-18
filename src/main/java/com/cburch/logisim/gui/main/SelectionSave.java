@@ -1,12 +1,12 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.main;
+package com.cburch.logisim.gui.main;
 
 import java.util.Collection;
 import java.util.HashSet;
 
-import main.java.com.cburch.logisim.comp.Component;
+import com.cburch.logisim.comp.Component;
 
 class SelectionSave {
 	public static SelectionSave create(Selection sel) {

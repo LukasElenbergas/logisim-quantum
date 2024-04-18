@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.prefs;
+package com.cburch.logisim.gui.prefs;
 
 import java.awt.BorderLayout;
 import java.awt.Font;
@@ -11,7 +11,7 @@ import javax.swing.BoxLayout;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import main.java.com.cburch.logisim.prefs.AppPreferences;
+import com.cburch.logisim.prefs.AppPreferences;
 
 class ExperimentalOptions extends OptionsPanel {
 	private JLabel accelRestart = new JLabel();

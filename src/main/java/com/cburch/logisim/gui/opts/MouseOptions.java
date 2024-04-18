@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.opts;
+package com.cburch.logisim.gui.opts;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -29,17 +29,17 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.table.AbstractTableModel;
 
-import main.java.com.cburch.logisim.file.MouseMappings;
-import main.java.com.cburch.logisim.gui.generic.AttrTable;
-import main.java.com.cburch.logisim.gui.generic.AttrTableModel;
-import main.java.com.cburch.logisim.gui.main.AttrTableToolModel;
-import main.java.com.cburch.logisim.gui.main.ProjectExplorer;
-import main.java.com.cburch.logisim.gui.main.ProjectExplorer.Event;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.tools.AddTool;
-import main.java.com.cburch.logisim.tools.Tool;
-import main.java.com.cburch.logisim.util.InputEventUtil;
-import main.java.com.cburch.logisim.util.StringUtil;
+import com.cburch.logisim.file.MouseMappings;
+import com.cburch.logisim.gui.generic.AttrTable;
+import com.cburch.logisim.gui.generic.AttrTableModel;
+import com.cburch.logisim.gui.main.AttrTableToolModel;
+import com.cburch.logisim.gui.main.ProjectExplorer;
+import com.cburch.logisim.gui.main.ProjectExplorer.Event;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.tools.AddTool;
+import com.cburch.logisim.tools.Tool;
+import com.cburch.logisim.util.InputEventUtil;
+import com.cburch.logisim.util.StringUtil;
 
 class MouseOptions extends OptionsPanel {
 	private class AddArea extends JPanel {

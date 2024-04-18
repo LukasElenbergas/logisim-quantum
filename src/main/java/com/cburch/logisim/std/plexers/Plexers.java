@@ -1,22 +1,22 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.std.plexers;
+package com.cburch.logisim.std.plexers;
 
 import java.awt.Graphics;
 import java.util.List;
 
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeOption;
-import main.java.com.cburch.logisim.data.Attributes;
-import main.java.com.cburch.logisim.data.BitWidth;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.data.Direction;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.tools.FactoryDescription;
-import main.java.com.cburch.logisim.tools.Library;
-import main.java.com.cburch.logisim.tools.Tool;
-import main.java.com.cburch.logisim.util.GraphicsUtil;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeOption;
+import com.cburch.logisim.data.Attributes;
+import com.cburch.logisim.data.BitWidth;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.data.Direction;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.tools.FactoryDescription;
+import com.cburch.logisim.tools.Library;
+import com.cburch.logisim.tools.Tool;
+import com.cburch.logisim.util.GraphicsUtil;
 
 public class Plexers extends Library {
 	public static final Attribute<BitWidth> ATTR_SELECT

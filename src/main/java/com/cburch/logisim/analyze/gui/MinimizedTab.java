@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.analyze.gui;
+package com.cburch.logisim.analyze.gui;
 
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -19,11 +19,11 @@ import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import main.java.com.cburch.logisim.analyze.model.AnalyzerModel;
-import main.java.com.cburch.logisim.analyze.model.OutputExpressions;
-import main.java.com.cburch.logisim.analyze.model.OutputExpressionsEvent;
-import main.java.com.cburch.logisim.analyze.model.OutputExpressionsListener;
-import main.java.com.cburch.logisim.analyze.model.VariableList;
+import com.cburch.logisim.analyze.model.AnalyzerModel;
+import com.cburch.logisim.analyze.model.OutputExpressions;
+import com.cburch.logisim.analyze.model.OutputExpressionsEvent;
+import com.cburch.logisim.analyze.model.OutputExpressionsListener;
+import com.cburch.logisim.analyze.model.VariableList;
 
 class MinimizedTab extends AnalyzerTab {
 	private static class FormatModel extends AbstractListModel

@@ -1,22 +1,22 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.appear;
+package com.cburch.logisim.gui.appear;
 
-import main.java.com.cburch.draw.canvas.Canvas;
-import main.java.com.cburch.draw.gui.AttrTableDrawManager;
-import main.java.com.cburch.draw.toolbar.ToolbarModel;
-import main.java.com.cburch.draw.tools.DrawingAttributeSet;
-import main.java.com.cburch.draw.tools.SelectTool;
-import main.java.com.cburch.logisim.circuit.CircuitState;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.gui.generic.AttrTable;
-import main.java.com.cburch.logisim.gui.generic.BasicZoomModel;
-import main.java.com.cburch.logisim.gui.generic.CanvasPane;
-import main.java.com.cburch.logisim.gui.generic.ZoomModel;
-import main.java.com.cburch.logisim.gui.main.EditHandler;
-import main.java.com.cburch.logisim.prefs.AppPreferences;
-import main.java.com.cburch.logisim.proj.Project;
+import com.cburch.draw.canvas.Canvas;
+import com.cburch.draw.gui.AttrTableDrawManager;
+import com.cburch.draw.toolbar.ToolbarModel;
+import com.cburch.draw.tools.DrawingAttributeSet;
+import com.cburch.draw.tools.SelectTool;
+import com.cburch.logisim.circuit.CircuitState;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.gui.generic.AttrTable;
+import com.cburch.logisim.gui.generic.BasicZoomModel;
+import com.cburch.logisim.gui.generic.CanvasPane;
+import com.cburch.logisim.gui.generic.ZoomModel;
+import com.cburch.logisim.gui.main.EditHandler;
+import com.cburch.logisim.prefs.AppPreferences;
+import com.cburch.logisim.proj.Project;
 
 public class AppearanceView {
 	private static final double[] ZOOM_OPTIONS = { 100, 150, 200, 300, 400, 600, 800 };

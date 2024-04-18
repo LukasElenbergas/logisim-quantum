@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.menu;
+package com.cburch.logisim.gui.menu;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -12,16 +12,16 @@ import javax.swing.JMenuItem;
 import javax.swing.JPopupMenu;
 import javax.swing.SwingUtilities;
 
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.file.LoadedLibrary;
-import main.java.com.cburch.logisim.file.Loader;
-import main.java.com.cburch.logisim.file.LogisimFile;
-import main.java.com.cburch.logisim.gui.main.Frame;
-import main.java.com.cburch.logisim.gui.main.StatisticsDialog;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.tools.AddTool;
-import main.java.com.cburch.logisim.tools.Library;
-import main.java.com.cburch.logisim.tools.Tool;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.file.LoadedLibrary;
+import com.cburch.logisim.file.Loader;
+import com.cburch.logisim.file.LogisimFile;
+import com.cburch.logisim.gui.main.Frame;
+import com.cburch.logisim.gui.main.StatisticsDialog;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.tools.AddTool;
+import com.cburch.logisim.tools.Library;
+import com.cburch.logisim.tools.Tool;
 
 public class Popups {
 	private static class ProjectPopup extends JPopupMenu

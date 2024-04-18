@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.hex;
+package com.cburch.logisim.gui.hex;
 
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.ClipboardOwner;
@@ -13,9 +13,9 @@ import java.io.StringReader;
 
 import javax.swing.JOptionPane;
 
-import main.java.com.cburch.hex.Caret;
-import main.java.com.cburch.hex.HexEditor;
-import main.java.com.cburch.hex.HexModel;
+import com.cburch.hex.Caret;
+import com.cburch.hex.HexEditor;
+import com.cburch.hex.HexModel;
 
 class Clip implements ClipboardOwner {
 	private static final DataFlavor binaryFlavor = new DataFlavor(int[].class, "Binary data");

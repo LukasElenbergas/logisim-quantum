@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.analyze.gui;
+package com.cburch.logisim.analyze.gui;
 
 interface TabInterface {
 	public void copy();

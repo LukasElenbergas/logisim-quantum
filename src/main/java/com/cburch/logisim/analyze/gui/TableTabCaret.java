@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.analyze.gui;
+package com.cburch.logisim.analyze.gui;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -21,11 +21,11 @@ import javax.swing.ActionMap;
 import javax.swing.InputMap;
 import javax.swing.KeyStroke;
 
-import main.java.com.cburch.logisim.analyze.model.Entry;
-import main.java.com.cburch.logisim.analyze.model.TruthTable;
-import main.java.com.cburch.logisim.analyze.model.TruthTableEvent;
-import main.java.com.cburch.logisim.analyze.model.TruthTableListener;
-import main.java.com.cburch.logisim.util.GraphicsUtil;
+import com.cburch.logisim.analyze.model.Entry;
+import com.cburch.logisim.analyze.model.TruthTable;
+import com.cburch.logisim.analyze.model.TruthTableEvent;
+import com.cburch.logisim.analyze.model.TruthTableListener;
+import com.cburch.logisim.util.GraphicsUtil;
 
 class TableTabCaret {
 	private static Color SELECT_COLOR = new Color(192, 192, 255);

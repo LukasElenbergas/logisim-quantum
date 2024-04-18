@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.file;
+package com.cburch.logisim.file;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -23,17 +23,17 @@ import javax.xml.transform.TransformerException;
 
 import org.xml.sax.SAXException;
 
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.circuit.SubcircuitFactory;
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.comp.ComponentFactory;
-import main.java.com.cburch.logisim.proj.Projects;
-import main.java.com.cburch.logisim.tools.AddTool;
-import main.java.com.cburch.logisim.tools.Library;
-import main.java.com.cburch.logisim.tools.Tool;
-import main.java.com.cburch.logisim.util.EventSourceWeakSupport;
-import main.java.com.cburch.logisim.util.ListUtil;
-import main.java.com.cburch.logisim.util.StringUtil;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.circuit.SubcircuitFactory;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.comp.ComponentFactory;
+import com.cburch.logisim.proj.Projects;
+import com.cburch.logisim.tools.AddTool;
+import com.cburch.logisim.tools.Library;
+import com.cburch.logisim.tools.Tool;
+import com.cburch.logisim.util.EventSourceWeakSupport;
+import com.cburch.logisim.util.ListUtil;
+import com.cburch.logisim.util.StringUtil;
 
 public class LogisimFile extends Library implements LibraryEventSource {
 	private static class WritingThread extends Thread {

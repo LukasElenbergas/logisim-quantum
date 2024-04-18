@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.shapes;
+package com.cburch.draw.shapes;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -11,14 +11,14 @@ import java.util.Random;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-import main.java.com.cburch.draw.model.CanvasObject;
-import main.java.com.cburch.draw.model.AbstractCanvasObject;
-import main.java.com.cburch.draw.model.Handle;
-import main.java.com.cburch.draw.model.HandleGesture;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.util.UnmodifiableList;
+import com.cburch.draw.model.CanvasObject;
+import com.cburch.draw.model.AbstractCanvasObject;
+import com.cburch.draw.model.Handle;
+import com.cburch.draw.model.HandleGesture;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.util.UnmodifiableList;
 
 public class Line extends AbstractCanvasObject {
 	static final int ON_LINE_THRESH = 2;

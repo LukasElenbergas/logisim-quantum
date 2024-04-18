@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.start;
+package com.cburch.logisim.gui.start;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -12,8 +12,8 @@ import net.roydesign.mac.MRJAdapter;
 
 //MAC import com.apple.eawt.Application;
 //MAC import com.apple.eawt.ApplicationAdapter;
-import main.java.com.cburch.logisim.gui.prefs.PreferencesFrame;
-import main.java.com.cburch.logisim.proj.ProjectActions;
+import com.cburch.logisim.gui.prefs.PreferencesFrame;
+import com.cburch.logisim.proj.ProjectActions;
 
 class MacOsAdapter { //MAC extends ApplicationAdapter {
 	

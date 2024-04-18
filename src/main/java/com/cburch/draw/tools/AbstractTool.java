@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.tools;
+package com.cburch.draw.tools;
 
 import java.awt.Cursor;
 import java.awt.Graphics;
@@ -11,9 +11,9 @@ import java.util.List;
 
 import javax.swing.Icon;
 
-import main.java.com.cburch.draw.canvas.Canvas;
-import main.java.com.cburch.draw.canvas.CanvasTool;
-import main.java.com.cburch.logisim.data.Attribute;
+import com.cburch.draw.canvas.Canvas;
+import com.cburch.draw.canvas.CanvasTool;
+import com.cburch.logisim.data.Attribute;
 
 public abstract class AbstractTool extends CanvasTool {
 	public static AbstractTool[] getTools(DrawingAttributeSet attrs) {

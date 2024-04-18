@@ -1,15 +1,15 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.main;
+package com.cburch.logisim.gui.main;
 
 import java.beans.PropertyChangeListener;
 import java.util.Collection;
 import java.util.HashSet;
 
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.util.PropertyChangeWeakSupport;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.util.PropertyChangeWeakSupport;
 
 class Clipboard {
 	public static final String contentsProperty = "contents";

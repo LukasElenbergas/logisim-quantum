@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.menu;
+package com.cburch.logisim.gui.menu;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -15,16 +15,16 @@ import javax.swing.KeyStroke;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.circuit.CircuitEvent;
-import main.java.com.cburch.logisim.circuit.CircuitListener;
-import main.java.com.cburch.logisim.circuit.CircuitState;
-import main.java.com.cburch.logisim.circuit.Simulator;
-import main.java.com.cburch.logisim.circuit.SimulatorEvent;
-import main.java.com.cburch.logisim.circuit.SimulatorListener;
-import main.java.com.cburch.logisim.gui.log.LogFrame;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.util.StringUtil;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.circuit.CircuitEvent;
+import com.cburch.logisim.circuit.CircuitListener;
+import com.cburch.logisim.circuit.CircuitState;
+import com.cburch.logisim.circuit.Simulator;
+import com.cburch.logisim.circuit.SimulatorEvent;
+import com.cburch.logisim.circuit.SimulatorListener;
+import com.cburch.logisim.gui.log.LogFrame;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.util.StringUtil;
 
 import java.util.ArrayList;
 

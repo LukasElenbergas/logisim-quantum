@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.std.memory;
+package com.cburch.logisim.std.memory;
 
 import java.awt.Frame;
 import java.awt.event.ActionEvent;
@@ -14,12 +14,12 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPopupMenu;
 
-import main.java.com.cburch.logisim.circuit.CircuitState;
-import main.java.com.cburch.logisim.gui.hex.HexFile;
-import main.java.com.cburch.logisim.gui.hex.HexFrame;
-import main.java.com.cburch.logisim.instance.Instance;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.tools.MenuExtender;
+import com.cburch.logisim.circuit.CircuitState;
+import com.cburch.logisim.gui.hex.HexFile;
+import com.cburch.logisim.gui.hex.HexFrame;
+import com.cburch.logisim.instance.Instance;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.tools.MenuExtender;
 
 class MemMenu implements ActionListener, MenuExtender {
 	private Mem factory;

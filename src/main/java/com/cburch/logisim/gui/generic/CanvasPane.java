@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.generic;
+package com.cburch.logisim.gui.generic;
 
 import java.awt.Component;
 import java.awt.Dimension;
@@ -14,7 +14,7 @@ import java.beans.PropertyChangeListener;
 import javax.swing.JScrollPane;
 import javax.swing.SwingConstants;
 
-import main.java.com.cburch.logisim.util.MacCompatibility;
+import com.cburch.logisim.util.MacCompatibility;
 
 public class CanvasPane extends JScrollPane {
 	private class Listener implements ComponentListener, PropertyChangeListener {

@@ -1,19 +1,19 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.file;
+package com.cburch.logisim.file;
 
 import java.util.ArrayList;
 
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.proj.Action;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.proj.ProjectActions;
-import main.java.com.cburch.logisim.tools.AddTool;
-import main.java.com.cburch.logisim.tools.Library;
-import main.java.com.cburch.logisim.tools.Tool;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.proj.Action;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.proj.ProjectActions;
+import com.cburch.logisim.tools.AddTool;
+import com.cburch.logisim.tools.Library;
+import com.cburch.logisim.tools.Tool;
 
 
 public class LogisimFileActions {

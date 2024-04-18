@@ -1,7 +1,7 @@
 /* Copyright (c) 2011, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.generic;
+package com.cburch.logisim.gui.generic;
 
 import java.awt.Component;
 import java.awt.Window;
@@ -9,10 +9,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeEvent;
-import main.java.com.cburch.logisim.data.AttributeListener;
-import main.java.com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeEvent;
+import com.cburch.logisim.data.AttributeListener;
+import com.cburch.logisim.data.AttributeSet;
 
 public abstract class AttributeSetTableModel
 		implements AttrTableModel, AttributeListener {

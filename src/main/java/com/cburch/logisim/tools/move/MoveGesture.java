@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.tools.move;
+package com.cburch.logisim.tools.move;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -11,12 +11,12 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.circuit.Wire;
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.comp.EndData;
-import main.java.com.cburch.logisim.data.Direction;
-import main.java.com.cburch.logisim.data.Location;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.circuit.Wire;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.comp.EndData;
+import com.cburch.logisim.data.Direction;
+import com.cburch.logisim.data.Location;
 
 public class MoveGesture {
 	private MoveRequestListener listener;

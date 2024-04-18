@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.main;
+package com.cburch.logisim.gui.main;
 
 import java.awt.Component;
 import java.awt.Graphics;
@@ -10,20 +10,20 @@ import java.awt.Dimension;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
-import main.java.com.cburch.draw.toolbar.AbstractToolbarModel;
-import main.java.com.cburch.draw.toolbar.ToolbarItem;
-import main.java.com.cburch.draw.toolbar.ToolbarSeparator;
-import main.java.com.cburch.logisim.comp.ComponentDrawContext;
-import main.java.com.cburch.logisim.data.AttributeEvent;
-import main.java.com.cburch.logisim.data.AttributeListener;
-import main.java.com.cburch.logisim.file.LogisimFile;
-import main.java.com.cburch.logisim.file.ToolbarData;
-import main.java.com.cburch.logisim.prefs.AppPreferences;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.proj.ProjectEvent;
-import main.java.com.cburch.logisim.proj.ProjectListener;
-import main.java.com.cburch.logisim.tools.Tool;
-import main.java.com.cburch.logisim.util.InputEventUtil;
+import com.cburch.draw.toolbar.AbstractToolbarModel;
+import com.cburch.draw.toolbar.ToolbarItem;
+import com.cburch.draw.toolbar.ToolbarSeparator;
+import com.cburch.logisim.comp.ComponentDrawContext;
+import com.cburch.logisim.data.AttributeEvent;
+import com.cburch.logisim.data.AttributeListener;
+import com.cburch.logisim.file.LogisimFile;
+import com.cburch.logisim.file.ToolbarData;
+import com.cburch.logisim.prefs.AppPreferences;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.proj.ProjectEvent;
+import com.cburch.logisim.proj.ProjectListener;
+import com.cburch.logisim.tools.Tool;
+import com.cburch.logisim.util.InputEventUtil;
 
 import java.util.ArrayList;
 import java.util.Collections;

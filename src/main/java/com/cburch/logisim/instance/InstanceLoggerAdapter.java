@@ -1,11 +1,11 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.instance;
+package com.cburch.logisim.instance;
 
-import main.java.com.cburch.logisim.circuit.CircuitState;
-import main.java.com.cburch.logisim.data.Value;
-import main.java.com.cburch.logisim.gui.log.Loggable;
+import com.cburch.logisim.circuit.CircuitState;
+import com.cburch.logisim.data.Value;
+import com.cburch.logisim.gui.log.Loggable;
 
 class InstanceLoggerAdapter implements Loggable {
 	private InstanceComponent comp;

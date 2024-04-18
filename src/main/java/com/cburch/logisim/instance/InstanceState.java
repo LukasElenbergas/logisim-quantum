@@ -1,12 +1,12 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.instance;
+package com.cburch.logisim.instance;
 
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.data.Value;
-import main.java.com.cburch.logisim.proj.Project;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.data.Value;
+import com.cburch.logisim.proj.Project;
 
 public interface InstanceState {
 	public Instance getInstance();

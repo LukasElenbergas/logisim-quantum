@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.tools;
+package com.cburch.draw.tools;
 
 import java.awt.Color;
 import java.awt.Cursor;
@@ -9,12 +9,12 @@ import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 
-import main.java.com.cburch.draw.actions.ModelAddAction;
-import main.java.com.cburch.draw.canvas.Canvas;
-import main.java.com.cburch.draw.model.CanvasModel;
-import main.java.com.cburch.draw.model.CanvasObject;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.data.Location;
+import com.cburch.draw.actions.ModelAddAction;
+import com.cburch.draw.canvas.Canvas;
+import com.cburch.draw.model.CanvasModel;
+import com.cburch.draw.model.CanvasObject;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.data.Location;
 
 abstract class RectangularTool extends AbstractTool {
 	private boolean active;

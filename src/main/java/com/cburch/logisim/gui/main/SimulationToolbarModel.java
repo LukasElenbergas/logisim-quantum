@@ -1,19 +1,19 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.main;
+package com.cburch.logisim.gui.main;
 
 import java.util.List;
 
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import main.java.com.cburch.draw.toolbar.AbstractToolbarModel;
-import main.java.com.cburch.draw.toolbar.ToolbarItem;
-import main.java.com.cburch.logisim.circuit.Simulator;
-import main.java.com.cburch.logisim.gui.menu.LogisimMenuBar;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.util.UnmodifiableList;
+import com.cburch.draw.toolbar.AbstractToolbarModel;
+import com.cburch.draw.toolbar.ToolbarItem;
+import com.cburch.logisim.circuit.Simulator;
+import com.cburch.logisim.gui.menu.LogisimMenuBar;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.util.UnmodifiableList;
 
 class SimulationToolbarModel extends AbstractToolbarModel
 		implements ChangeListener {

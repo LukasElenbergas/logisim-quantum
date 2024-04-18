@@ -1,16 +1,16 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.actions;
+package com.cburch.draw.actions;
 
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Map;
 
-import main.java.com.cburch.draw.model.AttributeMapKey;
-import main.java.com.cburch.draw.model.CanvasModel;
-import main.java.com.cburch.draw.model.CanvasObject;
-import main.java.com.cburch.logisim.data.Attribute;
+import com.cburch.draw.model.AttributeMapKey;
+import com.cburch.draw.model.CanvasModel;
+import com.cburch.draw.model.CanvasObject;
+import com.cburch.logisim.data.Attribute;
 
 public class ModelChangeAttributeAction extends ModelAction {
 	private Map<AttributeMapKey, Object> oldValues;

@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.std.memory;
+package com.cburch.logisim.std.memory;
 
 import java.awt.Window;
 import java.awt.event.MouseEvent;
@@ -15,18 +15,18 @@ import java.util.WeakHashMap;
 
 import javax.swing.JLabel;
 
-import main.java.com.cburch.logisim.circuit.CircuitState;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.data.BitWidth;
-import main.java.com.cburch.logisim.data.Value;
-import main.java.com.cburch.logisim.gui.hex.HexFile;
-import main.java.com.cburch.logisim.gui.hex.HexFrame;
-import main.java.com.cburch.logisim.gui.main.Frame;
-import main.java.com.cburch.logisim.instance.Instance;
-import main.java.com.cburch.logisim.instance.InstanceState;
-import main.java.com.cburch.logisim.instance.Port;
-import main.java.com.cburch.logisim.proj.Project;
+import com.cburch.logisim.circuit.CircuitState;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.data.BitWidth;
+import com.cburch.logisim.data.Value;
+import com.cburch.logisim.gui.hex.HexFile;
+import com.cburch.logisim.gui.hex.HexFrame;
+import com.cburch.logisim.gui.main.Frame;
+import com.cburch.logisim.instance.Instance;
+import com.cburch.logisim.instance.InstanceState;
+import com.cburch.logisim.instance.Port;
+import com.cburch.logisim.proj.Project;
 
 public class Rom extends Mem {
 	public static Attribute<MemContents> CONTENTS_ATTR = new ContentsAttribute();

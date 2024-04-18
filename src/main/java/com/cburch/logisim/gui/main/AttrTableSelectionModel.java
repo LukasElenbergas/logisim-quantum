@@ -1,20 +1,20 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.main;
+package com.cburch.logisim.gui.main;
 
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.circuit.Wire;
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.comp.ComponentFactory;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.gui.generic.AttrTableSetException;
-import main.java.com.cburch.logisim.gui.generic.AttributeSetTableModel;
-import main.java.com.cburch.logisim.gui.main.AttrTableCircuitModel;
-import main.java.com.cburch.logisim.gui.main.Selection;
-import main.java.com.cburch.logisim.gui.main.Selection.Event;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.tools.SetAttributeAction;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.circuit.Wire;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.comp.ComponentFactory;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.gui.generic.AttrTableSetException;
+import com.cburch.logisim.gui.generic.AttributeSetTableModel;
+import com.cburch.logisim.gui.main.AttrTableCircuitModel;
+import com.cburch.logisim.gui.main.Selection;
+import com.cburch.logisim.gui.main.Selection.Event;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.tools.SetAttributeAction;
 
 class AttrTableSelectionModel extends AttributeSetTableModel
 		implements Selection.Listener {

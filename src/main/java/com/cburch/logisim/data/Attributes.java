@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.data;
+package com.cburch.logisim.data;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -13,9 +13,9 @@ import javax.swing.JList;
 import javax.swing.plaf.basic.BasicComboBoxRenderer;
 
 import com.bric.swing.ColorPicker;
-import main.java.com.cburch.logisim.util.FontUtil;
-import main.java.com.cburch.logisim.util.JInputComponent;
-import main.java.com.cburch.logisim.util.StringGetter;
+import com.cburch.logisim.util.FontUtil;
+import com.cburch.logisim.util.JInputComponent;
+import com.cburch.logisim.util.StringGetter;
 import com.connectina.swing.fontchooser.JFontChooser;
 
 public class Attributes {

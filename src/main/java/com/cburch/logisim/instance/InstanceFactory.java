@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.instance;
+package com.cburch.logisim.instance;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -10,24 +10,24 @@ import java.util.List;
 
 import javax.swing.Icon;
 
-import main.java.com.cburch.logisim.LogisimVersion;
-import main.java.com.cburch.logisim.circuit.CircuitState;
-import main.java.com.cburch.logisim.comp.AbstractComponentFactory;
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.comp.ComponentDrawContext;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.data.AttributeSets;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.data.Direction;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.gui.log.Loggable;
-import main.java.com.cburch.logisim.tools.Pokable;
-import main.java.com.cburch.logisim.tools.key.KeyConfigurator;
-import main.java.com.cburch.logisim.util.Icons;
-import main.java.com.cburch.logisim.util.StringGetter;
-import main.java.com.cburch.logisim.util.StringUtil;
-import main.java.com.cburch.logisim.util.UnmodifiableList;
+import com.cburch.logisim.LogisimVersion;
+import com.cburch.logisim.circuit.CircuitState;
+import com.cburch.logisim.comp.AbstractComponentFactory;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.comp.ComponentDrawContext;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.data.AttributeSets;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.data.Direction;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.gui.log.Loggable;
+import com.cburch.logisim.tools.Pokable;
+import com.cburch.logisim.tools.key.KeyConfigurator;
+import com.cburch.logisim.util.Icons;
+import com.cburch.logisim.util.StringGetter;
+import com.cburch.logisim.util.StringUtil;
+import com.cburch.logisim.util.UnmodifiableList;
 
 /**
  * Represents a category of components that appear in a circuit. This class

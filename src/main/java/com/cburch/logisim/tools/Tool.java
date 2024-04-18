@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.tools;
+package com.cburch.logisim.tools;
 
 import java.awt.Cursor;
 import java.awt.Graphics;
@@ -9,13 +9,13 @@ import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.util.Set;
 
-import main.java.com.cburch.logisim.LogisimVersion;
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.comp.ComponentDrawContext;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeDefaultProvider;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.gui.main.Canvas;
+import com.cburch.logisim.LogisimVersion;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.comp.ComponentDrawContext;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeDefaultProvider;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.gui.main.Canvas;
 
 //
 // DRAWING TOOLS

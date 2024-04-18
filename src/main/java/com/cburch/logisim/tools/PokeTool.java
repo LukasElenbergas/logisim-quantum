@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.tools;
+package com.cburch.logisim.tools;
 
 import java.awt.Cursor;
 import java.awt.Color;
@@ -12,22 +12,22 @@ import java.awt.event.MouseEvent;
 
 import javax.swing.Icon;
 
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.circuit.CircuitEvent;
-import main.java.com.cburch.logisim.circuit.CircuitListener;
-import main.java.com.cburch.logisim.circuit.RadixOption;
-import main.java.com.cburch.logisim.circuit.Wire;
-import main.java.com.cburch.logisim.circuit.WireSet;
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.comp.ComponentDrawContext;
-import main.java.com.cburch.logisim.comp.ComponentUserEvent;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.data.Value;
-import main.java.com.cburch.logisim.gui.main.Canvas;
-import main.java.com.cburch.logisim.prefs.AppPreferences;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.util.Icons;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.circuit.CircuitEvent;
+import com.cburch.logisim.circuit.CircuitListener;
+import com.cburch.logisim.circuit.RadixOption;
+import com.cburch.logisim.circuit.Wire;
+import com.cburch.logisim.circuit.WireSet;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.comp.ComponentDrawContext;
+import com.cburch.logisim.comp.ComponentUserEvent;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.data.Value;
+import com.cburch.logisim.gui.main.Canvas;
+import com.cburch.logisim.prefs.AppPreferences;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.util.Icons;
 
 public class PokeTool extends Tool {
 	private static final Icon toolIcon = Icons.getIcon("poke.gif");

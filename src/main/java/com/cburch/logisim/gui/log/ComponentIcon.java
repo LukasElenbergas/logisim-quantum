@@ -1,15 +1,15 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.log;
+package com.cburch.logisim.gui.log;
 
 import java.awt.Color;
 import java.awt.Graphics;
 
 import javax.swing.Icon;
 
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.comp.ComponentDrawContext;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.comp.ComponentDrawContext;
 
 class ComponentIcon implements Icon {
 	public static final int TRIANGLE_NONE = 0;

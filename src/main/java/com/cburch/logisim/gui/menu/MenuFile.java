@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.menu;
+package com.cburch.logisim.gui.menu;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -11,12 +11,12 @@ import java.awt.event.KeyEvent;
 import javax.swing.JMenuItem;
 import javax.swing.KeyStroke;
 
-import main.java.com.cburch.logisim.gui.main.Frame;
-import main.java.com.cburch.logisim.gui.opts.OptionsFrame;
-import main.java.com.cburch.logisim.gui.prefs.PreferencesFrame;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.proj.ProjectActions;
-import main.java.com.cburch.logisim.util.MacCompatibility;
+import com.cburch.logisim.gui.main.Frame;
+import com.cburch.logisim.gui.opts.OptionsFrame;
+import com.cburch.logisim.gui.prefs.PreferencesFrame;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.proj.ProjectActions;
+import com.cburch.logisim.util.MacCompatibility;
 
 class MenuFile extends Menu implements ActionListener {
 	private LogisimMenuBar menubar;

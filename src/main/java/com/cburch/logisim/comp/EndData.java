@@ -1,10 +1,10 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.comp;
+package com.cburch.logisim.comp;
 
-import main.java.com.cburch.logisim.data.BitWidth;
-import main.java.com.cburch.logisim.data.Location;
+import com.cburch.logisim.data.BitWidth;
+import com.cburch.logisim.data.Location;
 
 public class EndData {
 	public static final int INPUT_ONLY = 1;

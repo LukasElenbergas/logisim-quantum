@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.prefs;
+package com.cburch.logisim.gui.prefs;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -10,8 +10,8 @@ import java.beans.PropertyChangeListener;
 
 import javax.swing.JCheckBox;
 
-import main.java.com.cburch.logisim.prefs.PrefMonitor;
-import main.java.com.cburch.logisim.util.StringGetter;
+import com.cburch.logisim.prefs.PrefMonitor;
+import com.cburch.logisim.util.StringGetter;
 
 class PrefBoolean extends JCheckBox
 		implements ActionListener, PropertyChangeListener {

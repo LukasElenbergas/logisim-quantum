@@ -1,15 +1,15 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.file;
+package com.cburch.logisim.file;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.io.File;
 import java.util.ArrayList;
 
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.proj.Projects;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.proj.Projects;
 
 class ProjectsDirty {
 	private ProjectsDirty() { }

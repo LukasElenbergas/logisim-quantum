@@ -1,11 +1,11 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.undo;
+package com.cburch.draw.undo;
 
 import java.util.LinkedList;
 
-import main.java.com.cburch.logisim.util.EventSourceWeakSupport;
+import com.cburch.logisim.util.EventSourceWeakSupport;
 
 public class UndoLog {
 	private static final int MAX_UNDO_SIZE = 64;

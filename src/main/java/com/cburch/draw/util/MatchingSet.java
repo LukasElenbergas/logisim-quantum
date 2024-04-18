@@ -1,14 +1,14 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.util;
+package com.cburch.draw.util;
 
 import java.util.AbstractSet;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
 
-import main.java.com.cburch.draw.model.CanvasObject;
+import com.cburch.draw.model.CanvasObject;
 
 public class MatchingSet<E extends CanvasObject> extends AbstractSet<E> {
 	private static class Member<E extends CanvasObject> {

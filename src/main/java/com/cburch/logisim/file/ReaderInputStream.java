@@ -14,7 +14,7 @@
  *  limitations under the License.
  *
  */
-package main.java.com.cburch.logisim.file;
+package com.cburch.logisim.file;
 
 import java.io.IOException;
 import java.io.InputStream;

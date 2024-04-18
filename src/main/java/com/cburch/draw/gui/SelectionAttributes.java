@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.gui;
+package com.cburch.draw.gui;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,15 +13,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import main.java.com.cburch.draw.canvas.Selection;
-import main.java.com.cburch.draw.canvas.SelectionEvent;
-import main.java.com.cburch.draw.canvas.SelectionListener;
-import main.java.com.cburch.draw.model.CanvasObject;
-import main.java.com.cburch.logisim.data.AbstractAttributeSet;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeEvent;
-import main.java.com.cburch.logisim.data.AttributeListener;
-import main.java.com.cburch.logisim.data.AttributeSet;
+import com.cburch.draw.canvas.Selection;
+import com.cburch.draw.canvas.SelectionEvent;
+import com.cburch.draw.canvas.SelectionListener;
+import com.cburch.draw.model.CanvasObject;
+import com.cburch.logisim.data.AbstractAttributeSet;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeEvent;
+import com.cburch.logisim.data.AttributeListener;
+import com.cburch.logisim.data.AttributeSet;
 
 public class SelectionAttributes extends AbstractAttributeSet {
 	private class Listener implements SelectionListener, AttributeListener {

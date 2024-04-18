@@ -1,31 +1,31 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.main;
+package com.cburch.logisim.gui.main;
 
 import javax.swing.JPopupMenu;
 
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.circuit.SubcircuitFactory;
-import main.java.com.cburch.logisim.comp.ComponentFactory;
-import main.java.com.cburch.logisim.data.AttributeEvent;
-import main.java.com.cburch.logisim.data.AttributeListener;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.file.LibraryEvent;
-import main.java.com.cburch.logisim.file.LibraryEventSource;
-import main.java.com.cburch.logisim.file.LibraryListener;
-import main.java.com.cburch.logisim.file.LogisimFile;
-import main.java.com.cburch.logisim.file.LogisimFileActions;
-import main.java.com.cburch.logisim.gui.generic.AttrTableModel;
-import main.java.com.cburch.logisim.gui.menu.ProjectCircuitActions;
-import main.java.com.cburch.logisim.gui.menu.ProjectLibraryActions;
-import main.java.com.cburch.logisim.gui.menu.Popups;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.proj.ProjectEvent;
-import main.java.com.cburch.logisim.proj.ProjectListener;
-import main.java.com.cburch.logisim.tools.AddTool;
-import main.java.com.cburch.logisim.tools.Library;
-import main.java.com.cburch.logisim.tools.Tool;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.circuit.SubcircuitFactory;
+import com.cburch.logisim.comp.ComponentFactory;
+import com.cburch.logisim.data.AttributeEvent;
+import com.cburch.logisim.data.AttributeListener;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.file.LibraryEvent;
+import com.cburch.logisim.file.LibraryEventSource;
+import com.cburch.logisim.file.LibraryListener;
+import com.cburch.logisim.file.LogisimFile;
+import com.cburch.logisim.file.LogisimFileActions;
+import com.cburch.logisim.gui.generic.AttrTableModel;
+import com.cburch.logisim.gui.menu.ProjectCircuitActions;
+import com.cburch.logisim.gui.menu.ProjectLibraryActions;
+import com.cburch.logisim.gui.menu.Popups;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.proj.ProjectEvent;
+import com.cburch.logisim.proj.ProjectListener;
+import com.cburch.logisim.tools.AddTool;
+import com.cburch.logisim.tools.Library;
+import com.cburch.logisim.tools.Tool;
 
 class ToolboxManip implements ProjectExplorer.Listener {
 	private class MyListener

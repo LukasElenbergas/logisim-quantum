@@ -1,5 +1,5 @@
 // retrieved from http://ouroborus.org/java/2.1/TableSorter.java
-package main.java.com.cburch.logisim.util;
+package com.cburch.logisim.util;
 
 import java.awt.*;
 import java.awt.event.*;

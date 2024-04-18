@@ -1,16 +1,16 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.main;
+package com.cburch.logisim.gui.main;
 
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.circuit.CircuitState;
-import main.java.com.cburch.logisim.comp.ComponentDrawContext;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.file.Loader;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.util.GifEncoder;
-import main.java.com.cburch.logisim.util.StringGetter;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.circuit.CircuitState;
+import com.cburch.logisim.comp.ComponentDrawContext;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.file.Loader;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.util.GifEncoder;
+import com.cburch.logisim.util.StringGetter;
 
 import java.awt.Color;
 import java.awt.Dimension;

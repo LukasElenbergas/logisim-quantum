@@ -1,15 +1,15 @@
 /* Copyright (c) 2011, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.circuit;
+package com.cburch.logisim.circuit;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JMenuItem;
 
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.util.StringGetter;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.util.StringGetter;
 
 class SplitterDistributeItem extends JMenuItem implements ActionListener {
 	private Project proj;

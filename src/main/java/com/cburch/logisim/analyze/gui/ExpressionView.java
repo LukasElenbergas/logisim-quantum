@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.analyze.gui;
+package com.cburch.logisim.analyze.gui;
 
 import java.awt.Dimension;
 import java.awt.FontMetrics;
@@ -12,8 +12,8 @@ import java.util.ArrayList;
 
 import javax.swing.JPanel;
 
-import main.java.com.cburch.logisim.analyze.model.Expression;
-import main.java.com.cburch.logisim.analyze.model.ExpressionVisitor;
+import com.cburch.logisim.analyze.model.Expression;
+import com.cburch.logisim.analyze.model.ExpressionVisitor;
 
 class ExpressionView extends JPanel {
 	private static final int BADNESS_IDENT_BREAK = 10000;

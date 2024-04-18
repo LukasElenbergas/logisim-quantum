@@ -1,13 +1,13 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.log;
+package com.cburch.logisim.gui.log;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import main.java.com.cburch.logisim.data.Value;
+import com.cburch.logisim.data.Value;
 
 class LogThread extends Thread implements ModelListener {
 	// file will be flushed with at least this frequency

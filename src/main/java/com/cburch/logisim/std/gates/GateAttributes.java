@@ -1,18 +1,18 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.std.gates;
+package com.cburch.logisim.std.gates;
 
 import java.awt.Font;
 import java.util.List;
 
-import main.java.com.cburch.logisim.data.AbstractAttributeSet;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeOption;
-import main.java.com.cburch.logisim.data.Attributes;
-import main.java.com.cburch.logisim.data.BitWidth;
-import main.java.com.cburch.logisim.data.Direction;
-import main.java.com.cburch.logisim.instance.StdAttr;
+import com.cburch.logisim.data.AbstractAttributeSet;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeOption;
+import com.cburch.logisim.data.Attributes;
+import com.cburch.logisim.data.BitWidth;
+import com.cburch.logisim.data.Direction;
+import com.cburch.logisim.instance.StdAttr;
 
 class GateAttributes extends AbstractAttributeSet {
 	static final int MAX_INPUTS = 32;

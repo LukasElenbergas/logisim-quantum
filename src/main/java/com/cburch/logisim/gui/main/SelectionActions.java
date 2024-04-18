@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.main;
+package com.cburch.logisim.gui.main;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -14,24 +14,24 @@ import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.circuit.CircuitMutation;
-import main.java.com.cburch.logisim.circuit.CircuitTransaction;
-import main.java.com.cburch.logisim.circuit.CircuitTransactionResult;
-import main.java.com.cburch.logisim.circuit.ReplacementMap;
-import main.java.com.cburch.logisim.circuit.SubcircuitFactory;
-import main.java.com.cburch.logisim.circuit.Wire;
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.comp.ComponentFactory;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.file.LogisimFile;
-import main.java.com.cburch.logisim.proj.Action;
-import main.java.com.cburch.logisim.proj.JoinedAction;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.tools.AddTool;
-import main.java.com.cburch.logisim.tools.Library;
-import main.java.com.cburch.logisim.tools.Tool;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.circuit.CircuitMutation;
+import com.cburch.logisim.circuit.CircuitTransaction;
+import com.cburch.logisim.circuit.CircuitTransactionResult;
+import com.cburch.logisim.circuit.ReplacementMap;
+import com.cburch.logisim.circuit.SubcircuitFactory;
+import com.cburch.logisim.circuit.Wire;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.comp.ComponentFactory;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.file.LogisimFile;
+import com.cburch.logisim.proj.Action;
+import com.cburch.logisim.proj.JoinedAction;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.tools.AddTool;
+import com.cburch.logisim.tools.Library;
+import com.cburch.logisim.tools.Tool;
 
 public class SelectionActions {
 	private SelectionActions() { }

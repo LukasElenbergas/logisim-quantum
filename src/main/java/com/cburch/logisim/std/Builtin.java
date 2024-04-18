@@ -1,21 +1,21 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.std;
+package com.cburch.logisim.std;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import main.java.com.cburch.logisim.std.arith.Arithmetic;
-import main.java.com.cburch.logisim.std.base.Base;
-import main.java.com.cburch.logisim.std.gates.Gates;
-import main.java.com.cburch.logisim.std.io.Io;
-import main.java.com.cburch.logisim.std.memory.Memory;
-import main.java.com.cburch.logisim.std.plexers.Plexers;
-import main.java.com.cburch.logisim.std.wiring.Wiring;
-import main.java.com.cburch.logisim.tools.Library;
-import main.java.com.cburch.logisim.tools.Tool;
+import com.cburch.logisim.std.arith.Arithmetic;
+import com.cburch.logisim.std.base.Base;
+import com.cburch.logisim.std.gates.Gates;
+import com.cburch.logisim.std.io.Io;
+import com.cburch.logisim.std.memory.Memory;
+import com.cburch.logisim.std.plexers.Plexers;
+import com.cburch.logisim.std.wiring.Wiring;
+import com.cburch.logisim.tools.Library;
+import com.cburch.logisim.tools.Tool;
 
 public class Builtin extends Library {
 	private List<Library> libraries = null;

@@ -1,19 +1,19 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.appear;
+package com.cburch.logisim.gui.appear;
 
 import java.util.ArrayList;
 import java.util.Map;
 
-import main.java.com.cburch.draw.model.CanvasModel;
-import main.java.com.cburch.draw.model.CanvasObject;
-import main.java.com.cburch.draw.util.ZOrder;
-import main.java.com.cburch.logisim.circuit.appear.AppearanceAnchor;
-import main.java.com.cburch.logisim.data.Direction;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.proj.Action;
-import main.java.com.cburch.logisim.proj.Project;
+import com.cburch.draw.model.CanvasModel;
+import com.cburch.draw.model.CanvasObject;
+import com.cburch.draw.util.ZOrder;
+import com.cburch.logisim.circuit.appear.AppearanceAnchor;
+import com.cburch.logisim.data.Direction;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.proj.Action;
+import com.cburch.logisim.proj.Project;
 
 public class ClipboardActions extends Action {
 	

@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.appear;
+package com.cburch.logisim.gui.appear;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
@@ -10,28 +10,28 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
-import main.java.com.cburch.draw.actions.ModelDeleteHandleAction;
-import main.java.com.cburch.draw.actions.ModelInsertHandleAction;
-import main.java.com.cburch.draw.actions.ModelReorderAction;
-import main.java.com.cburch.draw.canvas.Canvas;
-import main.java.com.cburch.draw.canvas.Selection;
-import main.java.com.cburch.draw.canvas.SelectionEvent;
-import main.java.com.cburch.draw.canvas.SelectionListener;
-import main.java.com.cburch.draw.model.CanvasModel;
-import main.java.com.cburch.draw.model.CanvasModelEvent;
-import main.java.com.cburch.draw.model.CanvasModelListener;
-import main.java.com.cburch.draw.model.CanvasObject;
-import main.java.com.cburch.draw.model.Handle;
-import main.java.com.cburch.draw.util.MatchingSet;
-import main.java.com.cburch.draw.util.ZOrder;
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.circuit.appear.AppearanceAnchor;
-import main.java.com.cburch.logisim.circuit.appear.AppearanceElement;
-import main.java.com.cburch.logisim.data.Direction;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.gui.main.EditHandler;
-import main.java.com.cburch.logisim.gui.menu.LogisimMenuBar;
-import main.java.com.cburch.logisim.proj.Project;
+import com.cburch.draw.actions.ModelDeleteHandleAction;
+import com.cburch.draw.actions.ModelInsertHandleAction;
+import com.cburch.draw.actions.ModelReorderAction;
+import com.cburch.draw.canvas.Canvas;
+import com.cburch.draw.canvas.Selection;
+import com.cburch.draw.canvas.SelectionEvent;
+import com.cburch.draw.canvas.SelectionListener;
+import com.cburch.draw.model.CanvasModel;
+import com.cburch.draw.model.CanvasModelEvent;
+import com.cburch.draw.model.CanvasModelListener;
+import com.cburch.draw.model.CanvasObject;
+import com.cburch.draw.model.Handle;
+import com.cburch.draw.util.MatchingSet;
+import com.cburch.draw.util.ZOrder;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.circuit.appear.AppearanceAnchor;
+import com.cburch.logisim.circuit.appear.AppearanceElement;
+import com.cburch.logisim.data.Direction;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.gui.main.EditHandler;
+import com.cburch.logisim.gui.menu.LogisimMenuBar;
+import com.cburch.logisim.proj.Project;
 
 public class AppearanceEditHandler extends EditHandler
 		implements SelectionListener, PropertyChangeListener, CanvasModelListener {

@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.main;
+package com.cburch.logisim.gui.main;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -12,16 +12,16 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.circuit.Wire;
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.data.AbstractAttributeSet;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeEvent;
-import main.java.com.cburch.logisim.data.AttributeListener;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.util.UnmodifiableList;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.circuit.Wire;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.data.AbstractAttributeSet;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeEvent;
+import com.cburch.logisim.data.AttributeListener;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.util.UnmodifiableList;
 
 class SelectionAttributes extends AbstractAttributeSet {
 	private static final Attribute<?>[] EMPTY_ATTRIBUTES = new Attribute<?>[0];

@@ -1,14 +1,14 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.instance;
+package com.cburch.logisim.instance;
 
-import main.java.com.cburch.logisim.comp.EndData;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.data.BitWidth;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.util.StringGetter;
+import com.cburch.logisim.comp.EndData;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.data.BitWidth;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.util.StringGetter;
 
 public class Port {
 	public static final String INPUT = "input";

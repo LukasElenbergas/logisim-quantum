@@ -1,16 +1,16 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.std.gates;
+package com.cburch.logisim.std.gates;
 
 import java.awt.Color;
 import java.awt.Graphics;
 import java.util.HashMap;
 
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.data.Value;
-import main.java.com.cburch.logisim.instance.InstancePainter;
-import main.java.com.cburch.logisim.util.GraphicsUtil;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.data.Value;
+import com.cburch.logisim.instance.InstancePainter;
+import com.cburch.logisim.util.GraphicsUtil;
 
 class PainterDin {
 	private PainterDin() { }

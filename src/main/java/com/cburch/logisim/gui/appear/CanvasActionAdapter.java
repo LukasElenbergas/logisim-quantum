@@ -1,21 +1,21 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.appear;
+package com.cburch.logisim.gui.appear;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import main.java.com.cburch.draw.actions.ModelAction;
-import main.java.com.cburch.draw.model.CanvasObject;
-import main.java.com.cburch.draw.undo.Action;
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.circuit.CircuitMutator;
-import main.java.com.cburch.logisim.circuit.CircuitTransaction;
-import main.java.com.cburch.logisim.circuit.appear.AppearanceElement;
-import main.java.com.cburch.logisim.proj.Project;
+import com.cburch.draw.actions.ModelAction;
+import com.cburch.draw.model.CanvasObject;
+import com.cburch.draw.undo.Action;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.circuit.CircuitMutator;
+import com.cburch.logisim.circuit.CircuitTransaction;
+import com.cburch.logisim.circuit.appear.AppearanceElement;
+import com.cburch.logisim.proj.Project;
 
-public class CanvasActionAdapter extends main.java.com.cburch.logisim.proj.Action {
+public class CanvasActionAdapter extends com.cburch.logisim.proj.Action {
 	private Circuit circuit;
 	private Action canvasAction;
 	private boolean wasDefault;

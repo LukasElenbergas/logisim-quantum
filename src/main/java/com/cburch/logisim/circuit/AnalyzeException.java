@@ -1,9 +1,9 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.circuit;
+package com.cburch.logisim.circuit;
 
-import main.java.com.cburch.logisim.util.StringUtil;
+import com.cburch.logisim.util.StringUtil;
 
 public class AnalyzeException extends Exception {
 	public static class Circular extends AnalyzeException {

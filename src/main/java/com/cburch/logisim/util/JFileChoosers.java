@@ -1,14 +1,14 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.util;
+package com.cburch.logisim.util;
 
 import java.io.File;
 import java.io.IOException;
 
 import javax.swing.JFileChooser;
 
-import main.java.com.cburch.logisim.prefs.AppPreferences;
+import com.cburch.logisim.prefs.AppPreferences;
 
 public class JFileChoosers {
 	/* A user reported that JFileChooser's constructor sometimes resulted in

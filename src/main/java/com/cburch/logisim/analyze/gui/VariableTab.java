@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.analyze.gui;
+package com.cburch.logisim.analyze.gui;
 
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
@@ -25,10 +25,10 @@ import javax.swing.event.DocumentListener;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import main.java.com.cburch.logisim.analyze.model.VariableList;
-import main.java.com.cburch.logisim.analyze.model.VariableListEvent;
-import main.java.com.cburch.logisim.analyze.model.VariableListListener;
-import main.java.com.cburch.logisim.util.StringUtil;
+import com.cburch.logisim.analyze.model.VariableList;
+import com.cburch.logisim.analyze.model.VariableListEvent;
+import com.cburch.logisim.analyze.model.VariableListListener;
+import com.cburch.logisim.util.StringUtil;
 
 class VariableTab extends AnalyzerTab implements TabInterface {
 	private static class VariableListModel extends AbstractListModel

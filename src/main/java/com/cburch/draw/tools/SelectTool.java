@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.tools;
+package com.cburch.draw.tools;
 
 import java.awt.Color;
 import java.awt.Cursor;
@@ -17,20 +17,20 @@ import java.util.Set;
 
 import javax.swing.Icon;
 
-import main.java.com.cburch.draw.actions.ModelMoveHandleAction;
-import main.java.com.cburch.draw.actions.ModelRemoveAction;
-import main.java.com.cburch.draw.actions.ModelTranslateAction;
-import main.java.com.cburch.draw.canvas.Canvas;
-import main.java.com.cburch.draw.canvas.Selection;
-import main.java.com.cburch.draw.model.CanvasModel;
-import main.java.com.cburch.draw.model.CanvasObject;
-import main.java.com.cburch.draw.model.Handle;
-import main.java.com.cburch.draw.model.HandleGesture;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.util.GraphicsUtil;
-import main.java.com.cburch.logisim.util.Icons;
+import com.cburch.draw.actions.ModelMoveHandleAction;
+import com.cburch.draw.actions.ModelRemoveAction;
+import com.cburch.draw.actions.ModelTranslateAction;
+import com.cburch.draw.canvas.Canvas;
+import com.cburch.draw.canvas.Selection;
+import com.cburch.draw.model.CanvasModel;
+import com.cburch.draw.model.CanvasObject;
+import com.cburch.draw.model.Handle;
+import com.cburch.draw.model.HandleGesture;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.util.GraphicsUtil;
+import com.cburch.logisim.util.Icons;
 
 public class SelectTool extends AbstractTool {
 	private static final int IDLE = 0;

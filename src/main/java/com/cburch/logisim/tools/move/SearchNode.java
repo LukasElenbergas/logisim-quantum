@@ -1,10 +1,10 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.tools.move;
+package com.cburch.logisim.tools.move;
 
-import main.java.com.cburch.logisim.data.Direction;
-import main.java.com.cburch.logisim.data.Location;
+import com.cburch.logisim.data.Direction;
+import com.cburch.logisim.data.Location;
 
 class SearchNode implements Comparable<SearchNode> {
 	private static final int CROSSING_PENALTY = 20;

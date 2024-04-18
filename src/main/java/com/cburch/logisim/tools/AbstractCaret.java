@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.tools;
+package com.cburch.logisim.tools;
 
 import java.awt.Graphics;
 import java.awt.event.MouseEvent;
@@ -10,7 +10,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.ArrayList;
 
-import main.java.com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.data.Bounds;
 
 public class AbstractCaret implements Caret {
 	private ArrayList<CaretListener> listeners = new ArrayList<CaretListener>();

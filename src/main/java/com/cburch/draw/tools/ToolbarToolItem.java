@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.tools;
+package com.cburch.draw.tools;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -10,7 +10,7 @@ import java.awt.Graphics;
 
 import javax.swing.Icon;
 
-import main.java.com.cburch.draw.toolbar.ToolbarItem;
+import com.cburch.draw.toolbar.ToolbarItem;
 
 public class ToolbarToolItem implements ToolbarItem {
 	private AbstractTool tool;

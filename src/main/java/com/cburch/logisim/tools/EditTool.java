@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.tools;
+package com.cburch.logisim.tools;
 
 import java.awt.Color;
 import java.awt.Cursor;
@@ -14,25 +14,25 @@ import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Set;
 
-import main.java.com.cburch.logisim.LogisimVersion;
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.circuit.CircuitEvent;
-import main.java.com.cburch.logisim.circuit.CircuitListener;
-import main.java.com.cburch.logisim.circuit.Wire;
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.comp.ComponentDrawContext;
-import main.java.com.cburch.logisim.comp.ComponentFactory;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.data.Direction;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.data.Value;
-import main.java.com.cburch.logisim.gui.main.Canvas;
-import main.java.com.cburch.logisim.gui.main.Selection;
-import main.java.com.cburch.logisim.gui.main.SelectionActions;
-import main.java.com.cburch.logisim.gui.main.Selection.Event;
-import main.java.com.cburch.logisim.proj.Action;
-import main.java.com.cburch.logisim.util.GraphicsUtil;
+import com.cburch.logisim.LogisimVersion;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.circuit.CircuitEvent;
+import com.cburch.logisim.circuit.CircuitListener;
+import com.cburch.logisim.circuit.Wire;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.comp.ComponentDrawContext;
+import com.cburch.logisim.comp.ComponentFactory;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.data.Direction;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.data.Value;
+import com.cburch.logisim.gui.main.Canvas;
+import com.cburch.logisim.gui.main.Selection;
+import com.cburch.logisim.gui.main.SelectionActions;
+import com.cburch.logisim.gui.main.Selection.Event;
+import com.cburch.logisim.proj.Action;
+import com.cburch.logisim.util.GraphicsUtil;
 
 public class EditTool extends Tool {
 	private static final int CACHE_MAX_SIZE = 32;

@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.hex;
+package com.cburch.logisim.gui.hex;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -13,7 +13,7 @@ import java.io.Writer;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-import main.java.com.cburch.hex.HexModel;
+import com.cburch.hex.HexModel;
 
 public class HexFile {
 	private HexFile() { }

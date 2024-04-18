@@ -1,15 +1,15 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.appear;
+package com.cburch.logisim.gui.appear;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import main.java.com.cburch.logisim.gui.main.EditHandler;
-import main.java.com.cburch.logisim.gui.menu.EditPopup;
-import main.java.com.cburch.logisim.gui.menu.LogisimMenuBar;
-import main.java.com.cburch.logisim.gui.menu.LogisimMenuItem;
+import com.cburch.logisim.gui.main.EditHandler;
+import com.cburch.logisim.gui.menu.EditPopup;
+import com.cburch.logisim.gui.menu.LogisimMenuBar;
+import com.cburch.logisim.gui.menu.LogisimMenuItem;
 
 public class AppearanceEditPopup extends EditPopup implements EditHandler.Listener {
 	private AppearanceCanvas canvas;

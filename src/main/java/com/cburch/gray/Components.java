@@ -1,13 +1,13 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.gray;
+package com.cburch.gray;
 
 import java.util.Arrays;
 import java.util.List;
 
-import main.java.com.cburch.logisim.tools.AddTool;
-import main.java.com.cburch.logisim.tools.Library;
+import com.cburch.logisim.tools.AddTool;
+import com.cburch.logisim.tools.Library;
 
 /** The library of components that the user can access. */
 public class Components extends Library {

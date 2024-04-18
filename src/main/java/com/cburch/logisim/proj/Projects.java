@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.proj;
+package com.cburch.logisim.proj;
 
 import java.awt.Dimension;
 import java.awt.Point;
@@ -15,10 +15,10 @@ import java.util.Collections;
 import java.util.List;
 import java.util.WeakHashMap;
 
-import main.java.com.cburch.logisim.file.Loader;
-import main.java.com.cburch.logisim.gui.main.Frame;
-import main.java.com.cburch.logisim.util.MacCompatibility;
-import main.java.com.cburch.logisim.util.PropertyChangeWeakSupport;
+import com.cburch.logisim.file.Loader;
+import com.cburch.logisim.gui.main.Frame;
+import com.cburch.logisim.util.MacCompatibility;
+import com.cburch.logisim.util.PropertyChangeWeakSupport;
 
 public class Projects {
 	public static final String projectListProperty = "projectList";

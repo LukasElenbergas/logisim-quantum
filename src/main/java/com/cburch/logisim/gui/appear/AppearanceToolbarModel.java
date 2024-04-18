@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.appear;
+package com.cburch.logisim.gui.appear;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
@@ -9,19 +9,19 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import main.java.com.cburch.draw.canvas.Canvas;
-import main.java.com.cburch.draw.toolbar.AbstractToolbarModel;
-import main.java.com.cburch.draw.toolbar.ToolbarItem;
-import main.java.com.cburch.draw.tools.AbstractTool;
-import main.java.com.cburch.draw.tools.CurveTool;
-import main.java.com.cburch.draw.tools.DrawingAttributeSet;
-import main.java.com.cburch.draw.tools.LineTool;
-import main.java.com.cburch.draw.tools.OvalTool;
-import main.java.com.cburch.draw.tools.PolyTool;
-import main.java.com.cburch.draw.tools.RectangleTool;
-import main.java.com.cburch.draw.tools.RoundRectangleTool;
-import main.java.com.cburch.draw.tools.TextTool;
-import main.java.com.cburch.draw.tools.ToolbarToolItem;
+import com.cburch.draw.canvas.Canvas;
+import com.cburch.draw.toolbar.AbstractToolbarModel;
+import com.cburch.draw.toolbar.ToolbarItem;
+import com.cburch.draw.tools.AbstractTool;
+import com.cburch.draw.tools.CurveTool;
+import com.cburch.draw.tools.DrawingAttributeSet;
+import com.cburch.draw.tools.LineTool;
+import com.cburch.draw.tools.OvalTool;
+import com.cburch.draw.tools.PolyTool;
+import com.cburch.draw.tools.RectangleTool;
+import com.cburch.draw.tools.RoundRectangleTool;
+import com.cburch.draw.tools.TextTool;
+import com.cburch.draw.tools.ToolbarToolItem;
 
 class AppearanceToolbarModel extends AbstractToolbarModel
 		implements PropertyChangeListener {

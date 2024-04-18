@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.log;
+package com.cburch.logisim.gui.log;
 
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -20,9 +20,9 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import main.java.com.cburch.logisim.data.Value;
-import main.java.com.cburch.logisim.util.JFileChoosers;
-import main.java.com.cburch.logisim.util.StringUtil;
+import com.cburch.logisim.data.Value;
+import com.cburch.logisim.util.JFileChoosers;
+import com.cburch.logisim.util.StringUtil;
 
 class FilePanel extends LogPanel {
 	private class Listener implements ActionListener, ModelListener {

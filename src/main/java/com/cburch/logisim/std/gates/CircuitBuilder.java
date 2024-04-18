@@ -1,29 +1,29 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.std.gates;
+package com.cburch.logisim.std.gates;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 
-import main.java.com.cburch.logisim.analyze.model.AnalyzerModel;
-import main.java.com.cburch.logisim.analyze.model.Expression;
-import main.java.com.cburch.logisim.analyze.model.VariableList;
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.circuit.CircuitMutation;
-import main.java.com.cburch.logisim.circuit.Wire;
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.comp.ComponentFactory;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.data.Direction;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.data.Value;
-import main.java.com.cburch.logisim.instance.StdAttr;
-import main.java.com.cburch.logisim.std.wiring.Constant;
-import main.java.com.cburch.logisim.std.wiring.Pin;
+import com.cburch.logisim.analyze.model.AnalyzerModel;
+import com.cburch.logisim.analyze.model.Expression;
+import com.cburch.logisim.analyze.model.VariableList;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.circuit.CircuitMutation;
+import com.cburch.logisim.circuit.Wire;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.comp.ComponentFactory;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.data.Direction;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.data.Value;
+import com.cburch.logisim.instance.StdAttr;
+import com.cburch.logisim.std.wiring.Constant;
+import com.cburch.logisim.std.wiring.Pin;
 
 public class CircuitBuilder {
 	private CircuitBuilder() { }

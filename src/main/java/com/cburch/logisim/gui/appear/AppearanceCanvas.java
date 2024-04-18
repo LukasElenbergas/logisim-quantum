@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.appear;
+package com.cburch.logisim.gui.appear;
 
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -15,25 +15,25 @@ import java.util.List;
 
 import javax.swing.JPopupMenu;
 
-import main.java.com.cburch.draw.actions.ModelAddAction;
-import main.java.com.cburch.draw.actions.ModelReorderAction;
-import main.java.com.cburch.draw.canvas.ActionDispatcher;
-import main.java.com.cburch.draw.canvas.Canvas;
-import main.java.com.cburch.draw.canvas.CanvasTool;
-import main.java.com.cburch.draw.model.CanvasModel;
-import main.java.com.cburch.draw.model.CanvasModelEvent;
-import main.java.com.cburch.draw.model.CanvasModelListener;
-import main.java.com.cburch.draw.model.CanvasObject;
-import main.java.com.cburch.draw.model.ReorderRequest;
-import main.java.com.cburch.draw.undo.Action;
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.circuit.CircuitState;
-import main.java.com.cburch.logisim.circuit.appear.AppearanceElement;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.gui.generic.CanvasPane;
-import main.java.com.cburch.logisim.gui.generic.CanvasPaneContents;
-import main.java.com.cburch.logisim.gui.generic.GridPainter;
-import main.java.com.cburch.logisim.proj.Project;
+import com.cburch.draw.actions.ModelAddAction;
+import com.cburch.draw.actions.ModelReorderAction;
+import com.cburch.draw.canvas.ActionDispatcher;
+import com.cburch.draw.canvas.Canvas;
+import com.cburch.draw.canvas.CanvasTool;
+import com.cburch.draw.model.CanvasModel;
+import com.cburch.draw.model.CanvasModelEvent;
+import com.cburch.draw.model.CanvasModelListener;
+import com.cburch.draw.model.CanvasObject;
+import com.cburch.draw.model.ReorderRequest;
+import com.cburch.draw.undo.Action;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.circuit.CircuitState;
+import com.cburch.logisim.circuit.appear.AppearanceElement;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.gui.generic.CanvasPane;
+import com.cburch.logisim.gui.generic.CanvasPaneContents;
+import com.cburch.logisim.gui.generic.GridPainter;
+import com.cburch.logisim.proj.Project;
 
 public class AppearanceCanvas extends Canvas
 		implements CanvasPaneContents, ActionDispatcher {

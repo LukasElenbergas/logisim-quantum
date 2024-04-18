@@ -1,16 +1,16 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.std.memory;
+package com.cburch.logisim.std.memory;
 
 import java.util.List;
 
-import main.java.com.cburch.logisim.data.AbstractAttributeSet;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.data.AttributeSets;
-import main.java.com.cburch.logisim.data.BitWidth;
-import main.java.com.cburch.logisim.instance.StdAttr;
+import com.cburch.logisim.data.AbstractAttributeSet;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.data.AttributeSets;
+import com.cburch.logisim.data.BitWidth;
+import com.cburch.logisim.instance.StdAttr;
 
 class CounterAttributes extends AbstractAttributeSet {
 	private AttributeSet base;

@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.actions;
+package com.cburch.draw.actions;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -9,10 +9,10 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-import main.java.com.cburch.draw.model.CanvasModel;
-import main.java.com.cburch.draw.model.CanvasObject;
-import main.java.com.cburch.draw.model.ReorderRequest;
-import main.java.com.cburch.draw.util.ZOrder;
+import com.cburch.draw.model.CanvasModel;
+import com.cburch.draw.model.CanvasObject;
+import com.cburch.draw.model.ReorderRequest;
+import com.cburch.draw.util.ZOrder;
 
 public class ModelReorderAction extends ModelAction {
 	public static ModelReorderAction createRaise(CanvasModel model,

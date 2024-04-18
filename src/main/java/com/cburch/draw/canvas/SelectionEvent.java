@@ -1,12 +1,12 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.canvas;
+package com.cburch.draw.canvas;
 
 import java.util.Collection;
 import java.util.EventObject;
 
-import main.java.com.cburch.draw.model.CanvasObject;
+import com.cburch.draw.model.CanvasObject;
 
 public class SelectionEvent extends EventObject {
 	public static final int ACTION_ADDED = 0;

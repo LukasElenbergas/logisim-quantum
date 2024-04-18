@@ -1,11 +1,11 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.std.plexers;
+package com.cburch.logisim.std.plexers;
 
-import main.java.com.cburch.logisim.util.LocaleManager;
-import main.java.com.cburch.logisim.util.StringGetter;
-import main.java.com.cburch.logisim.util.StringUtil;
+import com.cburch.logisim.util.LocaleManager;
+import com.cburch.logisim.util.StringGetter;
+import com.cburch.logisim.util.StringUtil;
 
 class Strings {
 	private static LocaleManager source

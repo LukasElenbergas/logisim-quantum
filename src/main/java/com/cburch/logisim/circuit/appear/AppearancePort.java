@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.circuit.appear;
+package com.cburch.logisim.circuit.appear;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -10,14 +10,14 @@ import java.util.List;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-import main.java.com.cburch.draw.model.CanvasObject;
-import main.java.com.cburch.draw.model.Handle;
-import main.java.com.cburch.draw.model.HandleGesture;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.instance.Instance;
-import main.java.com.cburch.logisim.std.wiring.Pin;
-import main.java.com.cburch.logisim.util.UnmodifiableList;
+import com.cburch.draw.model.CanvasObject;
+import com.cburch.draw.model.Handle;
+import com.cburch.draw.model.HandleGesture;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.instance.Instance;
+import com.cburch.logisim.std.wiring.Pin;
+import com.cburch.logisim.util.UnmodifiableList;
 
 public class AppearancePort extends AppearanceElement {
 	private static final int INPUT_RADIUS = 4;

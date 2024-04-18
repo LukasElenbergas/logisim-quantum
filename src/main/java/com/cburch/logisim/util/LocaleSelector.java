@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.util;
+package com.cburch.logisim.util;
 
 import java.util.Locale;
 import javax.swing.DefaultListModel;
@@ -11,7 +11,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import main.java.com.cburch.logisim.prefs.AppPreferences;
+import com.cburch.logisim.prefs.AppPreferences;
 
 class LocaleSelector extends JList
 			implements LocaleListener, ListSelectionListener {

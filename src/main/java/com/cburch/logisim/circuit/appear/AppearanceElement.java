@@ -1,17 +1,17 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.circuit.appear;
+package com.cburch.logisim.circuit.appear;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
-import main.java.com.cburch.draw.model.CanvasObject;
-import main.java.com.cburch.draw.model.AbstractCanvasObject;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.data.Location;
+import com.cburch.draw.model.CanvasObject;
+import com.cburch.draw.model.AbstractCanvasObject;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.data.Location;
 
 public abstract class AppearanceElement extends AbstractCanvasObject {
 	private Location location;

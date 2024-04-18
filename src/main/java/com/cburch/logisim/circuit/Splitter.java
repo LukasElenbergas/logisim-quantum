@@ -1,31 +1,31 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.circuit;
+package com.cburch.logisim.circuit;
 
 import javax.swing.JPopupMenu;
 
-import main.java.com.cburch.logisim.circuit.CircuitState;
-import main.java.com.cburch.logisim.circuit.CircuitWires;
-import main.java.com.cburch.logisim.comp.ComponentEvent;
-import main.java.com.cburch.logisim.comp.ComponentFactory;
-import main.java.com.cburch.logisim.comp.ComponentDrawContext;
-import main.java.com.cburch.logisim.comp.ComponentUserEvent;
-import main.java.com.cburch.logisim.comp.EndData;
-import main.java.com.cburch.logisim.comp.ManagedComponent;
-import main.java.com.cburch.logisim.data.AttributeEvent;
-import main.java.com.cburch.logisim.data.AttributeListener;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.data.BitWidth;
-import main.java.com.cburch.logisim.data.Direction;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.instance.StdAttr;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.tools.MenuExtender;
-import main.java.com.cburch.logisim.tools.ToolTipMaker;
-import main.java.com.cburch.logisim.tools.WireRepair;
-import main.java.com.cburch.logisim.tools.WireRepairData;
-import main.java.com.cburch.logisim.util.StringUtil;
+import com.cburch.logisim.circuit.CircuitState;
+import com.cburch.logisim.circuit.CircuitWires;
+import com.cburch.logisim.comp.ComponentEvent;
+import com.cburch.logisim.comp.ComponentFactory;
+import com.cburch.logisim.comp.ComponentDrawContext;
+import com.cburch.logisim.comp.ComponentUserEvent;
+import com.cburch.logisim.comp.EndData;
+import com.cburch.logisim.comp.ManagedComponent;
+import com.cburch.logisim.data.AttributeEvent;
+import com.cburch.logisim.data.AttributeListener;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.data.BitWidth;
+import com.cburch.logisim.data.Direction;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.instance.StdAttr;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.tools.MenuExtender;
+import com.cburch.logisim.tools.ToolTipMaker;
+import com.cburch.logisim.tools.WireRepair;
+import com.cburch.logisim.tools.WireRepairData;
+import com.cburch.logisim.util.StringUtil;
 
 public class Splitter extends ManagedComponent
 		implements WireRepair, ToolTipMaker, MenuExtender, AttributeListener {

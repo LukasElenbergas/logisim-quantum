@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.circuit;
+package com.cburch.logisim.circuit;
 
 import java.awt.Graphics;
 import java.awt.Color;
@@ -9,23 +9,23 @@ import java.awt.event.InputEvent;
 
 import javax.swing.Icon;
 
-import main.java.com.cburch.logisim.LogisimVersion;
-import main.java.com.cburch.logisim.circuit.Strings;
-import main.java.com.cburch.logisim.comp.AbstractComponentFactory;
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.comp.ComponentDrawContext;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.instance.StdAttr;
-import main.java.com.cburch.logisim.tools.key.BitWidthConfigurator;
-import main.java.com.cburch.logisim.tools.key.IntegerConfigurator;
-import main.java.com.cburch.logisim.tools.key.JoinedConfigurator;
-import main.java.com.cburch.logisim.tools.key.KeyConfigurator;
-import main.java.com.cburch.logisim.tools.key.ParallelConfigurator;
-import main.java.com.cburch.logisim.util.Icons;
-import main.java.com.cburch.logisim.util.StringGetter;
+import com.cburch.logisim.LogisimVersion;
+import com.cburch.logisim.circuit.Strings;
+import com.cburch.logisim.comp.AbstractComponentFactory;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.comp.ComponentDrawContext;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.instance.StdAttr;
+import com.cburch.logisim.tools.key.BitWidthConfigurator;
+import com.cburch.logisim.tools.key.IntegerConfigurator;
+import com.cburch.logisim.tools.key.JoinedConfigurator;
+import com.cburch.logisim.tools.key.KeyConfigurator;
+import com.cburch.logisim.tools.key.ParallelConfigurator;
+import com.cburch.logisim.util.Icons;
+import com.cburch.logisim.util.StringGetter;
 
 public class SplitterFactory extends AbstractComponentFactory {
 	public static final SplitterFactory instance = new SplitterFactory();

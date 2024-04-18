@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.canvas;
+package com.cburch.draw.canvas;
 
 import java.awt.Cursor;
 import java.awt.event.KeyEvent;
@@ -11,10 +11,10 @@ import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import java.util.List;
 
-import main.java.com.cburch.draw.model.CanvasModelEvent;
-import main.java.com.cburch.draw.model.CanvasModelListener;
-import main.java.com.cburch.draw.model.CanvasObject;
-import main.java.com.cburch.logisim.data.Location;
+import com.cburch.draw.model.CanvasModelEvent;
+import com.cburch.draw.model.CanvasModelListener;
+import com.cburch.draw.model.CanvasObject;
+import com.cburch.logisim.data.Location;
 
 class CanvasListener implements MouseListener, MouseMotionListener, KeyListener,
 		CanvasModelListener {

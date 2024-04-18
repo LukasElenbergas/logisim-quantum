@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.main;
+package com.cburch.logisim.gui.main;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -10,10 +10,10 @@ import java.util.Vector;
 
 import javax.swing.JList;
 
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.file.LogisimFile;
-import main.java.com.cburch.logisim.proj.Project;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.file.LogisimFile;
+import com.cburch.logisim.proj.Project;
 
 class CircuitJList extends JList {
 	public CircuitJList(Project proj, boolean includeEmpty) {

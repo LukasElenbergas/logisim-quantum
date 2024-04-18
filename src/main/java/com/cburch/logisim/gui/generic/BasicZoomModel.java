@@ -1,13 +1,13 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.generic;
+package com.cburch.logisim.gui.generic;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
-import main.java.com.cburch.logisim.gui.generic.ZoomModel;
-import main.java.com.cburch.logisim.prefs.PrefMonitor;
+import com.cburch.logisim.gui.generic.ZoomModel;
+import com.cburch.logisim.prefs.PrefMonitor;
 
 public class BasicZoomModel implements ZoomModel {
 	private double[] zoomOptions;

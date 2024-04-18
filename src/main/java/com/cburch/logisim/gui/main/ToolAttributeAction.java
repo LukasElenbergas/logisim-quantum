@@ -1,18 +1,18 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.main;
+package com.cburch.logisim.gui.main;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.proj.Action;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.tools.Tool;
-import main.java.com.cburch.logisim.tools.key.KeyConfigurationEvent;
-import main.java.com.cburch.logisim.tools.key.KeyConfigurationResult;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.proj.Action;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.tools.Tool;
+import com.cburch.logisim.tools.key.KeyConfigurationEvent;
+import com.cburch.logisim.tools.key.KeyConfigurationResult;
 
 public class ToolAttributeAction extends Action {
 	public static Action create(Tool tool, Attribute<?> attr, Object value) {

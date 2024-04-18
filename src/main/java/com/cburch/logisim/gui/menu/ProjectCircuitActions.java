@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.menu;
+package com.cburch.logisim.gui.menu;
 
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
@@ -18,20 +18,20 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import main.java.com.cburch.logisim.analyze.gui.Analyzer;
-import main.java.com.cburch.logisim.analyze.gui.AnalyzerManager;
-import main.java.com.cburch.logisim.analyze.model.AnalyzerModel;
-import main.java.com.cburch.logisim.circuit.Analyze;
-import main.java.com.cburch.logisim.circuit.AnalyzeException;
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.file.LogisimFileActions;
-import main.java.com.cburch.logisim.instance.Instance;
-import main.java.com.cburch.logisim.instance.StdAttr;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.std.wiring.Pin;
-import main.java.com.cburch.logisim.tools.AddTool;
-import main.java.com.cburch.logisim.tools.Library;
-import main.java.com.cburch.logisim.util.StringUtil;
+import com.cburch.logisim.analyze.gui.Analyzer;
+import com.cburch.logisim.analyze.gui.AnalyzerManager;
+import com.cburch.logisim.analyze.model.AnalyzerModel;
+import com.cburch.logisim.circuit.Analyze;
+import com.cburch.logisim.circuit.AnalyzeException;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.file.LogisimFileActions;
+import com.cburch.logisim.instance.Instance;
+import com.cburch.logisim.instance.StdAttr;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.std.wiring.Pin;
+import com.cburch.logisim.tools.AddTool;
+import com.cburch.logisim.tools.Library;
+import com.cburch.logisim.util.StringUtil;
 
 public class ProjectCircuitActions {
 	private ProjectCircuitActions() { }

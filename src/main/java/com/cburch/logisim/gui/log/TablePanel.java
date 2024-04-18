@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.log;
+package com.cburch.logisim.gui.log;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -15,8 +15,8 @@ import javax.swing.JScrollBar;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import main.java.com.cburch.logisim.data.Value;
-import main.java.com.cburch.logisim.util.GraphicsUtil;
+import com.cburch.logisim.data.Value;
+import com.cburch.logisim.util.GraphicsUtil;
 
 class TablePanel extends LogPanel {
 	private static final Font HEAD_FONT = new Font("Serif", Font.BOLD, 14);

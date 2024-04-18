@@ -1,11 +1,11 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.main;
+package com.cburch.logisim.gui.main;
 
-import main.java.com.cburch.logisim.circuit.Simulator;
-import main.java.com.cburch.logisim.circuit.SimulatorEvent;
-import main.java.com.cburch.logisim.circuit.SimulatorListener;
+import com.cburch.logisim.circuit.Simulator;
+import com.cburch.logisim.circuit.SimulatorEvent;
+import com.cburch.logisim.circuit.SimulatorListener;
 
 class TickCounter implements SimulatorListener {
 	private static final int QUEUE_LENGTH = 1000;

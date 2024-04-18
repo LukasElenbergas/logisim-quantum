@@ -1,17 +1,17 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.std.memory;
+package com.cburch.logisim.std.memory;
 
 import java.awt.Color;
 import java.awt.Graphics;
 
-import main.java.com.cburch.hex.HexModel;
-import main.java.com.cburch.hex.HexModelListener;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.instance.InstanceData;
-import main.java.com.cburch.logisim.util.GraphicsUtil;
-import main.java.com.cburch.logisim.util.StringUtil;
+import com.cburch.hex.HexModel;
+import com.cburch.hex.HexModelListener;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.instance.InstanceData;
+import com.cburch.logisim.util.GraphicsUtil;
+import com.cburch.logisim.util.StringUtil;
 
 class MemState implements InstanceData, Cloneable, HexModelListener {
 	private static final int ROWS = 4; // rows in memory display

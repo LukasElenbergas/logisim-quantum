@@ -1,18 +1,18 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.std.memory;
+package com.cburch.logisim.std.memory;
 
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.instance.InstancePainter;
-import main.java.com.cburch.logisim.instance.InstancePoker;
-import main.java.com.cburch.logisim.instance.InstanceState;
-import main.java.com.cburch.logisim.proj.Project;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.instance.InstancePainter;
+import com.cburch.logisim.instance.InstancePoker;
+import com.cburch.logisim.instance.InstanceState;
+import com.cburch.logisim.proj.Project;
 
 public class MemPoker extends InstancePoker {
 	private MemPoker sub;

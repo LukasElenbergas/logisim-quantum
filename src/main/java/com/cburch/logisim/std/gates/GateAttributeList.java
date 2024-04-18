@@ -1,13 +1,13 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.std.gates;
+package com.cburch.logisim.std.gates;
 
 import java.util.AbstractList;
 
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.Direction;
-import main.java.com.cburch.logisim.instance.StdAttr;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.Direction;
+import com.cburch.logisim.instance.StdAttr;
 
 class GateAttributeList extends AbstractList<Attribute<?>> {
 	private static final Attribute<?>[] BASE_ATTRIBUTES = {

@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.appear;
+package com.cburch.logisim.gui.appear;
 
 import java.awt.Dimension;
 import java.awt.Point;
@@ -17,14 +17,14 @@ import javax.swing.JViewport;
 import javax.swing.Popup;
 import javax.swing.PopupFactory;
 
-import main.java.com.cburch.draw.canvas.SelectionEvent;
-import main.java.com.cburch.draw.canvas.SelectionListener;
-import main.java.com.cburch.draw.model.CanvasObject;
-import main.java.com.cburch.logisim.circuit.CircuitState;
-import main.java.com.cburch.logisim.circuit.appear.AppearancePort;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.gui.generic.CanvasPane;
-import main.java.com.cburch.logisim.instance.Instance;
+import com.cburch.draw.canvas.SelectionEvent;
+import com.cburch.draw.canvas.SelectionListener;
+import com.cburch.draw.model.CanvasObject;
+import com.cburch.logisim.circuit.CircuitState;
+import com.cburch.logisim.circuit.appear.AppearancePort;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.gui.generic.CanvasPane;
+import com.cburch.logisim.instance.Instance;
 
 class LayoutPopupManager implements SelectionListener, MouseListener, MouseMotionListener {
 	private CanvasPane canvasPane;

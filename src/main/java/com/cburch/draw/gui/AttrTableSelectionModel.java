@@ -1,23 +1,23 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.gui;
+package com.cburch.draw.gui;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import main.java.com.cburch.draw.actions.ModelChangeAttributeAction;
-import main.java.com.cburch.draw.canvas.Canvas;
-import main.java.com.cburch.draw.canvas.Selection;
-import main.java.com.cburch.draw.canvas.SelectionEvent;
-import main.java.com.cburch.draw.canvas.SelectionListener;
-import main.java.com.cburch.draw.model.AttributeMapKey;
-import main.java.com.cburch.draw.model.CanvasModel;
-import main.java.com.cburch.draw.model.CanvasObject;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.gui.generic.AttrTableSetException;
-import main.java.com.cburch.logisim.gui.generic.AttributeSetTableModel;
+import com.cburch.draw.actions.ModelChangeAttributeAction;
+import com.cburch.draw.canvas.Canvas;
+import com.cburch.draw.canvas.Selection;
+import com.cburch.draw.canvas.SelectionEvent;
+import com.cburch.draw.canvas.SelectionListener;
+import com.cburch.draw.model.AttributeMapKey;
+import com.cburch.draw.model.CanvasModel;
+import com.cburch.draw.model.CanvasObject;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.gui.generic.AttrTableSetException;
+import com.cburch.logisim.gui.generic.AttributeSetTableModel;
 
 class AttrTableSelectionModel extends AttributeSetTableModel
 		implements SelectionListener {

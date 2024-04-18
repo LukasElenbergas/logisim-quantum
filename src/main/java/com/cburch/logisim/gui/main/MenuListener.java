@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.main;
+package com.cburch.logisim.gui.main;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -10,23 +10,23 @@ import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
 import java.util.List;
 
-import main.java.com.cburch.draw.model.CanvasModelEvent;
-import main.java.com.cburch.draw.model.CanvasModelListener;
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.circuit.CircuitState;
-import main.java.com.cburch.logisim.circuit.Simulator;
-import main.java.com.cburch.logisim.file.LibraryEvent;
-import main.java.com.cburch.logisim.file.LibraryListener;
-import main.java.com.cburch.logisim.file.LogisimFile;
-import main.java.com.cburch.logisim.gui.appear.RevertAppearanceAction;
-import main.java.com.cburch.logisim.gui.generic.CardPanel;
-import main.java.com.cburch.logisim.gui.menu.LogisimMenuItem;
-import main.java.com.cburch.logisim.gui.menu.ProjectCircuitActions;
-import main.java.com.cburch.logisim.gui.menu.LogisimMenuBar;
-import main.java.com.cburch.logisim.gui.menu.SimulateListener;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.proj.ProjectEvent;
-import main.java.com.cburch.logisim.proj.ProjectListener;
+import com.cburch.draw.model.CanvasModelEvent;
+import com.cburch.draw.model.CanvasModelListener;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.circuit.CircuitState;
+import com.cburch.logisim.circuit.Simulator;
+import com.cburch.logisim.file.LibraryEvent;
+import com.cburch.logisim.file.LibraryListener;
+import com.cburch.logisim.file.LogisimFile;
+import com.cburch.logisim.gui.appear.RevertAppearanceAction;
+import com.cburch.logisim.gui.generic.CardPanel;
+import com.cburch.logisim.gui.menu.LogisimMenuItem;
+import com.cburch.logisim.gui.menu.ProjectCircuitActions;
+import com.cburch.logisim.gui.menu.LogisimMenuBar;
+import com.cburch.logisim.gui.menu.SimulateListener;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.proj.ProjectEvent;
+import com.cburch.logisim.proj.ProjectListener;
 
 class MenuListener {
 	interface EnabledListener {

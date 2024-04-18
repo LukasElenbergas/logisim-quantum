@@ -1,16 +1,16 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.tools.move;
+package com.cburch.logisim.tools.move;
 
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Collection;
 
-import main.java.com.cburch.logisim.circuit.ReplacementMap;
-import main.java.com.cburch.logisim.circuit.Wire;
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.data.Location;
+import com.cburch.logisim.circuit.ReplacementMap;
+import com.cburch.logisim.circuit.Wire;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.data.Location;
 
 public class MoveResult {
 	private ReplacementMap replacements;

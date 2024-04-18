@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.opts;
+package com.cburch.logisim.gui.opts;
 
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -16,12 +16,12 @@ import javax.swing.ScrollPaneConstants;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import main.java.com.cburch.logisim.file.ToolbarData;
-import main.java.com.cburch.logisim.gui.main.ProjectExplorer;
-import main.java.com.cburch.logisim.gui.main.ProjectExplorer.Event;
-import main.java.com.cburch.logisim.tools.AddTool;
-import main.java.com.cburch.logisim.tools.Tool;
-import main.java.com.cburch.logisim.util.TableLayout;
+import com.cburch.logisim.file.ToolbarData;
+import com.cburch.logisim.gui.main.ProjectExplorer;
+import com.cburch.logisim.gui.main.ProjectExplorer.Event;
+import com.cburch.logisim.tools.AddTool;
+import com.cburch.logisim.tools.Tool;
+import com.cburch.logisim.util.TableLayout;
 
 class ToolbarOptions extends OptionsPanel {
 	private class Listener

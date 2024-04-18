@@ -1,22 +1,22 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.main;
+package com.cburch.logisim.gui.main;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.file.LibraryEvent;
-import main.java.com.cburch.logisim.file.LibraryListener;
-import main.java.com.cburch.logisim.gui.menu.LogisimMenuBar;
-import main.java.com.cburch.logisim.proj.Action;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.proj.ProjectEvent;
-import main.java.com.cburch.logisim.proj.ProjectListener;
-import main.java.com.cburch.logisim.std.base.Base;
-import main.java.com.cburch.logisim.tools.Library;
-import main.java.com.cburch.logisim.tools.Tool;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.file.LibraryEvent;
+import com.cburch.logisim.file.LibraryListener;
+import com.cburch.logisim.gui.menu.LogisimMenuBar;
+import com.cburch.logisim.proj.Action;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.proj.ProjectEvent;
+import com.cburch.logisim.proj.ProjectListener;
+import com.cburch.logisim.std.base.Base;
+import com.cburch.logisim.tools.Library;
+import com.cburch.logisim.tools.Tool;
 
 public class LayoutEditHandler extends EditHandler
 		implements ProjectListener, LibraryListener, PropertyChangeListener {

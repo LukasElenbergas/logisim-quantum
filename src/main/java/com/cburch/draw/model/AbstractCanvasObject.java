@@ -1,17 +1,17 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.model;
+package com.cburch.draw.model;
 
-import main.java.com.cburch.draw.shapes.DrawAttr;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeEvent;
-import main.java.com.cburch.logisim.data.AttributeListener;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.util.EventSourceWeakSupport;
-import main.java.com.cburch.logisim.util.GraphicsUtil;
+import com.cburch.draw.shapes.DrawAttr;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeEvent;
+import com.cburch.logisim.data.AttributeListener;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.util.EventSourceWeakSupport;
+import com.cburch.logisim.util.GraphicsUtil;
 
 import java.awt.Color;
 import java.awt.Graphics;

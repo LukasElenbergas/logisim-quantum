@@ -1,35 +1,35 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.proj;
+package com.cburch.logisim.proj;
 
 import java.util.HashMap;
 import java.util.LinkedList;
 
 import javax.swing.JFileChooser;
 
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.circuit.CircuitListener;
-import main.java.com.cburch.logisim.circuit.CircuitMutation;
-import main.java.com.cburch.logisim.circuit.CircuitState;
-import main.java.com.cburch.logisim.circuit.Simulator;
-import main.java.com.cburch.logisim.circuit.SubcircuitFactory;
-import main.java.com.cburch.logisim.file.Loader;
-import main.java.com.cburch.logisim.file.LogisimFile;
-import main.java.com.cburch.logisim.file.LibraryEvent;
-import main.java.com.cburch.logisim.file.LibraryListener;
-import main.java.com.cburch.logisim.file.Options;
-import main.java.com.cburch.logisim.gui.log.LogFrame;
-import main.java.com.cburch.logisim.gui.main.Canvas;
-import main.java.com.cburch.logisim.gui.main.Frame;
-import main.java.com.cburch.logisim.gui.main.Selection;
-import main.java.com.cburch.logisim.gui.main.SelectionActions;
-import main.java.com.cburch.logisim.gui.opts.OptionsFrame;
-import main.java.com.cburch.logisim.tools.AddTool;
-import main.java.com.cburch.logisim.tools.Library;
-import main.java.com.cburch.logisim.tools.Tool;
-import main.java.com.cburch.logisim.util.EventSourceWeakSupport;
-import main.java.com.cburch.logisim.util.JFileChoosers;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.circuit.CircuitListener;
+import com.cburch.logisim.circuit.CircuitMutation;
+import com.cburch.logisim.circuit.CircuitState;
+import com.cburch.logisim.circuit.Simulator;
+import com.cburch.logisim.circuit.SubcircuitFactory;
+import com.cburch.logisim.file.Loader;
+import com.cburch.logisim.file.LogisimFile;
+import com.cburch.logisim.file.LibraryEvent;
+import com.cburch.logisim.file.LibraryListener;
+import com.cburch.logisim.file.Options;
+import com.cburch.logisim.gui.log.LogFrame;
+import com.cburch.logisim.gui.main.Canvas;
+import com.cburch.logisim.gui.main.Frame;
+import com.cburch.logisim.gui.main.Selection;
+import com.cburch.logisim.gui.main.SelectionActions;
+import com.cburch.logisim.gui.opts.OptionsFrame;
+import com.cburch.logisim.tools.AddTool;
+import com.cburch.logisim.tools.Library;
+import com.cburch.logisim.tools.Tool;
+import com.cburch.logisim.util.EventSourceWeakSupport;
+import com.cburch.logisim.util.JFileChoosers;
 
 public class Project {
 	private static final int MAX_UNDO_SIZE = 64;

@@ -1,7 +1,7 @@
 /* Copyright (c) 2011, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.main;
+package com.cburch.logisim.gui.main;
 
 import java.util.ArrayList;
 
@@ -11,8 +11,8 @@ import javax.swing.tree.TreeModel;
 import javax.swing.tree.TreeNode;
 import javax.swing.tree.TreePath;
 
-import main.java.com.cburch.logisim.circuit.CircuitState;
-import main.java.com.cburch.logisim.comp.Component;
+import com.cburch.logisim.circuit.CircuitState;
+import com.cburch.logisim.comp.Component;
 
 public class SimulationTreeModel implements TreeModel {
 	private ArrayList<TreeModelListener> listeners;

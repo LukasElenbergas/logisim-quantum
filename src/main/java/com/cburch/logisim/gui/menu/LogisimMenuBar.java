@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.menu;
+package com.cburch.logisim.gui.menu;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -13,12 +13,12 @@ import javax.swing.JMenuBar;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import main.java.com.cburch.logisim.circuit.CircuitState;
-import main.java.com.cburch.logisim.circuit.Simulator;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.util.LocaleListener;
-import main.java.com.cburch.logisim.util.LocaleManager;
-import main.java.com.cburch.logisim.util.WindowMenu;
+import com.cburch.logisim.circuit.CircuitState;
+import com.cburch.logisim.circuit.Simulator;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.util.LocaleListener;
+import com.cburch.logisim.util.LocaleManager;
+import com.cburch.logisim.util.WindowMenu;
 
 public class LogisimMenuBar extends JMenuBar {
 	public static final LogisimMenuItem PRINT = new LogisimMenuItem("Print");

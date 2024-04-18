@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.shapes;
+package com.cburch.draw.shapes;
 
 import java.awt.Graphics;
 import java.util.List;
@@ -10,10 +10,10 @@ import java.util.Random;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-import main.java.com.cburch.draw.model.CanvasObject;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.data.Location;
+import com.cburch.draw.model.CanvasObject;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.data.Location;
 
 public class Rectangle extends Rectangular {
 	public Rectangle(int x, int y, int w, int h) {

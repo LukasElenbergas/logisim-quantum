@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.util;
+package com.cburch.logisim.util;
 
 /**
  * Allows immutable objects to be cached in memory in order to reduce

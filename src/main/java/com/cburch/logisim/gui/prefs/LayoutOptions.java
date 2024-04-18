@@ -1,13 +1,13 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.prefs;
+package com.cburch.logisim.gui.prefs;
 
 import javax.swing.JPanel;
 
-import main.java.com.cburch.logisim.circuit.RadixOption;
-import main.java.com.cburch.logisim.prefs.AppPreferences;
-import main.java.com.cburch.logisim.util.TableLayout;
+import com.cburch.logisim.circuit.RadixOption;
+import com.cburch.logisim.prefs.AppPreferences;
+import com.cburch.logisim.util.TableLayout;
 
 class LayoutOptions extends OptionsPanel {
 	private PrefBoolean[] checks;

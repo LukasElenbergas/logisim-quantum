@@ -1,12 +1,12 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.opts;
+package com.cburch.logisim.gui.opts;
 
-import main.java.com.cburch.logisim.file.ToolbarData;
-import main.java.com.cburch.logisim.proj.Action;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.tools.Tool;
+import com.cburch.logisim.file.ToolbarData;
+import com.cburch.logisim.proj.Action;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.tools.Tool;
 
 class ToolbarActions {
 	private ToolbarActions() { }

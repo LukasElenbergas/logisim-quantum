@@ -1,12 +1,12 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.std.gates;
+package com.cburch.logisim.std.gates;
 
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.Attributes;
-import main.java.com.cburch.logisim.data.Direction;
-import main.java.com.cburch.logisim.util.StringUtil;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.Attributes;
+import com.cburch.logisim.data.Direction;
+import com.cburch.logisim.util.StringUtil;
 
 class NegateAttribute extends Attribute<Boolean> {
 	private static Attribute<Boolean> BOOLEAN_ATTR = Attributes.forBoolean("negateDummy");

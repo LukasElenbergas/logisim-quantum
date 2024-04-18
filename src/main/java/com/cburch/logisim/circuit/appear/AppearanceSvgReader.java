@@ -1,17 +1,17 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.circuit.appear;
+package com.cburch.logisim.circuit.appear;
 
 import java.util.Map;
 
 import org.w3c.dom.Element;
 
-import main.java.com.cburch.draw.model.AbstractCanvasObject;
-import main.java.com.cburch.draw.shapes.SvgReader;
-import main.java.com.cburch.logisim.data.Direction;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.instance.Instance;
+import com.cburch.draw.model.AbstractCanvasObject;
+import com.cburch.draw.shapes.SvgReader;
+import com.cburch.logisim.data.Direction;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.instance.Instance;
 
 public class AppearanceSvgReader {
 	public static AbstractCanvasObject createShape(Element elt, Map<Location, Instance> pins) {

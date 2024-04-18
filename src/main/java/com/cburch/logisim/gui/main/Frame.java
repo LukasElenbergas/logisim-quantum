@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.main;
+package com.cburch.logisim.gui.main;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -25,40 +25,40 @@ import javax.swing.WindowConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import main.java.com.cburch.draw.toolbar.Toolbar;
-import main.java.com.cburch.draw.toolbar.ToolbarModel;
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.circuit.CircuitEvent;
-import main.java.com.cburch.logisim.circuit.CircuitListener;
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.data.AttributeEvent;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.data.Direction;
-import main.java.com.cburch.logisim.file.LibraryEvent;
-import main.java.com.cburch.logisim.file.LibraryListener;
-import main.java.com.cburch.logisim.gui.appear.AppearanceView;
-import main.java.com.cburch.logisim.gui.generic.AttrTable;
-import main.java.com.cburch.logisim.gui.generic.AttrTableModel;
-import main.java.com.cburch.logisim.gui.generic.BasicZoomModel;
-import main.java.com.cburch.logisim.gui.generic.CanvasPane;
-import main.java.com.cburch.logisim.gui.generic.CardPanel;
-import main.java.com.cburch.logisim.gui.generic.LFrame;
-import main.java.com.cburch.logisim.gui.generic.ZoomControl;
-import main.java.com.cburch.logisim.gui.generic.ZoomModel;
-import main.java.com.cburch.logisim.gui.menu.LogisimMenuBar;
-import main.java.com.cburch.logisim.prefs.AppPreferences;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.proj.ProjectActions;
-import main.java.com.cburch.logisim.proj.ProjectEvent;
-import main.java.com.cburch.logisim.proj.ProjectListener;
-import main.java.com.cburch.logisim.proj.Projects;
-import main.java.com.cburch.logisim.tools.Tool;
-import main.java.com.cburch.logisim.util.HorizontalSplitPane;
-import main.java.com.cburch.logisim.util.JFileChoosers;
-import main.java.com.cburch.logisim.util.LocaleListener;
-import main.java.com.cburch.logisim.util.LocaleManager;
-import main.java.com.cburch.logisim.util.StringUtil;
-import main.java.com.cburch.logisim.util.VerticalSplitPane;
+import com.cburch.draw.toolbar.Toolbar;
+import com.cburch.draw.toolbar.ToolbarModel;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.circuit.CircuitEvent;
+import com.cburch.logisim.circuit.CircuitListener;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.data.AttributeEvent;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.data.Direction;
+import com.cburch.logisim.file.LibraryEvent;
+import com.cburch.logisim.file.LibraryListener;
+import com.cburch.logisim.gui.appear.AppearanceView;
+import com.cburch.logisim.gui.generic.AttrTable;
+import com.cburch.logisim.gui.generic.AttrTableModel;
+import com.cburch.logisim.gui.generic.BasicZoomModel;
+import com.cburch.logisim.gui.generic.CanvasPane;
+import com.cburch.logisim.gui.generic.CardPanel;
+import com.cburch.logisim.gui.generic.LFrame;
+import com.cburch.logisim.gui.generic.ZoomControl;
+import com.cburch.logisim.gui.generic.ZoomModel;
+import com.cburch.logisim.gui.menu.LogisimMenuBar;
+import com.cburch.logisim.prefs.AppPreferences;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.proj.ProjectActions;
+import com.cburch.logisim.proj.ProjectEvent;
+import com.cburch.logisim.proj.ProjectListener;
+import com.cburch.logisim.proj.Projects;
+import com.cburch.logisim.tools.Tool;
+import com.cburch.logisim.util.HorizontalSplitPane;
+import com.cburch.logisim.util.JFileChoosers;
+import com.cburch.logisim.util.LocaleListener;
+import com.cburch.logisim.util.LocaleManager;
+import com.cburch.logisim.util.StringUtil;
+import com.cburch.logisim.util.VerticalSplitPane;
 
 public class Frame extends LFrame implements LocaleListener {
 	public static final String EDITOR_VIEW = "editorView";

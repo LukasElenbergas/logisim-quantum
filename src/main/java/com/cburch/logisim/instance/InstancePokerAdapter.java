@@ -1,20 +1,20 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.instance;
+package com.cburch.logisim.instance;
 
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 
-import main.java.com.cburch.logisim.circuit.CircuitState;
-import main.java.com.cburch.logisim.comp.ComponentDrawContext;
-import main.java.com.cburch.logisim.comp.ComponentUserEvent;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.gui.main.Canvas;
-import main.java.com.cburch.logisim.tools.AbstractCaret;
-import main.java.com.cburch.logisim.tools.Caret;
-import main.java.com.cburch.logisim.tools.Pokable;
+import com.cburch.logisim.circuit.CircuitState;
+import com.cburch.logisim.comp.ComponentDrawContext;
+import com.cburch.logisim.comp.ComponentUserEvent;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.gui.main.Canvas;
+import com.cburch.logisim.tools.AbstractCaret;
+import com.cburch.logisim.tools.Caret;
+import com.cburch.logisim.tools.Pokable;
 
 class InstancePokerAdapter extends AbstractCaret implements Pokable {
 	private InstanceComponent comp;

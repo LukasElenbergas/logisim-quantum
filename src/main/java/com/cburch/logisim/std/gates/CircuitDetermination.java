@@ -1,13 +1,13 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.std.gates;
+package com.cburch.logisim.std.gates;
 
 import java.util.ArrayList;
 
-import main.java.com.cburch.logisim.analyze.model.Expression;
-import main.java.com.cburch.logisim.analyze.model.ExpressionVisitor;
-import main.java.com.cburch.logisim.comp.ComponentFactory;
+import com.cburch.logisim.analyze.model.Expression;
+import com.cburch.logisim.analyze.model.ExpressionVisitor;
+import com.cburch.logisim.comp.ComponentFactory;
 
 /** This represents the actual gate selection used corresponding
  * to an expression, without any correspondence to how they would

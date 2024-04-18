@@ -1,19 +1,19 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.std.wiring;
+package com.cburch.logisim.std.wiring;
 
 import java.awt.Font;
 import java.util.Arrays;
 import java.util.List;
 
-import main.java.com.cburch.logisim.comp.TextField;
-import main.java.com.cburch.logisim.data.AbstractAttributeSet;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.BitWidth;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.data.Direction;
-import main.java.com.cburch.logisim.instance.StdAttr;
+import com.cburch.logisim.comp.TextField;
+import com.cburch.logisim.data.AbstractAttributeSet;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.BitWidth;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.data.Direction;
+import com.cburch.logisim.instance.StdAttr;
 
 class TunnelAttributes extends AbstractAttributeSet {
 	private static final List<Attribute<?>> ATTRIBUTES

@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.prefs;
+package com.cburch.logisim.prefs;
 
 import java.beans.PropertyChangeListener;
 import java.io.File;
@@ -17,13 +17,13 @@ import java.util.prefs.Preferences;
 
 import javax.swing.JFrame;
 
-import main.java.com.cburch.logisim.Main;
-import main.java.com.cburch.logisim.circuit.RadixOption;
-import main.java.com.cburch.logisim.data.Direction;
-import main.java.com.cburch.logisim.gui.start.Startup;
-import main.java.com.cburch.logisim.util.LocaleListener;
-import main.java.com.cburch.logisim.util.LocaleManager;
-import main.java.com.cburch.logisim.util.PropertyChangeWeakSupport;
+import com.cburch.logisim.Main;
+import com.cburch.logisim.circuit.RadixOption;
+import com.cburch.logisim.data.Direction;
+import com.cburch.logisim.gui.start.Startup;
+import com.cburch.logisim.util.LocaleListener;
+import com.cburch.logisim.util.LocaleManager;
+import com.cburch.logisim.util.PropertyChangeWeakSupport;
 
 public class AppPreferences {
 	// class variables for maintaining consistency between properties,

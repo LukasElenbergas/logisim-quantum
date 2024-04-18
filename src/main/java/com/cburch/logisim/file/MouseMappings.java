@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.file;
+package com.cburch.logisim.file;
 
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
@@ -9,11 +9,11 @@ import java.util.HashMap;
 import java.util.Set;
 import java.util.Map;
 
-import main.java.com.cburch.logisim.comp.ComponentFactory;
-import main.java.com.cburch.logisim.data.AttributeSets;
-import main.java.com.cburch.logisim.tools.AddTool;
-import main.java.com.cburch.logisim.tools.SelectTool;
-import main.java.com.cburch.logisim.tools.Tool;
+import com.cburch.logisim.comp.ComponentFactory;
+import com.cburch.logisim.data.AttributeSets;
+import com.cburch.logisim.tools.AddTool;
+import com.cburch.logisim.tools.SelectTool;
+import com.cburch.logisim.tools.Tool;
 
 public class MouseMappings {
 	public static interface MouseMappingsListener {

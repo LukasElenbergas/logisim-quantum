@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.menu;
+package com.cburch.logisim.gui.menu;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,11 +15,11 @@ import javax.swing.JList;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 
-import main.java.com.cburch.logisim.file.Loader;
-import main.java.com.cburch.logisim.file.LogisimFile;
-import main.java.com.cburch.logisim.file.LogisimFileActions;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.tools.Library;
+import com.cburch.logisim.file.Loader;
+import com.cburch.logisim.file.LogisimFile;
+import com.cburch.logisim.file.LogisimFileActions;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.tools.Library;
 
 public class ProjectLibraryActions {
 	private ProjectLibraryActions() { }

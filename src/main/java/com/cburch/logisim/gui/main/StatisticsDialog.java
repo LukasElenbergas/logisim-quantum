@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.main;
+package com.cburch.logisim.gui.main;
 
 import java.awt.BorderLayout;
 import java.awt.Container;
@@ -20,11 +20,11 @@ import javax.swing.JTable;
 import javax.swing.table.AbstractTableModel;
 import javax.swing.table.TableColumn;
 
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.file.FileStatistics;
-import main.java.com.cburch.logisim.file.LogisimFile;
-import main.java.com.cburch.logisim.tools.Library;
-import main.java.com.cburch.logisim.util.TableSorter;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.file.FileStatistics;
+import com.cburch.logisim.file.LogisimFile;
+import com.cburch.logisim.tools.Library;
+import com.cburch.logisim.util.TableSorter;
 
 public class StatisticsDialog extends JDialog implements ActionListener {
 	public static void show(JFrame parent, LogisimFile file, Circuit circuit) {

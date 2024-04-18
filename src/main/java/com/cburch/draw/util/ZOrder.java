@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.util;
+package com.cburch.draw.util;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -13,8 +13,8 @@ import java.util.ListIterator;
 import java.util.Map;
 import java.util.Set;
 
-import main.java.com.cburch.draw.model.CanvasModel;
-import main.java.com.cburch.draw.model.CanvasObject;
+import com.cburch.draw.model.CanvasModel;
+import com.cburch.draw.model.CanvasObject;
 
 public class ZOrder {
 	private ZOrder() { }

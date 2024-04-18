@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.analyze.gui;
+package com.cburch.logisim.analyze.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Component;
@@ -21,11 +21,11 @@ import javax.swing.ScrollPaneConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import main.java.com.cburch.logisim.analyze.model.AnalyzerModel;
-import main.java.com.cburch.logisim.gui.generic.LFrame;
-import main.java.com.cburch.logisim.gui.menu.LogisimMenuBar;
-import main.java.com.cburch.logisim.util.LocaleListener;
-import main.java.com.cburch.logisim.util.LocaleManager;
+import com.cburch.logisim.analyze.model.AnalyzerModel;
+import com.cburch.logisim.gui.generic.LFrame;
+import com.cburch.logisim.gui.menu.LogisimMenuBar;
+import com.cburch.logisim.util.LocaleListener;
+import com.cburch.logisim.util.LocaleManager;
 
 public class Analyzer extends LFrame {
 	// used by circuit analysis to select the relevant tab automatically.

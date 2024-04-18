@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.analyze.gui;
+package com.cburch.logisim.analyze.gui;
 
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -18,16 +18,16 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import main.java.com.cburch.logisim.analyze.model.AnalyzerModel;
-import main.java.com.cburch.logisim.analyze.model.Expression;
-import main.java.com.cburch.logisim.analyze.model.VariableList;
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.circuit.CircuitMutation;
-import main.java.com.cburch.logisim.file.LogisimFileActions;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.proj.Projects;
-import main.java.com.cburch.logisim.std.gates.CircuitBuilder;
-import main.java.com.cburch.logisim.util.StringUtil;
+import com.cburch.logisim.analyze.model.AnalyzerModel;
+import com.cburch.logisim.analyze.model.Expression;
+import com.cburch.logisim.analyze.model.VariableList;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.circuit.CircuitMutation;
+import com.cburch.logisim.file.LogisimFileActions;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.proj.Projects;
+import com.cburch.logisim.std.gates.CircuitBuilder;
+import com.cburch.logisim.util.StringUtil;
 
 class BuildCircuitButton extends JButton {
 	private static class ProjectItem {

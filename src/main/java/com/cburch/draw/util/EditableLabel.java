@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.util;
+package com.cburch.draw.util;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -17,7 +17,7 @@ import java.util.Arrays;
 
 import javax.swing.JTextField;
 
-import main.java.com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.data.Bounds;
 
 public class EditableLabel implements Cloneable {
 	public static final int LEFT = JTextField.LEFT;

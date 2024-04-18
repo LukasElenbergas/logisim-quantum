@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.menu;
+package com.cburch.logisim.gui.menu;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
@@ -13,15 +13,15 @@ import java.util.List;
 
 import javax.swing.JFrame;
 
-import main.java.com.cburch.logisim.analyze.gui.AnalyzerManager;
-import main.java.com.cburch.logisim.file.LibraryEvent;
-import main.java.com.cburch.logisim.file.LibraryListener;
-import main.java.com.cburch.logisim.gui.prefs.PreferencesFrame;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.proj.ProjectEvent;
-import main.java.com.cburch.logisim.proj.ProjectListener;
-import main.java.com.cburch.logisim.proj.Projects;
-import main.java.com.cburch.logisim.util.WindowMenuItemManager;
+import com.cburch.logisim.analyze.gui.AnalyzerManager;
+import com.cburch.logisim.file.LibraryEvent;
+import com.cburch.logisim.file.LibraryListener;
+import com.cburch.logisim.gui.prefs.PreferencesFrame;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.proj.ProjectEvent;
+import com.cburch.logisim.proj.ProjectListener;
+import com.cburch.logisim.proj.Projects;
+import com.cburch.logisim.util.WindowMenuItemManager;
 
 public class WindowManagers {
 	private WindowManagers() { }

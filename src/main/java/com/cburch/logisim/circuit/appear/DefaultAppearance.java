@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.circuit.appear;
+package com.cburch.logisim.circuit.appear;
 
 import java.awt.Color;
 import java.util.ArrayList;
@@ -12,14 +12,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import main.java.com.cburch.draw.model.CanvasObject;
-import main.java.com.cburch.draw.shapes.Curve;
-import main.java.com.cburch.draw.shapes.DrawAttr;
-import main.java.com.cburch.draw.shapes.Rectangle;
-import main.java.com.cburch.logisim.data.Direction;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.instance.Instance;
-import main.java.com.cburch.logisim.instance.StdAttr;
+import com.cburch.draw.model.CanvasObject;
+import com.cburch.draw.shapes.Curve;
+import com.cburch.draw.shapes.DrawAttr;
+import com.cburch.draw.shapes.Rectangle;
+import com.cburch.logisim.data.Direction;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.instance.Instance;
+import com.cburch.logisim.instance.StdAttr;
 
 class DefaultAppearance {
 	private static final int OFFS = 50;

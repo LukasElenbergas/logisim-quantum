@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.tools;
+package com.cburch.logisim.tools;
 
 
 import java.awt.Graphics;
@@ -13,15 +13,15 @@ import javax.swing.JComponent;
 import javax.swing.JPopupMenu;
 import javax.swing.JMenuItem;
 
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.circuit.CircuitMutation;
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.comp.ComponentDrawContext;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.gui.main.Canvas;
-import main.java.com.cburch.logisim.gui.main.Selection;
-import main.java.com.cburch.logisim.gui.main.SelectionActions;
-import main.java.com.cburch.logisim.proj.Project;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.circuit.CircuitMutation;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.comp.ComponentDrawContext;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.gui.main.Canvas;
+import com.cburch.logisim.gui.main.Selection;
+import com.cburch.logisim.gui.main.SelectionActions;
+import com.cburch.logisim.proj.Project;
 
 import java.util.Collection;
 

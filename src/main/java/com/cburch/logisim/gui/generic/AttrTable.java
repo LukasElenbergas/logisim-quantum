@@ -1,7 +1,7 @@
 /* Copyright (c) 2011, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.generic;
+package com.cburch.logisim.gui.generic;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -32,10 +32,10 @@ import javax.swing.event.TableModelListener;
 import javax.swing.table.TableCellEditor;
 import javax.swing.table.TableModel;
 
-import main.java.com.cburch.logisim.util.JDialogOk;
-import main.java.com.cburch.logisim.util.JInputComponent;
-import main.java.com.cburch.logisim.util.LocaleListener;
-import main.java.com.cburch.logisim.util.LocaleManager;
+import com.cburch.logisim.util.JDialogOk;
+import com.cburch.logisim.util.JInputComponent;
+import com.cburch.logisim.util.LocaleListener;
+import com.cburch.logisim.util.LocaleManager;
 
 import java.util.ArrayList;
 import java.util.EventObject;

@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.toolbar;
+package com.cburch.draw.toolbar;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -11,7 +11,7 @@ import java.awt.event.MouseListener;
 
 import javax.swing.JComponent;
 
-import main.java.com.cburch.logisim.util.GraphicsUtil;
+import com.cburch.logisim.util.GraphicsUtil;
 
 class ToolbarButton extends JComponent implements MouseListener {
 	private static final int BORDER = 2;

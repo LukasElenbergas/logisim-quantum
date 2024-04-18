@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.circuit;
+package com.cburch.logisim.circuit;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -13,20 +13,20 @@ import java.util.Set;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-import main.java.com.cburch.logisim.analyze.model.AnalyzerModel;
-import main.java.com.cburch.logisim.analyze.model.Entry;
-import main.java.com.cburch.logisim.analyze.model.Expression;
-import main.java.com.cburch.logisim.analyze.model.Expressions;
-import main.java.com.cburch.logisim.analyze.model.TruthTable;
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.data.Direction;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.data.Value;
-import main.java.com.cburch.logisim.instance.Instance;
-import main.java.com.cburch.logisim.instance.InstanceState;
-import main.java.com.cburch.logisim.instance.StdAttr;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.std.wiring.Pin;
+import com.cburch.logisim.analyze.model.AnalyzerModel;
+import com.cburch.logisim.analyze.model.Entry;
+import com.cburch.logisim.analyze.model.Expression;
+import com.cburch.logisim.analyze.model.Expressions;
+import com.cburch.logisim.analyze.model.TruthTable;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.data.Direction;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.data.Value;
+import com.cburch.logisim.instance.Instance;
+import com.cburch.logisim.instance.InstanceState;
+import com.cburch.logisim.instance.StdAttr;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.std.wiring.Pin;
 
 public class Analyze {
 	private static final int MAX_ITERATIONS = 100;

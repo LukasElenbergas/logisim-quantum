@@ -4,7 +4,7 @@
 /*
  * @(#)GIFEncoder.java    0.90 4/21/96 Adam Doppelt
  */
-package main.java.com.cburch.logisim.util;
+package com.cburch.logisim.util;
 
 import java.awt.AWTException;
 import java.awt.Image;

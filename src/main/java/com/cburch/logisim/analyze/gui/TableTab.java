@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.analyze.gui;
+package com.cburch.logisim.analyze.gui;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -14,11 +14,11 @@ import java.awt.event.MouseEvent;
 import javax.swing.JPanel;
 import javax.swing.JScrollBar;
 
-import main.java.com.cburch.logisim.analyze.model.Entry;
-import main.java.com.cburch.logisim.analyze.model.TruthTable;
-import main.java.com.cburch.logisim.analyze.model.TruthTableEvent;
-import main.java.com.cburch.logisim.analyze.model.TruthTableListener;
-import main.java.com.cburch.logisim.util.GraphicsUtil;
+import com.cburch.logisim.analyze.model.Entry;
+import com.cburch.logisim.analyze.model.TruthTable;
+import com.cburch.logisim.analyze.model.TruthTableEvent;
+import com.cburch.logisim.analyze.model.TruthTableListener;
+import com.cburch.logisim.util.GraphicsUtil;
 
 class TableTab extends JPanel implements TruthTablePanel, TabInterface {
 	private static final Font HEAD_FONT = new Font("Serif", Font.BOLD, 14);

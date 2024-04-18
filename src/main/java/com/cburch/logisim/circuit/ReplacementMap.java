@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.circuit;
+package com.cburch.logisim.circuit;
 
 import java.io.PrintStream;
 import java.util.Collection;
@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 
-import main.java.com.cburch.logisim.comp.Component;
+import com.cburch.logisim.comp.Component;
 
 public class ReplacementMap {
 	private boolean frozen;

@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.circuit;
+package com.cburch.logisim.circuit;
 
 import java.util.Collection;
 import java.util.ConcurrentModificationException;
@@ -11,22 +11,22 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-import main.java.com.cburch.logisim.circuit.Propagator.SetData;
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.comp.ComponentDrawContext;
-import main.java.com.cburch.logisim.comp.ComponentState;
-import main.java.com.cburch.logisim.data.BitWidth;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.data.Value;
-import main.java.com.cburch.logisim.instance.Instance;
-import main.java.com.cburch.logisim.instance.InstanceData;
-import main.java.com.cburch.logisim.instance.InstanceFactory;
-import main.java.com.cburch.logisim.instance.InstanceState;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.std.wiring.Clock;
-import main.java.com.cburch.logisim.std.wiring.Pin;
-import main.java.com.cburch.logisim.util.ArraySet;
-import main.java.com.cburch.logisim.util.SmallSet;
+import com.cburch.logisim.circuit.Propagator.SetData;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.comp.ComponentDrawContext;
+import com.cburch.logisim.comp.ComponentState;
+import com.cburch.logisim.data.BitWidth;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.data.Value;
+import com.cburch.logisim.instance.Instance;
+import com.cburch.logisim.instance.InstanceData;
+import com.cburch.logisim.instance.InstanceFactory;
+import com.cburch.logisim.instance.InstanceState;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.std.wiring.Clock;
+import com.cburch.logisim.std.wiring.Pin;
+import com.cburch.logisim.util.ArraySet;
+import com.cburch.logisim.util.SmallSet;
 
 public class CircuitState implements InstanceData {
 	private class MyCircuitListener implements CircuitListener {

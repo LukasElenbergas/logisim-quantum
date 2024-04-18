@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.prefs;
+package com.cburch.logisim.gui.prefs;
 
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
@@ -23,13 +23,13 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 
-import main.java.com.cburch.logisim.file.Loader;
-import main.java.com.cburch.logisim.file.LoaderException;
-import main.java.com.cburch.logisim.file.LogisimFile;
-import main.java.com.cburch.logisim.prefs.AppPreferences;
-import main.java.com.cburch.logisim.prefs.Template;
-import main.java.com.cburch.logisim.util.JFileChoosers;
-import main.java.com.cburch.logisim.util.StringUtil;
+import com.cburch.logisim.file.Loader;
+import com.cburch.logisim.file.LoaderException;
+import com.cburch.logisim.file.LogisimFile;
+import com.cburch.logisim.prefs.AppPreferences;
+import com.cburch.logisim.prefs.Template;
+import com.cburch.logisim.util.JFileChoosers;
+import com.cburch.logisim.util.StringUtil;
 
 class TemplateOptions extends OptionsPanel {
 	private class MyListener implements ActionListener, PropertyChangeListener {

@@ -1,12 +1,12 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.std.memory;
+package com.cburch.logisim.std.memory;
 
-import main.java.com.cburch.hex.HexModel;
-import main.java.com.cburch.hex.HexModelListener;
-import main.java.com.cburch.logisim.proj.Action;
-import main.java.com.cburch.logisim.proj.Project;
+import com.cburch.hex.HexModel;
+import com.cburch.hex.HexModelListener;
+import com.cburch.logisim.proj.Action;
+import com.cburch.logisim.proj.Project;
 
 class RomContentsListener implements HexModelListener {
 	private static class Change extends Action {

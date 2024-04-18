@@ -1,13 +1,13 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.std.memory;
+package com.cburch.logisim.std.memory;
 
 import java.util.Arrays;
 
-import main.java.com.cburch.hex.HexModel;
-import main.java.com.cburch.hex.HexModelListener;
-import main.java.com.cburch.logisim.util.EventSourceWeakSupport;
+import com.cburch.hex.HexModel;
+import com.cburch.hex.HexModelListener;
+import com.cburch.logisim.util.EventSourceWeakSupport;
 
 class MemContents implements Cloneable, HexModel {
 	private static final int PAGE_SIZE_BITS = 12;

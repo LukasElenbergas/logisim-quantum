@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.main;
+package com.cburch.logisim.gui.main;
 
 import java.awt.AlphaComposite;
 import java.awt.Color;
@@ -13,10 +13,10 @@ import java.awt.Graphics2D;
 
 import javax.swing.Icon;
 
-import main.java.com.cburch.draw.toolbar.ToolbarItem;
-import main.java.com.cburch.logisim.gui.menu.LogisimMenuItem;
-import main.java.com.cburch.logisim.util.Icons;
-import main.java.com.cburch.logisim.util.StringGetter;
+import com.cburch.draw.toolbar.ToolbarItem;
+import com.cburch.logisim.gui.menu.LogisimMenuItem;
+import com.cburch.logisim.util.Icons;
+import com.cburch.logisim.util.StringGetter;
 
 class LogisimToolbarItem implements ToolbarItem {
 	private MenuListener menu;

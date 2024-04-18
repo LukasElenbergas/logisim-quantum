@@ -1,15 +1,15 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.std.wiring;
+package com.cburch.logisim.std.wiring;
 
 import java.util.Arrays;
 import java.util.List;
 
-import main.java.com.cburch.logisim.comp.EndData;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.BitWidth;
-import main.java.com.cburch.logisim.instance.StdAttr;
+import com.cburch.logisim.comp.EndData;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.BitWidth;
+import com.cburch.logisim.instance.StdAttr;
 
 class PinAttributes extends ProbeAttributes {
 	public static PinAttributes instance = new PinAttributes();

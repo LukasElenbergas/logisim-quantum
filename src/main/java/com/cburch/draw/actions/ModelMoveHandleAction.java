@@ -1,15 +1,15 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.actions;
+package com.cburch.draw.actions;
 
 import java.util.Collection;
 import java.util.Collections;
 
-import main.java.com.cburch.draw.model.CanvasModel;
-import main.java.com.cburch.draw.model.CanvasObject;
-import main.java.com.cburch.draw.model.Handle;
-import main.java.com.cburch.draw.model.HandleGesture;
+import com.cburch.draw.model.CanvasModel;
+import com.cburch.draw.model.CanvasObject;
+import com.cburch.draw.model.Handle;
+import com.cburch.draw.model.HandleGesture;
 
 public class ModelMoveHandleAction extends ModelAction {
 	private HandleGesture gesture;

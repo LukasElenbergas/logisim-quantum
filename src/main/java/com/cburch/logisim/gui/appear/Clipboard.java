@@ -1,11 +1,11 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.appear;
+package com.cburch.logisim.gui.appear;
 
 import java.beans.PropertyChangeListener;
 
-import main.java.com.cburch.logisim.util.PropertyChangeWeakSupport;
+import com.cburch.logisim.util.PropertyChangeWeakSupport;
 
 class Clipboard {
 	private Clipboard() { }

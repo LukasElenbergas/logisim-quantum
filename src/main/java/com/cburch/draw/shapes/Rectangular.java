@@ -1,17 +1,17 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.shapes;
+package com.cburch.draw.shapes;
 
 import java.awt.Graphics;
 import java.util.List;
 
-import main.java.com.cburch.draw.model.CanvasObject;
-import main.java.com.cburch.draw.model.Handle;
-import main.java.com.cburch.draw.model.HandleGesture;
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.util.UnmodifiableList;
+import com.cburch.draw.model.CanvasObject;
+import com.cburch.draw.model.Handle;
+import com.cburch.draw.model.HandleGesture;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.util.UnmodifiableList;
 
 abstract class Rectangular extends FillableCanvasObject {
 	private Bounds bounds; // excluding the stroke's width

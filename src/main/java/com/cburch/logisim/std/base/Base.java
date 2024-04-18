@@ -1,20 +1,20 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.std.base;
+package com.cburch.logisim.std.base;
 
 import java.util.Arrays;
 import java.util.List;
 
-import main.java.com.cburch.logisim.tools.Library;
-import main.java.com.cburch.logisim.tools.MenuTool;
-import main.java.com.cburch.logisim.tools.PokeTool;
-import main.java.com.cburch.logisim.tools.SelectTool;
-import main.java.com.cburch.logisim.tools.TextTool;
-import main.java.com.cburch.logisim.tools.AddTool;
-import main.java.com.cburch.logisim.tools.EditTool;
-import main.java.com.cburch.logisim.tools.Tool;
-import main.java.com.cburch.logisim.tools.WiringTool;
+import com.cburch.logisim.tools.Library;
+import com.cburch.logisim.tools.MenuTool;
+import com.cburch.logisim.tools.PokeTool;
+import com.cburch.logisim.tools.SelectTool;
+import com.cburch.logisim.tools.TextTool;
+import com.cburch.logisim.tools.AddTool;
+import com.cburch.logisim.tools.EditTool;
+import com.cburch.logisim.tools.Tool;
+import com.cburch.logisim.tools.WiringTool;
 
 public class Base extends Library {
 	private List<Tool> tools = null;

@@ -1,14 +1,14 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.shapes;
+package com.cburch.draw.shapes;
 
 import java.awt.Color;
 
-import main.java.com.cburch.draw.model.CanvasObject;
-import main.java.com.cburch.draw.model.AbstractCanvasObject;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeOption;
+import com.cburch.draw.model.CanvasObject;
+import com.cburch.draw.model.AbstractCanvasObject;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeOption;
 
 abstract class FillableCanvasObject extends AbstractCanvasObject {
 	private AttributeOption paintType;

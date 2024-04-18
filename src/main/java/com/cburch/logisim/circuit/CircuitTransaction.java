@@ -1,13 +1,13 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.circuit;
+package com.cburch.logisim.circuit;
 
 import java.util.Collection;
 import java.util.Map;
 import java.util.concurrent.locks.Lock;
 
-import main.java.com.cburch.logisim.circuit.appear.CircuitPins;
+import com.cburch.logisim.circuit.appear.CircuitPins;
 
 public abstract class CircuitTransaction {
 	public static final Integer READ_ONLY = Integer.valueOf(1);

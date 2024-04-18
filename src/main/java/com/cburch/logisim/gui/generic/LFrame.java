@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.generic;
+package com.cburch.logisim.gui.generic;
 
 import java.awt.Image;
 import java.awt.Window;
@@ -14,7 +14,7 @@ import java.util.List;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
-import main.java.com.cburch.logisim.util.WindowClosable;
+import com.cburch.logisim.util.WindowClosable;
 
 public class LFrame extends JFrame implements WindowClosable {
 	private static final String PATH = "resources/logisim/img/logisim-icon-";

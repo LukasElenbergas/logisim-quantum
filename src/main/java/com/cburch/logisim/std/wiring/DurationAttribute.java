@@ -1,13 +1,13 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.std.wiring;
+package com.cburch.logisim.std.wiring;
 
 import javax.swing.JTextField;
 
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.util.StringGetter;
-import main.java.com.cburch.logisim.util.StringUtil;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.util.StringGetter;
+import com.cburch.logisim.util.StringUtil;
 
 public class DurationAttribute extends Attribute<Integer> {
 	private int min;

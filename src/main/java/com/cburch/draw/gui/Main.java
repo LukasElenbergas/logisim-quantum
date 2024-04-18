@@ -1,23 +1,23 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.gui;
+package com.cburch.draw.gui;
 
 import java.awt.BorderLayout;
 import java.util.Collections;
 
 import javax.swing.JFrame;
 
-import main.java.com.cburch.draw.canvas.Canvas;
-import main.java.com.cburch.draw.model.CanvasObject;
-import main.java.com.cburch.draw.model.Drawing;
-import main.java.com.cburch.draw.shapes.Rectangle;
-import main.java.com.cburch.draw.tools.DrawingAttributeSet;
-import main.java.com.cburch.draw.undo.UndoLog;
-import main.java.com.cburch.draw.undo.UndoLogDispatcher;
-import main.java.com.cburch.logisim.gui.generic.AttrTable;
-import main.java.com.cburch.logisim.util.HorizontalSplitPane;
-import main.java.com.cburch.logisim.util.VerticalSplitPane;
+import com.cburch.draw.canvas.Canvas;
+import com.cburch.draw.model.CanvasObject;
+import com.cburch.draw.model.Drawing;
+import com.cburch.draw.shapes.Rectangle;
+import com.cburch.draw.tools.DrawingAttributeSet;
+import com.cburch.draw.undo.UndoLog;
+import com.cburch.draw.undo.UndoLogDispatcher;
+import com.cburch.logisim.gui.generic.AttrTable;
+import com.cburch.logisim.util.HorizontalSplitPane;
+import com.cburch.logisim.util.VerticalSplitPane;
 
 public class Main {
 	public static void main(String[] args) {

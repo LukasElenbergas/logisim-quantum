@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.opts;
+package com.cburch.logisim.gui.opts;
 
 import java.awt.Component;
 import java.awt.Graphics;
@@ -15,13 +15,13 @@ import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.ListSelectionModel;
 
-import main.java.com.cburch.logisim.comp.ComponentDrawContext;
-import main.java.com.cburch.logisim.data.AttributeEvent;
-import main.java.com.cburch.logisim.data.AttributeListener;
-import main.java.com.cburch.logisim.file.ToolbarData;
-import main.java.com.cburch.logisim.file.ToolbarData.ToolbarListener;
-import main.java.com.cburch.logisim.prefs.AppPreferences;
-import main.java.com.cburch.logisim.tools.Tool;
+import com.cburch.logisim.comp.ComponentDrawContext;
+import com.cburch.logisim.data.AttributeEvent;
+import com.cburch.logisim.data.AttributeListener;
+import com.cburch.logisim.file.ToolbarData;
+import com.cburch.logisim.file.ToolbarData.ToolbarListener;
+import com.cburch.logisim.prefs.AppPreferences;
+import com.cburch.logisim.tools.Tool;
 
 class ToolbarList extends JList {
 	private static class ToolIcon implements Icon {

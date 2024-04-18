@@ -1,10 +1,10 @@
 /* Copyright (c) 2011, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.circuit;
+package com.cburch.logisim.circuit;
 
-import main.java.com.cburch.logisim.data.Direction;
-import main.java.com.cburch.logisim.util.GraphicsUtil;
+import com.cburch.logisim.data.Direction;
+import com.cburch.logisim.util.GraphicsUtil;
 
 class SplitterParameters {
 	private int dxEnd0; // location of split end 0 relative to origin

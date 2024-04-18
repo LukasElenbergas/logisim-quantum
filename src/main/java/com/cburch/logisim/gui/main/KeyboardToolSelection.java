@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.main;
+package com.cburch.logisim.gui.main;
 
 import java.awt.event.ActionEvent;
 
@@ -11,9 +11,9 @@ import javax.swing.InputMap;
 import javax.swing.JComponent;
 import javax.swing.KeyStroke;
 
-import main.java.com.cburch.draw.toolbar.Toolbar;
-import main.java.com.cburch.draw.toolbar.ToolbarItem;
-import main.java.com.cburch.draw.toolbar.ToolbarModel;
+import com.cburch.draw.toolbar.Toolbar;
+import com.cburch.draw.toolbar.ToolbarItem;
+import com.cburch.draw.toolbar.ToolbarModel;
 
 public class KeyboardToolSelection extends AbstractAction {
 	public static void register(Toolbar toolbar) {

@@ -1,13 +1,13 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.tools;
+package com.cburch.logisim.tools;
 
 import java.util.Collections;
 import java.util.List;
 
-import main.java.com.cburch.logisim.comp.ComponentFactory;
-import main.java.com.cburch.logisim.util.ListUtil;
+import com.cburch.logisim.comp.ComponentFactory;
+import com.cburch.logisim.util.ListUtil;
 
 public abstract class Library {
 	public String getName() {

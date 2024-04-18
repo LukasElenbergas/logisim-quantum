@@ -1,24 +1,24 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.circuit;
+package com.cburch.logisim.circuit;
 
 import java.awt.Font;
 import java.util.Arrays;
 import java.util.List;
 
-import main.java.com.cburch.logisim.circuit.appear.CircuitAppearanceEvent;
-import main.java.com.cburch.logisim.circuit.appear.CircuitAppearanceListener;
-import main.java.com.cburch.logisim.data.AbstractAttributeSet;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeEvent;
-import main.java.com.cburch.logisim.data.AttributeListener;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.data.AttributeSets;
-import main.java.com.cburch.logisim.data.Attributes;
-import main.java.com.cburch.logisim.data.Direction;
-import main.java.com.cburch.logisim.instance.Instance;
-import main.java.com.cburch.logisim.instance.StdAttr;
+import com.cburch.logisim.circuit.appear.CircuitAppearanceEvent;
+import com.cburch.logisim.circuit.appear.CircuitAppearanceListener;
+import com.cburch.logisim.data.AbstractAttributeSet;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeEvent;
+import com.cburch.logisim.data.AttributeListener;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.data.AttributeSets;
+import com.cburch.logisim.data.Attributes;
+import com.cburch.logisim.data.Direction;
+import com.cburch.logisim.instance.Instance;
+import com.cburch.logisim.instance.StdAttr;
 
 public class CircuitAttributes extends AbstractAttributeSet {
 	public static final Attribute<String> NAME_ATTR

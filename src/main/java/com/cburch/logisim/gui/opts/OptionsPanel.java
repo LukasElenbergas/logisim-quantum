@@ -1,15 +1,15 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.opts;
+package com.cburch.logisim.gui.opts;
 
 import java.awt.LayoutManager;
 
 import javax.swing.JPanel;
 
-import main.java.com.cburch.logisim.file.LogisimFile;
-import main.java.com.cburch.logisim.file.Options;
-import main.java.com.cburch.logisim.proj.Project;
+import com.cburch.logisim.file.LogisimFile;
+import com.cburch.logisim.file.Options;
+import com.cburch.logisim.proj.Project;
 
 abstract class OptionsPanel extends JPanel {
 	private OptionsFrame optionsFrame;

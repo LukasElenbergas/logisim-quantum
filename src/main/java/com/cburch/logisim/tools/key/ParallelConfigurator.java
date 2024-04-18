@@ -1,11 +1,11 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.tools.key;
+package com.cburch.logisim.tools.key;
 
 import java.util.HashMap;
 
-import main.java.com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.Attribute;
 
 public class ParallelConfigurator implements KeyConfigurator, Cloneable {
 	public static ParallelConfigurator create(KeyConfigurator a, KeyConfigurator b) {

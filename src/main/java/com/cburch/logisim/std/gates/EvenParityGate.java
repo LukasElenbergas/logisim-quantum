@@ -1,13 +1,13 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.std.gates;
+package com.cburch.logisim.std.gates;
 
-import main.java.com.cburch.logisim.analyze.model.Expression;
-import main.java.com.cburch.logisim.analyze.model.Expressions;
-import main.java.com.cburch.logisim.data.Value;
-import main.java.com.cburch.logisim.instance.InstancePainter;
-import main.java.com.cburch.logisim.instance.InstanceState;
+import com.cburch.logisim.analyze.model.Expression;
+import com.cburch.logisim.analyze.model.Expressions;
+import com.cburch.logisim.data.Value;
+import com.cburch.logisim.instance.InstancePainter;
+import com.cburch.logisim.instance.InstanceState;
 
 class EvenParityGate extends AbstractGate {
 	public static EvenParityGate FACTORY = new EvenParityGate();

@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.comp;
+package com.cburch.logisim.comp;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -13,10 +13,10 @@ import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-import main.java.com.cburch.logisim.data.Bounds;
-import main.java.com.cburch.logisim.tools.Caret;
-import main.java.com.cburch.logisim.tools.CaretEvent;
-import main.java.com.cburch.logisim.tools.CaretListener;
+import com.cburch.logisim.data.Bounds;
+import com.cburch.logisim.tools.Caret;
+import com.cburch.logisim.tools.CaretEvent;
+import com.cburch.logisim.tools.CaretListener;
 
 class TextFieldCaret implements Caret, TextFieldListener {
 	private LinkedList<CaretListener> listeners = new LinkedList<CaretListener>();

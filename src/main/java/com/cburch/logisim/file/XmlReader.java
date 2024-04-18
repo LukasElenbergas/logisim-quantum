@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.file;
+package com.cburch.logisim.file;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -18,22 +18,22 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.xml.sax.SAXException;
 
-import main.java.com.cburch.draw.model.AbstractCanvasObject;
-import main.java.com.cburch.logisim.LogisimVersion;
-import main.java.com.cburch.logisim.Main;
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.circuit.appear.AppearanceSvgReader;
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeDefaultProvider;
-import main.java.com.cburch.logisim.data.AttributeSet;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.instance.Instance;
-import main.java.com.cburch.logisim.std.wiring.Pin;
-import main.java.com.cburch.logisim.tools.Library;
-import main.java.com.cburch.logisim.tools.Tool;
-import main.java.com.cburch.logisim.util.InputEventUtil;
-import main.java.com.cburch.logisim.util.StringUtil;
+import com.cburch.draw.model.AbstractCanvasObject;
+import com.cburch.logisim.LogisimVersion;
+import com.cburch.logisim.Main;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.circuit.appear.AppearanceSvgReader;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeDefaultProvider;
+import com.cburch.logisim.data.AttributeSet;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.instance.Instance;
+import com.cburch.logisim.std.wiring.Pin;
+import com.cburch.logisim.tools.Library;
+import com.cburch.logisim.tools.Tool;
+import com.cburch.logisim.util.InputEventUtil;
+import com.cburch.logisim.util.StringUtil;
 
 class XmlReader {
 	static class CircuitData {

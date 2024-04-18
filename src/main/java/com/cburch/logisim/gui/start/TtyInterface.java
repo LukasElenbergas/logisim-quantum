@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.start;
+package com.cburch.logisim.gui.start;
 
 import java.io.File;
 import java.io.IOException;
@@ -10,25 +10,25 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Map;
 
-import main.java.com.cburch.logisim.circuit.Analyze;
-import main.java.com.cburch.logisim.circuit.Circuit;
-import main.java.com.cburch.logisim.circuit.CircuitState;
-import main.java.com.cburch.logisim.circuit.Propagator;
-import main.java.com.cburch.logisim.comp.Component;
-import main.java.com.cburch.logisim.data.Value;
-import main.java.com.cburch.logisim.file.LoadFailedException;
-import main.java.com.cburch.logisim.file.Loader;
-import main.java.com.cburch.logisim.file.LogisimFile;
-import main.java.com.cburch.logisim.file.FileStatistics;
-import main.java.com.cburch.logisim.instance.Instance;
-import main.java.com.cburch.logisim.instance.InstanceState;
-import main.java.com.cburch.logisim.proj.Project;
-import main.java.com.cburch.logisim.std.io.Keyboard;
-import main.java.com.cburch.logisim.std.io.Tty;
-import main.java.com.cburch.logisim.std.memory.Ram;
-import main.java.com.cburch.logisim.std.wiring.Pin;
-import main.java.com.cburch.logisim.tools.Library;
-import main.java.com.cburch.logisim.util.StringUtil;
+import com.cburch.logisim.circuit.Analyze;
+import com.cburch.logisim.circuit.Circuit;
+import com.cburch.logisim.circuit.CircuitState;
+import com.cburch.logisim.circuit.Propagator;
+import com.cburch.logisim.comp.Component;
+import com.cburch.logisim.data.Value;
+import com.cburch.logisim.file.LoadFailedException;
+import com.cburch.logisim.file.Loader;
+import com.cburch.logisim.file.LogisimFile;
+import com.cburch.logisim.file.FileStatistics;
+import com.cburch.logisim.instance.Instance;
+import com.cburch.logisim.instance.InstanceState;
+import com.cburch.logisim.proj.Project;
+import com.cburch.logisim.std.io.Keyboard;
+import com.cburch.logisim.std.io.Tty;
+import com.cburch.logisim.std.memory.Ram;
+import com.cburch.logisim.std.wiring.Pin;
+import com.cburch.logisim.tools.Library;
+import com.cburch.logisim.util.StringUtil;
 
 public class TtyInterface {
 	public static final int FORMAT_TABLE = 1;

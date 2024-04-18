@@ -1,13 +1,13 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.analyze.gui;
+package com.cburch.logisim.analyze.gui;
 
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-import main.java.com.cburch.logisim.analyze.model.Entry;
-import main.java.com.cburch.logisim.analyze.model.TruthTable;
+import com.cburch.logisim.analyze.model.Entry;
+import com.cburch.logisim.analyze.model.TruthTable;
 
 class TruthTableMouseListener implements MouseListener {
 	private int cellX;

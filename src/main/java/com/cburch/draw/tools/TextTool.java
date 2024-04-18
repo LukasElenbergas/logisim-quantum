@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.tools;
+package com.cburch.draw.tools;
 
 import java.awt.Cursor;
 import java.awt.Graphics;
@@ -18,19 +18,19 @@ import javax.swing.Icon;
 import javax.swing.InputMap;
 import javax.swing.KeyStroke;
 
-import main.java.com.cburch.draw.actions.ModelAddAction;
-import main.java.com.cburch.draw.actions.ModelEditTextAction;
-import main.java.com.cburch.draw.actions.ModelRemoveAction;
-import main.java.com.cburch.draw.canvas.Canvas;
-import main.java.com.cburch.draw.model.CanvasObject;
-import main.java.com.cburch.draw.shapes.DrawAttr;
-import main.java.com.cburch.draw.shapes.Text;
-import main.java.com.cburch.draw.util.EditableLabelField;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.AttributeEvent;
-import main.java.com.cburch.logisim.data.AttributeListener;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.util.Icons;
+import com.cburch.draw.actions.ModelAddAction;
+import com.cburch.draw.actions.ModelEditTextAction;
+import com.cburch.draw.actions.ModelRemoveAction;
+import com.cburch.draw.canvas.Canvas;
+import com.cburch.draw.model.CanvasObject;
+import com.cburch.draw.shapes.DrawAttr;
+import com.cburch.draw.shapes.Text;
+import com.cburch.draw.util.EditableLabelField;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.AttributeEvent;
+import com.cburch.logisim.data.AttributeListener;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.util.Icons;
 
 public class TextTool extends AbstractTool {
 	private class FieldListener extends AbstractAction implements AttributeListener {

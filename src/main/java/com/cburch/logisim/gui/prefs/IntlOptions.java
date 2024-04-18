@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.gui.prefs;
+package com.cburch.logisim.gui.prefs;
 
 import java.awt.Component;
 import java.awt.Dimension;
@@ -12,8 +12,8 @@ import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import main.java.com.cburch.logisim.prefs.AppPreferences;
-import main.java.com.cburch.logisim.util.LocaleManager;
+import com.cburch.logisim.prefs.AppPreferences;
+import com.cburch.logisim.util.LocaleManager;
 
 class IntlOptions extends OptionsPanel {
 	private static class RestrictedLabel extends JLabel {

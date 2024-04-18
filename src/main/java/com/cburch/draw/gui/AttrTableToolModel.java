@@ -1,13 +1,13 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.gui;
+package com.cburch.draw.gui;
 
-import main.java.com.cburch.draw.tools.AbstractTool;
-import main.java.com.cburch.draw.tools.DrawingAttributeSet;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.gui.generic.AttrTableSetException;
-import main.java.com.cburch.logisim.gui.generic.AttributeSetTableModel;
+import com.cburch.draw.tools.AbstractTool;
+import com.cburch.draw.tools.DrawingAttributeSet;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.gui.generic.AttrTableSetException;
+import com.cburch.logisim.gui.generic.AttributeSetTableModel;
 
 class AttrTableToolModel extends AttributeSetTableModel {
 	private DrawingAttributeSet defaults;

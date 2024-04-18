@@ -1,13 +1,13 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.logisim.std.arith;
+package com.cburch.logisim.std.arith;
 
 import java.util.List;
 
-import main.java.com.cburch.logisim.tools.FactoryDescription;
-import main.java.com.cburch.logisim.tools.Library;
-import main.java.com.cburch.logisim.tools.Tool;
+import com.cburch.logisim.tools.FactoryDescription;
+import com.cburch.logisim.tools.Library;
+import com.cburch.logisim.tools.Tool;
 
 public class Arithmetic extends Library {
 	private static FactoryDescription[] DESCRIPTIONS = {

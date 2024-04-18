@@ -1,7 +1,7 @@
 /* Copyright (c) 2010, Carl Burch. License information is located in the
  * com.cburch.logisim.Main source code and at www.cburch.com/logisim/. */
 
-package main.java.com.cburch.draw.tools;
+package com.cburch.draw.tools;
 
 import java.awt.Color;
 import java.awt.Cursor;
@@ -13,17 +13,17 @@ import java.util.List;
 
 import javax.swing.Icon;
 
-import main.java.com.cburch.draw.actions.ModelAddAction;
-import main.java.com.cburch.draw.canvas.Canvas;
-import main.java.com.cburch.draw.model.CanvasModel;
-import main.java.com.cburch.draw.model.CanvasObject;
-import main.java.com.cburch.draw.shapes.DrawAttr;
-import main.java.com.cburch.draw.shapes.LineUtil;
-import main.java.com.cburch.draw.shapes.Poly;
-import main.java.com.cburch.logisim.data.Attribute;
-import main.java.com.cburch.logisim.data.Location;
-import main.java.com.cburch.logisim.util.Icons;
-import main.java.com.cburch.logisim.util.UnmodifiableList;
+import com.cburch.draw.actions.ModelAddAction;
+import com.cburch.draw.canvas.Canvas;
+import com.cburch.draw.model.CanvasModel;
+import com.cburch.draw.model.CanvasObject;
+import com.cburch.draw.shapes.DrawAttr;
+import com.cburch.draw.shapes.LineUtil;
+import com.cburch.draw.shapes.Poly;
+import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.Location;
+import com.cburch.logisim.util.Icons;
+import com.cburch.logisim.util.UnmodifiableList;
 
 public class LineTool extends AbstractTool {
 	private DrawingAttributeSet attrs;
