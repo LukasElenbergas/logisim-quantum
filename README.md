@@ -14,6 +14,6 @@ Quantum logic gate implementation in the Logisim (2.7.1) tool
 - [x] Setup jre, jdk, Intellij on work PC
 - [x] Setup several GitHub Account access on work PC
 - [x] Import missing external libraries to libs folder
-- [ ] Fix any outstanding errors
-- [ ] Figure out how to and compile the code and COMPILE
-- [ ] Prune any other unnecessary stuff from the repo
+- [x] Fix any outstanding errors
+- [x] Figure out how to and compile the code and COMPILE
+- [x] Prune any other unnecessary stuff from the repo
