@@ -10,6 +10,16 @@ Quantum logic gate implementation in the Logisim (2.7.1) tool
     - https://logisim.altervista.org/developerstutorial.php
     - https://reintech.io/blog/java-project-structure-organizing-managing-large-projects
 
+## Application startup process:
+1. Main.java startup.run() ->
+2. Startup.java run() > ProjectActions.doNew(...) ->
+3. ProjectActions.java doNew(...) > completeProject(...) > new CreateFrame(...) (RUNNABLE) > Frame(newProject) ->
+4. Frame.java Canvas(proj) ->
+5. Canvas.java paintThread.start() ->
+6. Frame.java (everything else in constructor finishes) ->
+7. ProjectActions.java CrateFrame run() (everything else in there finishes) ->
+8. (we have a running Canvas thread)
+
 ## TODOS:
 - [x] Setup jre, jdk, Intellij on work PC
 - [x] Setup several GitHub Account access on work PC
