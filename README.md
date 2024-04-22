@@ -28,6 +28,7 @@ Quantum logic gate implementation in the Logisim (2.7.1) tool
 - [x] Figure out how to and compile the code and COMPILE
 - [x] Prune any other unnecessary stuff from the repo
 - [x] Explore how is it advised to introduce new changes in the guide
+- [ ] NEW: Figure out how many threads are running during the programs lifespan
 - [ ] (FIRST BIG CHANGE) Add a folder where quantum logic gates will be stored
 - [ ] Introduction of complex numbers (add new external package?)
 - [ ] Explore how the engine works right now to gauge work needed to be done
