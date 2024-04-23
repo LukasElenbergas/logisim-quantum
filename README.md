@@ -11,6 +11,7 @@ Quantum logic gate implementation in the Logisim (2.7.1) tool
     - https://reintech.io/blog/java-project-structure-organizing-managing-large-projects
 
 ## Notes:
+- A .jar can be built via Build > Build Artifacts via Intellij
 - There seem to be around 15-20 threads running at once, some of which include:
   - CanvasPaintThread - main thread where the GUI is running
   - SimulatorTicker - thread where the circuit simulation is running
