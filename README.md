@@ -15,6 +15,7 @@ Quantum logic gate implementation in the Logisim (2.7.1) tool
 - There seem to be around 15-20 threads running at once, some of which include:
   - CanvasPaintThread - main thread where the GUI is running
   - SimulatorTicker - thread where the circuit simulation is running
+- There is a method convertToNands() which indicates gate conversion of some kind in the engine
 
 ## Application startup process:
 1. Main.java startup.run() ->
