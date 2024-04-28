@@ -38,8 +38,8 @@ Quantum logic gate implementation in the Logisim (2.7.1) tool
 - [x] NEW: Figure out how many threads are running during the programs lifespan
 - [x] (FIRST BIG CHANGE) Add a folder where quantum logic gates will be stored
 - [x] Introduction of complex numbers (add new external package?)
+- [x] Define which exact gates will be implemented
+- [x] Add all components needed for this project (qubits, gates, etc.)
 - [ ] Explore how the engine works right now to gauge work needed to be done
-- [ ] Define which exact gates will be implemented
-- [ ] Add all components needed for this project (qubits, gates, etc.)
 - [ ] Implement qubit behavior
-- [ ] Implement the very first quantum gate
+- [ ] Implement Pauli-X and Measurement gates

@@ -2,11 +2,11 @@ package com.cburch.logisim.std.quantum;
 
 import com.cburch.logisim.instance.*;
 
-class IdentityGate extends InstanceFactory{
-    public static InstanceFactory FACTORY = new IdentityGate();
+class Qubit extends InstanceFactory {
+    public static InstanceFactory FACTORY = new Qubit();
 
-    private IdentityGate() {
-        super("Identity Gate", Strings.getter("identityGateComponent"));
+    private Qubit() {
+        super("Qubit", Strings.getter("qubitComponent"));
     }
 
     @Override
