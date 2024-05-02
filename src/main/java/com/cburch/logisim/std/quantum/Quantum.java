@@ -13,6 +13,7 @@ public class Quantum extends Library {
     public Quantum() {
         tools = Arrays.asList(new Tool[] {
                 new AddTool(Qubit.FACTORY),
+                new AddTool(Control.FACTORY),
                 new AddTool(PauliXGate.FACTORY),
                 new AddTool(PauliYGate.FACTORY),
                 new AddTool(PauliZGate.FACTORY),
@@ -23,9 +24,6 @@ public class Quantum extends Library {
                 new AddTool(RxGate.FACTORY),
                 new AddTool(RyGate.FACTORY),
                 new AddTool(RzGate.FACTORY),
-                new AddTool(CNotGate.FACTORY),
-                new AddTool(CZGate.FACTORY),
-                new AddTool(ToffoliGate.FACTORY),
                 new AddTool(MeasurementGate.FACTORY)
         });
     }

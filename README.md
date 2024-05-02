@@ -42,4 +42,4 @@ Quantum logic gate implementation in the Logisim (2.7.1) tool
 - [x] Add all components needed for this project (qubits, gates, etc.)
 - [ ] Explore how the engine works right now to gauge work needed to be done
 - [ ] Implement qubit behavior
-- [ ] Implement Pauli-X and Measurement gates
+- [ ] Implement Pauli-X, Hadamard, Control and Measurement gates
