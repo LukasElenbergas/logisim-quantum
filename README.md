@@ -41,6 +41,6 @@ Quantum logic gate implementation in the Logisim (2.7.1) tool
 - [x] Define which exact gates will be implemented
 - [x] Add all components needed for this project (qubits, gates, etc.)
 - [x] Explore how the engine works right now to gauge work needed to be done
-- [ ] Implement qubit
+- [ ] Implement qubit (make sure IDs are included)
 - [ ] Implement new value quantum components will output
 - [ ] Implement Identity
