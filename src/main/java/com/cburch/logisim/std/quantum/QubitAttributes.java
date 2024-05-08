@@ -15,12 +15,12 @@ class QubitAttributes extends AbstractAttributeSet {
     public static QubitAttributes instance = new QubitAttributes();
 
     private static final List<Attribute<?>> ATTRIBUTES
-            = Arrays.asList(StdAttr.FACING, StdAttr.WIDTH, StdAttr.LABEL, Pin.ATTR_LABEL_LOC, StdAttr.LABEL_FONT);
+            = Arrays.asList(StdAttr.FACING, StdAttr.LABEL, Pin.ATTR_LABEL_LOC, StdAttr.LABEL_FONT);
 
     Direction facing = Direction.EAST;
     BitWidth width = BitWidth.ONE;
     String label = "";
-    Direction labelloc = Direction.NORTH;
+    Direction labelloc = Direction.EAST;
     Font labelfont = StdAttr.DEFAULT_LABEL_FONT;
 
     public QubitAttributes() { }
