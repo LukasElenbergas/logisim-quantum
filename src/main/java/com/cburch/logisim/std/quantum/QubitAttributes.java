@@ -6,6 +6,7 @@ import java.util.List;
 
 import com.cburch.logisim.data.AbstractAttributeSet;
 import com.cburch.logisim.data.Attribute;
+import com.cburch.logisim.data.BitWidth;
 import com.cburch.logisim.data.Direction;
 import com.cburch.logisim.instance.StdAttr;
 import com.cburch.logisim.std.wiring.Pin;
@@ -14,9 +15,10 @@ class QubitAttributes extends AbstractAttributeSet {
     public static QubitAttributes instance = new QubitAttributes();
 
     private static final List<Attribute<?>> ATTRIBUTES
-            = Arrays.asList(StdAttr.FACING, StdAttr.LABEL, Pin.ATTR_LABEL_LOC, StdAttr.LABEL_FONT);
+            = Arrays.asList(StdAttr.FACING, StdAttr.WIDTH, StdAttr.LABEL, Pin.ATTR_LABEL_LOC, StdAttr.LABEL_FONT);
 
     Direction facing = Direction.EAST;
+    BitWidth width = BitWidth.ONE;
     String label = "";
     Direction labelloc = Direction.NORTH;
     Font labelfont = StdAttr.DEFAULT_LABEL_FONT;
@@ -33,6 +35,7 @@ class QubitAttributes extends AbstractAttributeSet {
     @SuppressWarnings("unchecked")
     public <E> E getValue(Attribute<E> attr) {
         if (attr == StdAttr.FACING) return (E) facing;
+        if (attr == StdAttr.WIDTH) return (E) width;
         if (attr == StdAttr.LABEL) return (E) label;
         if (attr == Pin.ATTR_LABEL_LOC) return (E) labelloc;
         if (attr == StdAttr.LABEL_FONT) return (E) labelfont;
@@ -43,6 +46,8 @@ class QubitAttributes extends AbstractAttributeSet {
     public <V> void setValue(Attribute<V> attr, V value) {
         if (attr == StdAttr.FACING) {
             facing = (Direction) value;
+        } else if (attr == StdAttr.WIDTH) {
+            width = (BitWidth) value;
         } else if (attr == StdAttr.LABEL) {
             label = (String) value;
         } else if (attr == Pin.ATTR_LABEL_LOC) {
