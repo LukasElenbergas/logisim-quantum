@@ -15,11 +15,11 @@ class QubitAttributes extends AbstractAttributeSet {
     public static QubitAttributes instance = new QubitAttributes();
 
     private static final List<Attribute<?>> ATTRIBUTES
-            = Arrays.asList(StdAttr.FACING, StdAttr.LABEL, Pin.ATTR_LABEL_LOC, StdAttr.LABEL_FONT);
+            = Arrays.asList(StdAttr.FACING, StdAttr.QUBIT_ID, Pin.ATTR_LABEL_LOC, StdAttr.LABEL_FONT);
 
     Direction facing = Direction.EAST;
     BitWidth width = BitWidth.ONE;
-    String label = "";
+    String id = "0";
     Direction labelloc = Direction.EAST;
     Font labelfont = StdAttr.DEFAULT_LABEL_FONT;
 
@@ -36,7 +36,7 @@ class QubitAttributes extends AbstractAttributeSet {
     public <E> E getValue(Attribute<E> attr) {
         if (attr == StdAttr.FACING) return (E) facing;
         if (attr == StdAttr.WIDTH) return (E) width;
-        if (attr == StdAttr.LABEL) return (E) label;
+        if (attr == StdAttr.QUBIT_ID) return (E) id;
         if (attr == Pin.ATTR_LABEL_LOC) return (E) labelloc;
         if (attr == StdAttr.LABEL_FONT) return (E) labelfont;
         return null;
@@ -48,8 +48,8 @@ class QubitAttributes extends AbstractAttributeSet {
             facing = (Direction) value;
         } else if (attr == StdAttr.WIDTH) {
             width = (BitWidth) value;
-        } else if (attr == StdAttr.LABEL) {
-            label = (String) value;
+        } else if (attr == StdAttr.QUBIT_ID) {
+            id = (String) value;
         } else if (attr == Pin.ATTR_LABEL_LOC) {
             labelloc = (Direction) value;
         } else if (attr == StdAttr.LABEL_FONT) {
