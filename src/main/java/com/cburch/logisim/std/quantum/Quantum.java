@@ -13,8 +13,8 @@ public class Quantum extends Library {
     public Quantum() {
         tools = Arrays.asList(new Tool[] {
                 new AddTool(Qubit.FACTORY),
-                new AddTool(Control.FACTORY),
                 new AddTool(IdentityGate.FACTORY),
+                new AddTool(ControlGate.FACTORY),
                 new AddTool(PauliXGate.FACTORY),
                 new AddTool(PauliYGate.FACTORY),
                 new AddTool(PauliZGate.FACTORY),

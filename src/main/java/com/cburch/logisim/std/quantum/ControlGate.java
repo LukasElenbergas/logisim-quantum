@@ -2,11 +2,11 @@ package com.cburch.logisim.std.quantum;
 
 import com.cburch.logisim.instance.*;
 
-class Control extends InstanceFactory {
-    public static InstanceFactory FACTORY = new Control();
+class ControlGate extends InstanceFactory {
+    public static InstanceFactory FACTORY = new ControlGate();
 
-    private Control() {
-        super("Control", Strings.getter("controlComponent"));
+    private ControlGate() {
+        super("Control Gate", Strings.getter("controlGateComponent"));
     }
 
     @Override
