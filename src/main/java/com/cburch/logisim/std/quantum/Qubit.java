@@ -2,6 +2,8 @@ package com.cburch.logisim.std.quantum;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.util.ArrayList;
+import java.util.Objects;
 import javax.swing.*;
 
 import com.cburch.logisim.comp.TextField;
@@ -64,15 +66,13 @@ class Qubit extends InstanceFactory {
 
     @Override
     public void paintInstance(InstancePainter painter) {
-        QubitAttributes attrs = (QubitAttributes) painter.getAttributeSet();
         Graphics g = painter.getGraphics();
         Bounds bds = painter.getInstance().getBounds();
         int x = bds.getX();
         int y = bds.getY();
         GraphicsUtil.switchToWidth(g, 2);
         g.setColor(Color.black);
-        g.drawRect(x + 1, y + 1,
-                bds.getWidth() - 1, bds.getHeight() - 1);
+        g.drawRect(x + 1, y + 1, bds.getWidth() - 1, bds.getHeight() - 1);
 
         painter.drawLabel();
 
@@ -81,9 +81,7 @@ class Qubit extends InstanceFactory {
             GraphicsUtil.drawCenteredText(g, "x" + 1,
                     bds.getX() + bds.getWidth() / 2, bds.getY() + bds.getHeight() / 2);
         } else {
-            // TODO: Adjust color according to the "value"
-            // g.setColor(receiving.getColor());
-            g.setColor(new Color(105, 40, 242));
+            g.setColor(Value.QUANTUM_COLOR);
             g.fillOval(x + 4, y + 4, 13, 13);
             g.setColor(Color.WHITE);
             GraphicsUtil.drawCenteredText(g, "q", x + 11, y + 8);
@@ -125,35 +123,35 @@ class Qubit extends InstanceFactory {
         int x, y, halign, valign;
 
         if (labelLoc == Direction.NORTH) {
-            halign = com.cburch.logisim.comp.TextField.H_CENTER;
-            valign = com.cburch.logisim.comp.TextField.V_BOTTOM;
+            halign = TextField.H_CENTER;
+            valign = TextField.V_BOTTOM;
             x = bds.getX() + bds.getWidth() / 2;
             y = bds.getY() - 2;
             if (facing == labelLoc) {
-                halign = com.cburch.logisim.comp.TextField.H_LEFT;
+                halign = TextField.H_LEFT;
                 x += 2;
             }
         } else if (labelLoc == Direction.SOUTH) {
-            halign = com.cburch.logisim.comp.TextField.H_CENTER;
-            valign = com.cburch.logisim.comp.TextField.V_TOP;
+            halign = TextField.H_CENTER;
+            valign = TextField.V_TOP;
             x = bds.getX() + bds.getWidth() / 2;
             y = bds.getY() + bds.getHeight() + 2;
             if (facing == labelLoc) {
-                halign = com.cburch.logisim.comp.TextField.H_LEFT;
+                halign = TextField.H_LEFT;
                 x += 2;
             }
         } else if (labelLoc == Direction.EAST) {
-            halign = com.cburch.logisim.comp.TextField.H_LEFT;
-            valign = com.cburch.logisim.comp.TextField.V_CENTER;
+            halign = TextField.H_LEFT;
+            valign = TextField.V_CENTER;
             x = bds.getX() + bds.getWidth() + 2;
             y = bds.getY() + bds.getHeight() / 2;
             if (facing == labelLoc) {
-                valign = com.cburch.logisim.comp.TextField.V_BOTTOM;
+                valign = TextField.V_BOTTOM;
                 y -= 2;
             }
         } else { // WEST
-            halign = com.cburch.logisim.comp.TextField.H_RIGHT;
-            valign = com.cburch.logisim.comp.TextField.V_CENTER;
+            halign = TextField.H_RIGHT;
+            valign = TextField.V_CENTER;
             x = bds.getX() - 2;
             y = bds.getY() + bds.getHeight() / 2;
             if (facing == labelLoc) {
@@ -162,11 +160,24 @@ class Qubit extends InstanceFactory {
             }
         }
 
-        instance.setTextField(StdAttr.LABEL, StdAttr.LABEL_FONT, x, y, halign, valign);
+        instance.setTextField(StdAttr.QUBIT_ID, StdAttr.LABEL_FONT, x, y, halign, valign);
     }
 
     @Override
     public void propagate(InstanceState state) {
+        String idString = state.getAttributeValue(StdAttr.QUBIT_ID);
+        Value in = state.getPort(1);
 
+        if (Objects.equals(idString, "") || in == Value.ERROR) {
+            state.setPort(0, Value.ERROR, 1);
+        } else {
+            int id = Integer.parseInt(idString);
+            int bit = in == Value.TRUE ? 1 : 0;
+
+            QuantumValue qVal = new QuantumValue(id, bit, new ArrayList<>());
+
+            state.setPort(0, Value.QUANTUM, 1);
+
+        }
     }
 }

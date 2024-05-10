@@ -21,4 +21,11 @@ public class QuantumValue {
     }
 
     public void appendInstruction(String instr) { this.instructions.add(instr); }
+
+    // For debugging purposes
+    public void printValues() {
+        System.out.println(this);
+        System.out.println("Qubit ID: " + this.id + " Bit value: " + this.bit);
+        System.out.println("Instruction list: " + this.instructions);
+    }
 }
