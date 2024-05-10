@@ -14,6 +14,7 @@ public class Value {
 	public static final Value UNKNOWN = new Value(1, 0, 1, 0);
 	public static final Value ERROR   = new Value(1, 1, 0, 0);
 	public static final Value NIL     = new Value(0, 0, 0, 0);
+	public static final Value QUANTUM = new Value(1, 0, 1, 1);
 
 	public static final int MAX_WIDTH = 32;
 
@@ -23,6 +24,7 @@ public class Value {
 	public static final Color UNKNOWN_COLOR = new Color(40, 40, 255);
 	public static final Color ERROR_COLOR = new Color(192, 0, 0);
 	public static final Color WIDTH_ERROR_COLOR = new Color(255, 123, 0);
+	public static final Color QUANTUM_COLOR = new Color(105, 40, 242);
 	public static final Color MULTI_COLOR = Color.BLACK;
 	
 	private static final Cache cache = new Cache();
@@ -175,7 +177,10 @@ public class Value {
 		if (which < 0 || which >= width) return ERROR;
 		int mask = 1 << which;
 		if ((error & mask) != 0) return ERROR;
-		else if ((unknown & mask) != 0) return UNKNOWN;
+		else if ((unknown & mask) == 1) {
+			if (value == 1) return QUANTUM;
+			else return UNKNOWN;
+		}
 		else if ((value & mask) != 0) return TRUE;
 		else return FALSE;
 	}
@@ -191,11 +196,10 @@ public class Value {
 	@Override
 	public boolean equals(Object other_obj) {
 		if (!(other_obj instanceof Value other)) return false;
-        boolean ret = this.width == other.width
-			&& this.error == other.error
-			&& this.unknown == other.unknown
-			&& this.value == other.value;
-		return ret;
+        return this.width == other.width
+            && this.error == other.error
+            && this.unknown == other.unknown
+            && this.value == other.value;
 	}
 	
 	@Override
@@ -219,7 +223,10 @@ public class Value {
 		case 0: return "-";
 		case 1:
 			if (error != 0)        return "E";
-			else if (unknown != 0) return "x";
+			else if (unknown == 1) {
+				if (value == 0) return "x";
+				else return "q";
+			}
 			else if (value != 0)   return "1";
 			else                  return "0";
 		default:
@@ -349,6 +356,7 @@ public class Value {
 	public Value and(Value other) {
 		if (other == null) return this;
 		if (this.width == 1 && other.width == 1) {
+			if (this == QUANTUM) return ERROR;
 			if (this == FALSE || other == FALSE) return FALSE;
 			if (this == TRUE  && other == TRUE ) return TRUE;
 			return ERROR;
@@ -366,6 +374,7 @@ public class Value {
 	public Value or(Value other) {
 		if (other == null) return this;
 		if (this.width == 1 && other.width == 1) {
+			if (this == QUANTUM) return ERROR;
 			if (this == TRUE  || other == TRUE ) return TRUE;
 			if (this == FALSE && other == FALSE) return FALSE;
 			return ERROR;
@@ -383,6 +392,7 @@ public class Value {
 	public Value xor(Value other) {
 		if (other == null) return this;
 		if (this.width <= 1 && other.width <= 1) {
+			if (this == QUANTUM) return ERROR;
 			if (this == ERROR || other == ERROR) return ERROR;
 			if (this == UNKNOWN || other == UNKNOWN) return ERROR;
 			if (this == NIL || other == NIL) return ERROR;
@@ -417,6 +427,7 @@ public class Value {
 		} else if (width == 1) {
 			if (this == UNKNOWN) return UNKNOWN_COLOR;
 			else if (this == TRUE) return TRUE_COLOR;
+			else if (this == QUANTUM) return QUANTUM_COLOR;
 			else return FALSE_COLOR;
 		} else {
 			return MULTI_COLOR;
