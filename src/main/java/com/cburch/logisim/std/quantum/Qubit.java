@@ -76,16 +76,10 @@ class Qubit extends InstanceFactory {
 
         painter.drawLabel();
 
-        if (!painter.getShowState()) {
-            g.setColor(Color.BLACK);
-            GraphicsUtil.drawCenteredText(g, "x" + 1,
-                    bds.getX() + bds.getWidth() / 2, bds.getY() + bds.getHeight() / 2);
-        } else {
-            g.setColor(Value.QUANTUM_COLOR);
-            g.fillOval(x + 4, y + 4, 13, 13);
-            g.setColor(Color.WHITE);
-            GraphicsUtil.drawCenteredText(g, "q", x + 11, y + 8);
-        }
+        g.setColor(Value.QUANTUM_COLOR);
+        g.fillOval(x + 4, y + 4, 13, 13);
+        g.setColor(Color.WHITE);
+        GraphicsUtil.drawCenteredText(g, "q", x + 11, y + 8);
 
         painter.drawPorts();
     }
@@ -176,6 +170,7 @@ class Qubit extends InstanceFactory {
 
             QuantumValue qVal = new QuantumValue(id, bit, new ArrayList<>());
 
+            // TODO: Remove debugging print
             qVal.printValues();
 
             state.setPort(0, Value.QUANTUM, 1, qVal);
