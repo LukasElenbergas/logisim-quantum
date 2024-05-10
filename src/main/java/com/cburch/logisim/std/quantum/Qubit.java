@@ -176,8 +176,9 @@ class Qubit extends InstanceFactory {
 
             QuantumValue qVal = new QuantumValue(id, bit, new ArrayList<>());
 
-            state.setPort(0, Value.QUANTUM, 1);
+            qVal.printValues();
 
+            state.setPort(0, Value.QUANTUM, 1, qVal);
         }
     }
 }
