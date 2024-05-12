@@ -5,7 +5,6 @@ package com.cburch.logisim.instance;
 
 import com.cburch.logisim.data.Attribute;
 import com.cburch.logisim.data.AttributeSet;
-import com.cburch.logisim.data.QuantumValue;
 import com.cburch.logisim.data.Value;
 import com.cburch.logisim.proj.Project;
 

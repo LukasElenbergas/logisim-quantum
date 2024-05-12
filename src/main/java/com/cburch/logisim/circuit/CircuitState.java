@@ -17,7 +17,6 @@ import com.cburch.logisim.comp.ComponentDrawContext;
 import com.cburch.logisim.comp.ComponentState;
 import com.cburch.logisim.data.BitWidth;
 import com.cburch.logisim.data.Location;
-import com.cburch.logisim.data.QuantumValue;
 import com.cburch.logisim.data.Value;
 import com.cburch.logisim.instance.Instance;
 import com.cburch.logisim.instance.InstanceData;
