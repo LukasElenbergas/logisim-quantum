@@ -18,12 +18,12 @@ public class Port {
 	public static final String EXCLUSIVE = "exclusive";
 	public static final String SHARED = "shared";
 	
-	private int dx;
-	private int dy;
-	private int type;
-	private BitWidth widthFixed;
-	private Attribute<BitWidth> widthAttr;
-	private boolean exclude;
+	private final int dx;
+	private final int dy;
+	private final int type;
+	private final BitWidth widthFixed;
+	private final Attribute<BitWidth> widthAttr;
+	private final boolean exclude;
 	private StringGetter toolTip;
 	
 	public Port(int dx, int dy, String type, BitWidth bits) {
@@ -81,11 +81,11 @@ public class Port {
 		if (widthFixed != null) {
 			return new EndData(pt, widthFixed, type, exclude);
 		} else {
-			Object val = attrs.getValue(widthAttr);
-			if (!(val instanceof BitWidth)) {
+			BitWidth val = attrs.getValue(widthAttr);
+			if (val == null) {
 				throw new IllegalArgumentException("Width attribute not set");
 			}
-			return new EndData(pt, (BitWidth) val, type, exclude);
+			return new EndData(pt, val, type, exclude);
 		}
 	}
 	
