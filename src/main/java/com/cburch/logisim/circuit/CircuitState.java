@@ -276,10 +276,6 @@ public class CircuitState implements InstanceData {
         if (base != null) base.setValue(this, pt, val, cause, delay);
     }
 
-    public void setValue(Location pt, Value val, Component cause, int delay, QuantumValue qVal) {
-        if (base != null) base.setValue(this, pt, val, cause, delay, qVal);
-    }
-
     public void markComponentAsDirty(Component comp) {
         try {
             dirtyComponents.add(comp);

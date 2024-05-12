@@ -168,12 +168,9 @@ class Qubit extends InstanceFactory {
             int id = Integer.parseInt(idString);
             int bit = in == Value.TRUE ? 1 : 0;
 
-            QuantumValue qVal = new QuantumValue(id, bit, new ArrayList<>());
+            Value out = new Value(Value.QUANTUM, new QuantumValue(id, bit, new ArrayList<>()));
 
-            // TODO: Remove debugging print
-            qVal.printValues();
-
-            state.setPort(0, Value.QUANTUM, 1, qVal);
+            state.setPort(0, out, 1);
         }
     }
 }

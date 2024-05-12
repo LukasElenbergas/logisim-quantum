@@ -73,11 +73,6 @@ class InstanceStateImpl implements InstanceState {
         circuitState.setValue(end.getLocation(), value, component, delay);
     }
 
-    public void setPort(int portIndex, Value value, int delay, QuantumValue qVal) {
-        EndData end = component.getEnd(portIndex);
-        circuitState.setValue(end.getLocation(), value, component, delay, qVal);
-    }
-
     public InstanceData getData() {
         return (InstanceData) circuitState.getData(component);
     }

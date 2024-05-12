@@ -26,8 +26,6 @@ public interface InstanceState {
 
     void setPort(int portIndex, Value value, int delay);
 
-    void setPort(int portIndex, Value value, int delay, QuantumValue qVal);
-
     InstanceData getData();
 
     void setData(InstanceData value);

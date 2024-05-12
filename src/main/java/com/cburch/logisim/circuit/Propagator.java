@@ -24,7 +24,6 @@ public class Propagator {
         Location loc;       // the location at which value is emitted
         Value val;          // value being emitted
         SetData next = null;
-        QuantumValue qVal;
 
         private SetData(int time, int serialNumber, CircuitState state, Location loc, Component cause, Value val) {
             this.time = time;
@@ -33,16 +32,6 @@ public class Propagator {
             this.cause = cause;
             this.loc = loc;
             this.val = val;
-        }
-
-        private SetData(int time, int serialNumber, CircuitState state, Location loc, Component cause, Value val, QuantumValue qVal) {
-            this.time = time;
-            this.serialNumber = serialNumber;
-            this.state = state;
-            this.cause = cause;
-            this.loc = loc;
-            this.val = val;
-            this.qVal = qVal;
         }
 
         public int compareTo(SetData o) {
@@ -126,7 +115,7 @@ public class Propagator {
      */
     private volatile int simRandomShift;
 
-    private final PriorityQueue<SetData> toProcess = new PriorityQueue<SetData>();
+    private final PriorityQueue<SetData> toProcess = new PriorityQueue<>();
     private int clock = 0;
     private boolean isOscillating = false;
     private boolean oscAdding = false;
@@ -346,36 +335,6 @@ public class Propagator {
 		Simulator.log(clock + ": set " + pt + " in "
 				+ state + " to " + val
 				+ " by " + 
-				cause + " after " + delay); //*/
-
-        setDataSerialNumber++;
-    }
-
-    void setValue(CircuitState state, Location pt, Value val, Component cause, int delay, QuantumValue qVal) {
-        if (cause instanceof Wire || cause instanceof Splitter) return;
-        if (delay <= 0) {
-            delay = 1;
-        }
-        int randomShift = simRandomShift;
-        if (randomShift > 0) { // random noise is turned on
-            // multiply the delay by 32 so that the random noise
-            // only changes the delay by 3%.
-            delay <<= randomShift;
-            if (!(cause.getFactory() instanceof SubcircuitFactory)) {
-                if (noiseCount > 0) {
-                    noiseCount--;
-                } else {
-                    delay++;
-                    noiseCount = noiseSource.nextInt(1 << randomShift);
-                }
-            }
-        }
-        toProcess.add(new SetData(clock + delay, setDataSerialNumber,
-                state, pt, cause, val, qVal));
-		/*DEBUGGING - comment out
-		Simulator.log(clock + ": set " + pt + " in "
-				+ state + " to " + val
-				+ " by " +
 				cause + " after " + delay); //*/
 
         setDataSerialNumber++;

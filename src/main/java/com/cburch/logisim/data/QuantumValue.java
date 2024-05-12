@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class QuantumValue {
 
-    int id;
-    int bit;
-    ArrayList<String> instructions;
+    public int id;
+    public int bit;
+    public ArrayList<String> instructions;
 
     public QuantumValue(int id, int bit, ArrayList<String> instructions) {
         this.id = id;
@@ -14,13 +14,21 @@ public class QuantumValue {
         this.instructions = instructions;
     }
 
-    public QuantumValue(QuantumValue q) {
+    public QuantumValue(QuantumValue q, String instruction) {
         this.id = q.id;
         this.bit = q.bit;
-        this.instructions = q.instructions;
+        this.instructions = new ArrayList<>(q.instructions);
+        this.instructions.add(instruction);
+
+        // TODO: Remove debugging print
+        printValues();
     }
 
-    public void appendInstruction(String instr) { this.instructions.add(instr); }
+    public boolean equals(QuantumValue other) {
+        return this.id == other.id
+                && this.bit == other.bit
+                && this.instructions.equals(other.instructions);
+    }
 
     // For debugging purposes
     public void printValues() {

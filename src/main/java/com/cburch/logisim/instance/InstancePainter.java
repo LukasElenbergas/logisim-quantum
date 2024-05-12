@@ -101,10 +101,6 @@ public class InstancePainter implements InstanceState {
         throw new UnsupportedOperationException("setValue on InstancePainter");
     }
 
-    public void setPort(int portIndex, Value value, int delay, QuantumValue qVal) {
-        throw new UnsupportedOperationException("setValue on InstancePainter");
-    }
-
     public InstanceData getData() {
         CircuitState circState = context.getCircuitState();
         if (circState == null || comp == null) {

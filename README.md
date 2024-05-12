@@ -44,4 +44,4 @@ Quantum logic gate implementation in the Logisim (2.7.1) tool
 - [x] Implement qubit (make sure IDs are included)
 - [x] Implement new value quantum components will output
 - [x] Implement Identity
-- [ ] Make sure the values are passed through quantum components properly
+- [x] Make sure the values are passed through quantum components properly
