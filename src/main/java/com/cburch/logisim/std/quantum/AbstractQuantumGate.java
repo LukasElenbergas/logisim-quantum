@@ -20,6 +20,7 @@ abstract class AbstractQuantumGate extends InstanceFactory {
 
     private Icon ICON = Icons.getIcon("qubit.gif");
     private String GATE_IDENTIFIER = "";
+    private boolean RADS_NEEDED = false;
 
     protected AbstractQuantumGate(String name, StringGetter desc) {
         super(name, desc);
@@ -39,8 +40,16 @@ abstract class AbstractQuantumGate extends InstanceFactory {
                 new DirectionConfigurator(ATTR_LABEL_LOC, KeyEvent.ALT_DOWN_MASK)));
     }
 
+    protected AbstractQuantumGate(String name, StringGetter desc, Icon icon, String gate, boolean rads) {
+        this(name, desc, icon, gate);
+        this.RADS_NEEDED = rads;
+    }
+
     @Override
-    public AttributeSet createAttributeSet() { return new QuantumGateAttributes(); }
+    public AttributeSet createAttributeSet() {
+        if (!this.RADS_NEEDED) return new QuantumGateAttributes(false);
+        else return new QuantumGateAttributes(true);
+    }
 
     //
     // graphics methods
@@ -119,7 +128,7 @@ abstract class AbstractQuantumGate extends InstanceFactory {
         instance.setPorts(ports);
     }
 
-    static void configureLabel(Instance instance, Direction labelLoc, Direction facing) {
+    void configureLabel(Instance instance, Direction labelLoc, Direction facing) {
         Bounds bds = instance.getBounds();
         int x, y, halign, valign;
 
@@ -161,7 +170,12 @@ abstract class AbstractQuantumGate extends InstanceFactory {
             }
         }
 
-        instance.setTextField(StdAttr.LABEL, StdAttr.LABEL_FONT, x, y, halign, valign);
+        if (!this.RADS_NEEDED) {
+            instance.setTextField(StdAttr.LABEL, StdAttr.LABEL_FONT, x, y, halign, valign);
+        } else {
+            instance.setTextField(StdAttr.RADIANS, StdAttr.LABEL_FONT, x, y, halign, valign);
+        }
+
     }
 
     @Override
