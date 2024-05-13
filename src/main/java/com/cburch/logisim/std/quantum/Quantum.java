@@ -25,7 +25,6 @@ public class Quantum extends Library {
                 new AddTool(RxGate.FACTORY),
                 new AddTool(RyGate.FACTORY),
                 new AddTool(RzGate.FACTORY),
-                new AddTool(SwapGate.FACTORY),
                 new AddTool(MeasurementGate.FACTORY)
         });
     }
