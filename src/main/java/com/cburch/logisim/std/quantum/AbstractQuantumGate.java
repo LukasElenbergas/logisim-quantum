@@ -3,6 +3,7 @@ package com.cburch.logisim.std.quantum;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.util.Objects;
 
 import com.cburch.logisim.comp.TextField;
 import com.cburch.logisim.data.*;
@@ -93,9 +94,15 @@ abstract class AbstractQuantumGate extends InstanceFactory {
 
         painter.drawLabel();
 
-        g.setColor(Color.BLACK);
-        g.setFont(new Font("Tahoma", Font.BOLD, 12));
-        GraphicsUtil.drawCenteredText(g, GATE_IDENTIFIER, x + 10, y + 9);
+        if (!Objects.equals(this.GATE_IDENTIFIER, "C")) {
+            g.setColor(Color.BLACK);
+            g.setFont(new Font("Tahoma", Font.BOLD, 12));
+            GraphicsUtil.drawCenteredText(g, GATE_IDENTIFIER, x + 10, y + 9);
+        } else {
+            g.setColor(Color.BLACK);
+            g.fillOval(x + 7, y + 7, 7, 7);
+        }
+
 
         painter.drawPorts();
     }
@@ -119,7 +126,7 @@ abstract class AbstractQuantumGate extends InstanceFactory {
         configureLabel(instance, attrs.labelloc, attrs.facing);
     }
 
-    private void configurePorts(Instance instance) {
+    public void configurePorts(Instance instance) {
         Direction facing = instance.getAttributeValue(StdAttr.FACING);
         Port[] ports = new Port[2];
         ports[0] = new Port(0, 0, Port.OUTPUT, StdAttr.WIDTH);
