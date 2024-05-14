@@ -35,4 +35,5 @@ public interface StdAttr {
 
     Attribute<String> QUBIT_ID = Attributes.forString("label", Strings.getter("stdQubitIdAttr"));
     Attribute<String> RADIANS = Attributes.forString("label", Strings.getter("stdRadiansAttr"));
+    Attribute<Integer> NUM_QUBITS = Attributes.forInteger("numqubits", Strings.getter("stdNumGatesAttr"));
 }
