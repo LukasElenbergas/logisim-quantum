@@ -9,6 +9,8 @@ Quantum logic gate implementation in the Logisim (2.7.1) tool
 - Useful links:
     - https://logisim.altervista.org/developerstutorial.php
     - https://reintech.io/blog/java-project-structure-organizing-managing-large-projects
+    - https://quantumcomputing.stackexchange.com/questions/1206/how-does-measurement-of-one-qubit-affect-the-others#:~:text=To%20represent%20a%20quantum%20computer's,a%20system%20of%20multiple%20qubits.
+    - https://quantumcomputing.stackexchange.com/questions/9011/how-to-measure-one-of-the-qubits-in-a-two-qubit-register
 
 ## Notes:
 - A .jar can be built via Build > Build Artifacts via Intellij
@@ -47,4 +49,8 @@ Quantum logic gate implementation in the Logisim (2.7.1) tool
 - [x] Make sure the values are passed through quantum components properly
 - [x] Implement all the Quantum Gates
 - [ ] Change the icons to be less ugly...
+- [ ] Make sure measurement gate check whether all entangled qubits are passed together
 - [ ] Implement logic of the Measurement gate and finish logisim-quantum (for now...)
+
+## IF THERE'S ENOUGH TIME:
+- [ ] Add single qubit "measuring" - checking their complex vector state at a certain point
