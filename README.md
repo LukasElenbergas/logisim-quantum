@@ -48,8 +48,9 @@ Quantum logic gate implementation in the Logisim (2.7.1) tool
 - [x] Implement Identity
 - [x] Make sure the values are passed through quantum components properly
 - [x] Implement all the Quantum Gates
-- [ ] Change the icons to be less ugly...
+- [x] Change the icons to be less ugly...
 - [ ] Make sure measurement gate check whether all entangled qubits are passed together
+- [ ] Make sure measurement gate checks for swaps
 - [ ] Implement logic of the Measurement gate and finish logisim-quantum (for now...)
 
 ## IF THERE'S ENOUGH TIME:
