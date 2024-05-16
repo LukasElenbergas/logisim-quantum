@@ -12,24 +12,15 @@ import com.cburch.logisim.tools.key.BitWidthConfigurator;
 import com.cburch.logisim.tools.key.DirectionConfigurator;
 import com.cburch.logisim.tools.key.JoinedConfigurator;
 import com.cburch.logisim.util.GraphicsUtil;
-import com.cburch.logisim.util.Icons;
 import com.cburch.logisim.util.StringGetter;
 
 abstract class AbstractQuantumGate extends InstanceFactory {
     private static final Attribute<Direction> ATTR_LABEL_LOC
             = Attributes.forDirection("labelloc", Strings.getter("pinLabelLocAttr"));
 
-    private Icon ICON = Icons.getIcon("qubit.gif");
-    private String GATE_IDENTIFIER = "";
+    private final Icon ICON;
+    private final String GATE_IDENTIFIER;
     private boolean RADS_NEEDED = false;
-
-    protected AbstractQuantumGate(String name, StringGetter desc) {
-        super(name, desc);
-        setFacingAttribute(StdAttr.FACING);
-        setKeyConfigurator(JoinedConfigurator.create(
-                new BitWidthConfigurator(StdAttr.WIDTH),
-                new DirectionConfigurator(ATTR_LABEL_LOC, KeyEvent.ALT_DOWN_MASK)));
-    }
 
     protected AbstractQuantumGate(String name, StringGetter desc, Icon icon, String gate) {
         super(name, desc);

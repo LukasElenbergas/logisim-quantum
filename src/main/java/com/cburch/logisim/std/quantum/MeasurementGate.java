@@ -1,9 +1,6 @@
 package com.cburch.logisim.std.quantum;
 
-import com.cburch.logisim.data.AttributeSet;
-import com.cburch.logisim.data.Bounds;
-import com.cburch.logisim.data.Direction;
-import com.cburch.logisim.data.Location;
+import com.cburch.logisim.data.*;
 import com.cburch.logisim.instance.*;
 import com.cburch.logisim.util.Icons;
 
@@ -51,12 +48,10 @@ class MeasurementGate extends AbstractQuantumGate {
 
         int right = 0;
         for (int i = 1; i < totalPorts; i++) {
-            if ((i % 2) != 0) {
-                // Odd ports are inputs (QUBITS)
+            if ((i % 2) != 0) { // Odd ports are inputs (QUBITS)
                 Location in = Location.create(0, 0).translate(facing, -20, right);
                 ports[i] = new Port(in.getX(), in.getY(), Port.INPUT, StdAttr.WIDTH);
-            } else {
-                // Even ports are outputs (BITS)
+            } else { // Even ports are outputs (BITS)
                 Location out = Location.create(0, 0).translate(facing, 0, right);
                 ports[i] = new Port(out.getX(), out.getY(), Port.OUTPUT, StdAttr.WIDTH);
                 right += 40;
@@ -68,6 +63,42 @@ class MeasurementGate extends AbstractQuantumGate {
 
     @Override
     public void propagate(InstanceState state) {
+        Integer qubits = state.getAttributeValue(StdAttr.NUM_QUBITS);
+        Value top = state.getPort(0);
+        Value[] inputs = new Value[qubits];
+        Value[] outputs = new Value[qubits];
+        boolean allQubitsQuantum = true;
 
+        // GET INPUTS AND CONNECTION STATUS
+        int index = 0;
+        for (int i = 1; i < qubits * 2 + 1; i++) {
+            if ((i % 2) != 0) { // Odd ports are inputs (QUBITS)
+                inputs[index] = state.getPort(i);
+                allQubitsQuantum = allQubitsQuantum == inputs[index].isQuantum();
+                index++;
+            }
+        }
+
+        if (!allQubitsQuantum || top == Value.ERROR || top == Value.UNKNOWN) {
+            // SET OUTPUTS TO ERROR WHEN TOP CONTROL IS ERROR/ UNKNOWN OR NOT ALL INPUTS ARE QUANTUM
+            for (int i = 1; i < qubits * 2 + 1; i++) {
+                if ((i % 2) == 0) { // Even ports are outputs (BITS)
+                    state.setPort(i, Value.ERROR, 1);
+                }
+            }
+        } else {
+
+            if (top == Value.FALSE) {
+                // SET OUTPUTS TO UNKNOWN WHEN TOP CONTROL IS FALSE
+                for (int i = 1; i < qubits * 2 + 1; i++) {
+                    if ((i % 2) == 0) { // Even ports are outputs (BITS)
+                        state.setPort(i, Value.UNKNOWN, 1);
+                    }
+                }
+            } else if (top == Value.TRUE) {
+                // MAIN LOGIC GOES HERE SINCE
+
+            }
+        }
     }
 }
