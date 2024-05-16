@@ -42,8 +42,7 @@ class PauliXGate extends AbstractQuantumGate {
                 state.setPort(0, out, 1);
 
             } else if (top.isQuantum()) {
-                String controlledGate = "X[" + top.qVal.instructions.getLast() + "]";
-                Value out = new Value(Value.QUANTUM, new QuantumValue(in.qVal, controlledGate));
+                Value out = new Value(Value.QUANTUM, new QuantumValue(in.qVal, "CX"));
 
                 state.setPort(0, out, 1);
             }
