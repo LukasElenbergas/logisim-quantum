@@ -4,6 +4,8 @@ import com.cburch.logisim.data.*;
 import com.cburch.logisim.instance.*;
 import com.cburch.logisim.util.Icons;
 
+import java.util.Arrays;
+
 class MeasurementGate extends AbstractQuantumGate {
     public static InstanceFactory FACTORY = new MeasurementGate();
 
@@ -66,38 +68,83 @@ class MeasurementGate extends AbstractQuantumGate {
         Integer qubits = state.getAttributeValue(StdAttr.NUM_QUBITS);
         Value top = state.getPort(0);
         Value[] inputs = new Value[qubits];
-        Value[] outputs = new Value[qubits];
-        boolean allQubitsQuantum = true;
+        int[] outputPorts = new int[qubits];
 
-        // GET INPUTS AND CONNECTION STATUS
-        int index = 0;
+        // GET QUBIT INPUTS AND PORT INDICES
+        int indexIn = 0, indexOut = 0;
         for (int i = 1; i < qubits * 2 + 1; i++) {
             if ((i % 2) != 0) { // Odd ports are inputs (QUBITS)
-                inputs[index] = state.getPort(i);
-                allQubitsQuantum = allQubitsQuantum == inputs[index].isQuantum();
-                index++;
+                inputs[indexIn] = state.getPort(i);
+                indexIn++;
+            } else { // Even ports are outputs (BITS)
+                outputPorts[indexOut] = i;
+                indexOut++;
             }
         }
 
-        if (!allQubitsQuantum || top == Value.ERROR || top == Value.UNKNOWN) {
-            // SET OUTPUTS TO ERROR WHEN TOP CONTROL IS ERROR/ UNKNOWN OR NOT ALL INPUTS ARE QUANTUM
-            for (int i = 1; i < qubits * 2 + 1; i++) {
-                if ((i % 2) == 0) { // Even ports are outputs (BITS)
-                    state.setPort(i, Value.ERROR, 1);
-                }
-            }
+        // CHECK WHETHER ALL QUBITS ARE CONNECTED AND IF NUMBER OF GATES IN INSTRUCTIONS MATCH
+        boolean allInputsQuantum;
+        boolean sameGateAmount;
+        int gateNumber;
+
+        allInputsQuantum = Arrays.stream(inputs).allMatch(Value::isQuantum);
+
+        if (allInputsQuantum) {
+            gateNumber = inputs[0].qVal.instructions.size();
+            sameGateAmount = Arrays.stream(inputs).allMatch(input -> input.qVal.instructions.size() == gateNumber);
+        } else {
+            sameGateAmount = false;
+            gateNumber = 0;
+        }
+
+
+        // SET OUTPUTS TO ERROR WHEN TOP CONTROL IS ERROR/ UNKNOWN OR NOT ALL INPUTS ARE QUANTUM
+        if (!allInputsQuantum || !sameGateAmount || top == Value.ERROR || top == Value.UNKNOWN) {
+            setNonSpecificPorts(state, Value.ERROR, qubits);
+
         } else {
 
+            // SET OUTPUTS TO UNKNOWN WHEN TOP CONTROL IS FALSE
             if (top == Value.FALSE) {
-                // SET OUTPUTS TO UNKNOWN WHEN TOP CONTROL IS FALSE
-                for (int i = 1; i < qubits * 2 + 1; i++) {
-                    if ((i % 2) == 0) { // Even ports are outputs (BITS)
-                        state.setPort(i, Value.UNKNOWN, 1);
+                setNonSpecificPorts(state, Value.UNKNOWN, qubits);
+            }
+
+            // MAIN LOGIC GOES HERE SINCE
+            else if (top == Value.TRUE) {
+
+                // GETTING INITIAL BIT INIT AND INSTRUCTION MATRIX
+                int[] initialBits = new int[qubits];
+                String[][] instructionMatrix = new String[gateNumber][qubits];
+
+                for (int i = 0; i < qubits; i++) {
+                    initialBits[i] = inputs[i].qVal.bit;
+                    for (int j = 0; j < gateNumber; j++) {
+                        instructionMatrix[j][i] = inputs[i].qVal.instructions.get(j);
                     }
                 }
-            } else if (top == Value.TRUE) {
-                // MAIN LOGIC GOES HERE SINCE
 
+                // CHECKING IF THERE ARE NO ENTANGLED QUBITS WITHOUT THEIR PARTNERS
+                boolean looseEntangledQubits = MeasuringFunctions.checkEntangledStatus(instructionMatrix, gateNumber);
+                if (!looseEntangledQubits) {
+                    setNonSpecificPorts(state, Value.ERROR, qubits);
+                    return;
+                }
+
+                // FINALLY, CALCULATING OUTPUT FOR THIS PROPAGATION
+                int[] outputBits;
+                outputBits = MeasuringFunctions.collapseQubits(initialBits, instructionMatrix, gateNumber, qubits);
+                for (int i = 0; i < qubits; i++) {
+                    if (outputBits[i] == 0) state.setPort(outputPorts[i], Value.FALSE, 1);
+                    else state.setPort(outputPorts[i], Value.TRUE, 1);
+                }
+            }
+        }
+    }
+
+    private void setNonSpecificPorts(InstanceState state, Value val, int qubits) {
+        for (int i = 1; i < qubits * 2 + 1; i++) {
+            if ((i % 2) == 0) { // Even ports are outputs (BITS)
+                state.setPort(i, val, 1);
             }
         }
     }
