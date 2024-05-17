@@ -171,7 +171,7 @@ abstract class AbstractQuantumGate extends InstanceFactory {
         if (!this.RADS_NEEDED) {
             instance.setTextField(StdAttr.LABEL, StdAttr.LABEL_FONT, x, y, halign, valign);
         } else {
-            instance.setTextField(StdAttr.RADIANS, StdAttr.LABEL_FONT, x, y, halign, valign);
+            instance.setTextField(StdAttr.DEGREES, StdAttr.LABEL_FONT, x, y, halign, valign);
         }
 
     }
