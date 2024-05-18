@@ -20,7 +20,7 @@ class RzGate extends AbstractQuantumGate {
 
     @Override
     public void propagate(InstanceState state) {
-        String degrees = state.getAttributeValue(StdAttr.DEGREES);
+        String degrees = state.getAttributeValue(StdAttr.THETA);
         Value in = state.getPort(1);
 
         if (!Objects.equals(degrees, "") && in.isQuantum()) {

@@ -26,7 +26,7 @@ class QuantumGateAttributes extends AbstractAttributeSet {
     Font labelfont = StdAttr.DEFAULT_LABEL_FONT;
 
     public QuantumGateAttributes(boolean radsNeeded) {
-        if (radsNeeded) this.ATTRIBUTES.set(1, StdAttr.DEGREES);
+        if (radsNeeded) this.ATTRIBUTES.set(1, StdAttr.THETA);
     }
 
     public QuantumGateAttributes(String measurement) {
@@ -50,7 +50,7 @@ class QuantumGateAttributes extends AbstractAttributeSet {
         if (attr == StdAttr.NUM_QUBITS) return (E) qubits;
         if (attr == StdAttr.WIDTH) return (E) width;
         if (attr == StdAttr.LABEL) return (E) label;
-        if (attr == StdAttr.DEGREES) return (E) rads;
+        if (attr == StdAttr.THETA) return (E) rads;
         if (attr == Pin.ATTR_LABEL_LOC) return (E) labelloc;
         if (attr == StdAttr.LABEL_FONT) return (E) labelfont;
         return null;
@@ -66,7 +66,7 @@ class QuantumGateAttributes extends AbstractAttributeSet {
             width = (BitWidth) value;
         } else if (attr == StdAttr.LABEL) {
             label = (String) value;
-        } else if (attr == StdAttr.DEGREES) {
+        } else if (attr == StdAttr.THETA) {
             rads = (String) value;
         } else if (attr == Pin.ATTR_LABEL_LOC) {
             labelloc = (Direction) value;

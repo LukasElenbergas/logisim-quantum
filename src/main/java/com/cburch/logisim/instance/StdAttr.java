@@ -34,6 +34,6 @@ public interface StdAttr {
     Font DEFAULT_LABEL_FONT = new Font("SansSerif", Font.PLAIN, 12);
 
     Attribute<String> QUBIT_ID = Attributes.forString("label", Strings.getter("stdQubitIdAttr"));
-    Attribute<String> DEGREES = Attributes.forString("label", Strings.getter("stdRadiansAttr"));
+    Attribute<String> THETA = Attributes.forString("label", Strings.getter("stdThetaAttr"));
     Attribute<Integer> NUM_QUBITS = Attributes.forInteger("numqubits", Strings.getter("stdNumGatesAttr"));
 }
