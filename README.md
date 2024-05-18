@@ -52,9 +52,5 @@ Quantum logic gate implementation in the Logisim (2.7.1) tool
 - [x] Implement logic of the Measurement gate
 - [x] Make sure measurement gate checks whether all entangled qubits are passed together
 - [ ] Calculate collapsed qubits
-- [ ] Swap Gate
 - [ ] Remove Qubit ID functionality
 - [ ] Remove QuantumValue debug printing
-
-## IF THERE'S ENOUGH TIME:
-- [ ] Add single qubit "measuring" - checking their complex vector state at a certain point
