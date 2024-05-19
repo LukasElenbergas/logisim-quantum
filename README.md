@@ -1,2 +1,2 @@
 # logisim-quantum
-Quantum logic gate implementation in the Logisim (2.7.1) tool
+Quantum logic gate implementation in Logisim 2.7.1
