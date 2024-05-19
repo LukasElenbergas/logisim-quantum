@@ -6,6 +6,7 @@ import org.ejml.dense.row.CommonOps_ZDRM;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Random;
 
 public class MeasuringFunctions {
     private static final double DECIMAL_ROUNDING_PLACES = 1e15;
@@ -224,8 +225,6 @@ public class MeasuringFunctions {
     }
 
     public static int[] collapseQubits(int[] initialBits, String[][] instructions, int gateNumber, int qubitNumber) {
-        // SIZE VALUES FOR THE FINAL ARRAY TO BE MULTIPLIED WITH THE STATE VECTOR
-        int finSize = (int) Math.pow(2, qubitNumber);
 
         // CREATE 2D ARRAYLIST AND STORE CONVERTED GATE INSTRUCTIONS
         ArrayList<ArrayList<ZMatrixRMaj>> gateInstructions = new ArrayList<>();
@@ -235,19 +234,45 @@ public class MeasuringFunctions {
         }
 
         // CALCULATE THE KRON PRODUCTS OF THE PARALLEL GATES
-        ZMatrixRMaj[] kronProductMatrices = new ZMatrixRMaj[gateNumber];
+        ArrayList<ZMatrixRMaj> kronProductMatrices = new ArrayList<>();
         for (int i = 0; i < gateNumber; i++) {
-            kronProductMatrices[i] = kron(gateInstructions.get(i));
-            kronProductMatrices[i].print();
+            kronProductMatrices.add(kron(gateInstructions.get(i)));
         }
 
         // CALCULATE THE OVERALL MATRIX OF THE CIRCUIT
+        ZMatrixRMaj overallMatrix = mult(kronProductMatrices);
 
         // CREATE A STATE VECTOR OUT OF THE INITIAL BITS
+        int decimalValue = 0;
+        for (int i = initialBits.length - 1; i >= 0; i--) {
+            decimalValue = (decimalValue << 1) | initialBits[i];
+        }
+        ZMatrixRMaj stateVector = new ZMatrixRMaj(overallMatrix.numRows, 1);
+        stateVector.set(decimalValue, 0, 1, 0);
 
-        // GET THE OUTPUT OF THE QUANTUM CIRCUIT FOR THE PROPAGATION
+        // MULTIPLY THE OVERALL MATRIX WITH THE STATE VECTOR
+        ZMatrixRMaj outputStateVector = new ZMatrixRMaj(overallMatrix.numRows, 1);
+        CommonOps_ZDRM.mult(overallMatrix, stateVector, outputStateVector);
 
-        return initialBits;
+        // GET PROBABILITY ARRAY
+        double[] probabilityArr = new double[outputStateVector.numRows];
+        for (int i = 0; i < outputStateVector.numRows; i++) {
+            Complex_F64 cVal = new Complex_F64();
+            outputStateVector.get(i, 0, cVal);
+            probabilityArr[i] = Math.pow(cVal.real, 2) + Math.pow(cVal.imaginary, 2);
+        }
+
+        // GET DECIMAL VALUE WHICH IS THE OUTPUT OF THE CIRCUIT BY COLLAPSING THE PROBABILITY
+        int decimalOutput = decimalReturn(probabilityArr);
+
+        // TURN THE DECIMAL VALUE INTO A NEW OUTPUT BIT ARRAY
+        int[] outputBits = new int[initialBits.length];
+        for (int i = 0; i < initialBits.length; i++) {
+            outputBits[i] = decimalOutput % 2;
+            decimalOutput /= 2;
+        }
+
+        return outputBits;
     }
 
     public static boolean checkEntangledStatus(String[][] matrix, int rowNum) {
@@ -373,7 +398,7 @@ public class MeasuringFunctions {
                     Complex_F64 a = new Complex_F64();
                     A.get(i, j, a);
 
-                    for(int rowB = 0; rowB < B.numRows; ++rowB) {
+                    for (int rowB = 0; rowB < B.numRows; ++rowB) {
                         for (int colB = 0; colB < B.numCols; ++colB) {
                             Complex_F64 b = new Complex_F64();
                             B.get(rowB, colB, b);
@@ -388,5 +413,32 @@ public class MeasuringFunctions {
 
             return C;
         }
+    }
+
+    private static ZMatrixRMaj mult(ArrayList<ZMatrixRMaj> instructions) {
+
+        if (instructions.size() == 1) {
+            return instructions.getFirst();
+        } else {
+            ZMatrixRMaj B = instructions.getFirst();
+            instructions.removeFirst();
+            ZMatrixRMaj A = mult(instructions);
+
+            ZMatrixRMaj C = new ZMatrixRMaj(A.numRows, A.numCols);
+            CommonOps_ZDRM.mult(A, B, C);
+
+            return C;
+        }
+    }
+
+    private static int decimalReturn(double[] arr) {
+
+        double position = new Random().nextDouble();
+        for (int i = 0; i < arr.length; i++) {
+
+            if (position <= arr[i]) return i;
+            position -= arr[i];
+        }
+        throw new IllegalStateException("Should never reach there!");
     }
 }
