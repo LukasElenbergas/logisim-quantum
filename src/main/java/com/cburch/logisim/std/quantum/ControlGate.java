@@ -42,7 +42,8 @@ class ControlGate extends AbstractQuantumGate {
             state.setPort(0, out, 1);
             state.setPort(3, out, 1);
 
-        } else if (in.isQuantum() && top.isQuantum()) {
+        } else if (in.isQuantum() && top.isQuantum() && !top.qVal.instructions.getLast().equals("CC")) {
+
             Value outRight = new Value(Value.QUANTUM, new QuantumValue(in.qVal, "C"));
             state.setPort(0, outRight, 1);
 
