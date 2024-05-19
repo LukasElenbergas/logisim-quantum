@@ -53,7 +53,16 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/libs/commons-numbers-complex-1.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/ejml-core-0.42.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/ejml-zdense-0.42.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

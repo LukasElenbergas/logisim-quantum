@@ -7,24 +7,24 @@ import com.cburch.logisim.data.Value;
 import com.cburch.logisim.instance.*;
 import com.cburch.logisim.util.Icons;
 
-class PhaseRGate extends AbstractQuantumGate {
-    public static InstanceFactory FACTORY = new PhaseRGate();
+class PhaseGate extends AbstractQuantumGate {
+    public static InstanceFactory FACTORY = new PhaseGate();
 
-    private PhaseRGate() {
-        super("Phase (R) Gate",
-                Strings.getter("rGateComponent"),
-                Icons.getIcon("rGate.gif"),
-                "R",
+    private PhaseGate() {
+        super("Phase Shift Gate",
+                Strings.getter("pGateComponent"),
+                Icons.getIcon("pGate.gif"),
+                "P",
                 true);
     }
 
     @Override
     public void propagate(InstanceState state) {
-        String radians = state.getAttributeValue(StdAttr.RADIANS);
+        String degrees = state.getAttributeValue(StdAttr.THETA);
         Value in = state.getPort(1);
 
-        if (!Objects.equals(radians, "") && in.isQuantum()) {
-            String instruction = "R(" + radians + ")";
+        if (!Objects.equals(degrees, "") && in.isQuantum()) {
+            String instruction = "P" + degrees;
 
             Value out = new Value(Value.QUANTUM, new QuantumValue(in.qVal, instruction));
 

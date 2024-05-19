@@ -3,7 +3,6 @@ package com.cburch.logisim.std.quantum;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
-import java.util.Objects;
 import javax.swing.*;
 
 import com.cburch.logisim.comp.TextField;
@@ -154,21 +153,19 @@ class Qubit extends InstanceFactory {
             }
         }
 
-        instance.setTextField(StdAttr.QUBIT_ID, StdAttr.LABEL_FONT, x, y, halign, valign);
+        instance.setTextField(StdAttr.LABEL, StdAttr.LABEL_FONT, x, y, halign, valign);
     }
 
     @Override
     public void propagate(InstanceState state) {
-        String idString = state.getAttributeValue(StdAttr.QUBIT_ID);
         Value in = state.getPort(1);
 
-        if (Objects.equals(idString, "") || in == Value.ERROR) {
+        if (in == Value.ERROR) {
             state.setPort(0, Value.ERROR, 1);
         } else {
-            int id = Integer.parseInt(idString);
             int bit = in == Value.TRUE ? 1 : 0;
 
-            Value out = new Value(Value.QUANTUM, new QuantumValue(id, bit, new ArrayList<>()));
+            Value out = new Value(Value.QUANTUM, new QuantumValue(bit, new ArrayList<>()));
 
             state.setPort(0, out, 1);
         }

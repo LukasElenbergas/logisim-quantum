@@ -20,11 +20,11 @@ class RyGate extends AbstractQuantumGate {
 
     @Override
     public void propagate(InstanceState state) {
-        String radians = state.getAttributeValue(StdAttr.RADIANS);
+        String degrees = state.getAttributeValue(StdAttr.THETA);
         Value in = state.getPort(1);
 
-        if (!Objects.equals(radians, "") && in.isQuantum()) {
-            String instruction = "Ry(" + radians + ")";
+        if (!Objects.equals(degrees, "") && in.isQuantum()) {
+            String instruction = "Ry" + degrees;
 
             Value out = new Value(Value.QUANTUM, new QuantumValue(in.qVal, instruction));
 
