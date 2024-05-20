@@ -244,8 +244,8 @@ public class MeasuringFunctions {
 
         // CREATE A STATE VECTOR OUT OF THE INITIAL BITS
         int decimalValue = 0;
-        for (int i = initialBits.length - 1; i >= 0; i--) {
-            decimalValue = (decimalValue << 1) | initialBits[i];
+        for (int initialBit : initialBits) {
+            decimalValue = (decimalValue << 1) | initialBit;
         }
         ZMatrixRMaj stateVector = new ZMatrixRMaj(overallMatrix.numRows, 1);
         stateVector.set(decimalValue, 0, 1, 0);
@@ -267,7 +267,7 @@ public class MeasuringFunctions {
 
         // TURN THE DECIMAL VALUE INTO A NEW OUTPUT BIT ARRAY
         int[] outputBits = new int[initialBits.length];
-        for (int i = 0; i < initialBits.length; i++) {
+        for (int i = initialBits.length - 1; i >= 0; i--) {
             outputBits[i] = decimalOutput % 2;
             decimalOutput /= 2;
         }
