@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Change $PATH_TO_CLONED_PROJECT to where you cloned the project on your system-->
 <launch4jConfig>
   <dontWrapJar>false</dontWrapJar>
   <headerType>gui</headerType>
-  <jar>C:\Projects\logisim-quantum\out\artifacts\logisim-quantum.jar</jar>
-  <outfile>C:\Projects\logisim-quantum\out\artifacts\logisim-quantum.exe</outfile>
+  <jar>$PATH_TO_CLONED_PROJECT\logisim-quantum\out\artifacts\logisim-quantum.jar</jar>
+  <outfile>$PATH_TO_CLONED_PROJECT\logisim-quantum\out\artifacts\logisim-quantum.exe</outfile>
   <errTitle></errTitle>
   <cmdLine></cmdLine>
   <chdir>.</chdir>
@@ -13,7 +14,7 @@
   <stayAlive>false</stayAlive>
   <restartOnCrash>false</restartOnCrash>
   <manifest></manifest>
-  <icon>C:\Projects\logisim-quantum\src\main\resources\logisim\img\logisim-icon-128.ico</icon>
+  <icon>$PATH_TO_CLONED_PROJECT\logisim-quantum\src\main\resources\logisim\img\logisim-icon-128.ico</icon>
   <classPath>
     <mainClass>com.cburch.logisim.Main</mainClass>
   </classPath>
